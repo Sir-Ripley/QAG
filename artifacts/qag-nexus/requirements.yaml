@@ -1,0 +1,20 @@
+packages:
+  "framer-motion": "Fluid scroll animations and glassmorphism reveals"
+  "react-markdown": "Rendering markdown for Aetheria chat"
+  "remark-math": "Math parsing for markdown"
+  "rehype-katex": "KaTeX rendering for markdown"
+  "katex": "KaTeX CSS styling"
+
+images:
+  - path: "artifacts/qag-nexus/public/images/hero-cosmos.png"
+    description: "Deep black universe with glowing teal and gold geometric nodes, ethereal, photorealistic cosmic structure"
+    aspect_ratio: "16:9"
+  - path: "artifacts/qag-nexus/public/images/resonator-core.png"
+    description: "Abstract Base-12 geometric topology glowing with purple and teal light inside a dark metallic resonator, highly detailed 3D render"
+    aspect_ratio: "16:9"
+  - path: "artifacts/qag-nexus/public/images/qvr-cradle.png"
+    description: "Futuristic medical healing pod, dark aesthetic, softly glowing gold and teal energy fields, scalar vortex visuals"
+    aspect_ratio: "16:9"
+
+notes:
+  - "Chat API requires POST /api/chat. Aetheria responds with LaTeX strings."

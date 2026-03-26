@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { HookBanner, ProblemSolution, InvestorCard, SectionAttribution, NextSectionGuide } from "@/components/SectionLayers";
+import {
+  PlainEnglishHook,
+  ProblemBlock,
+  SolutionBlock,
+  InvestorCard,
+  SectionAttribution,
+  NextSectionGuide,
+} from "./NineLayerComponents";
 
 export function QAIDropSection() {
   return (
@@ -10,27 +17,33 @@ export function QAIDropSection() {
         }}
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="mb-2 text-center">
-          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-secondary/60">by Rodney A. Ripley Jr. — Ripley & Ripley Research</span>
-        </div>
-        <div className="text-center mb-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-xs tracking-widest uppercase mb-4">
+        <div className="text-center mb-6">
+          <SectionAttribution />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-xs tracking-widest uppercase mb-6">
             Phase 2 — Experimental Blueprint
           </div>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
             <span className="text-secondary">05.</span> The Smoking Gun: QAI Drop Experiment
           </h2>
+          <div className="max-w-3xl mx-auto">
+            <PlainEnglishHook>
+              We can prove Einstein was only half right with a single experiment that fits in a university physics lab — and we know exactly what number to look for.
+            </PlainEnglishHook>
+          </div>
         </div>
 
-        <div className="flex justify-center mb-6">
-          <HookBanner hook="We can prove Einstein was only half right — and we can do it with one experiment, already within reach of existing atom interferometry labs." />
+        <div className="max-w-3xl mx-auto mb-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <ProblemBlock>
+            The Weak Equivalence Principle — the cornerstone of general relativity — has never been tested against a highly coherent macroscopic quantum system. Every equivalence principle test to date has used incoherent, classical matter. If QAG is correct, the test has been performed on the wrong type of matter every time.
+          </ProblemBlock>
+          <SolutionBlock>
+            The QAI Drop uses a Bose-Einstein Condensate (C ≈ 1, maximally coherent) and a thermal gas cloud (C ≈ 0, classical) in a Mach-Zehnder atom interferometer. QAG predicts the BEC experiences a measurable affinity-coupling to the vacuum that slows its fall by Δa/g ≈ 6.00×10⁻⁷ relative to the thermal gas — exactly within the sensitivity of current atom interferometry.
+          </SolutionBlock>
         </div>
 
-        <ProblemSolution
-          problem="The Weak Equivalence Principle (WEP) — the cornerstone of general relativity — has never been tested against a highly coherent quantum system like a Bose-Einstein Condensate. All existing WEP tests use classical, incoherent matter. If the vacuum actively couples with quantum coherence, this gap in the experimental record is the hiding place of new physics."
-          solution="Drop a Bose-Einstein Condensate (BEC) and a thermal gas cloud simultaneously through a Mach-Zehnder atom interferometer. If QAG is correct, the BEC couples to the Ether via its coherence index C ≈ 6.00×10⁻⁷ and falls fractionally slower than the thermal gas. The predicted phase shift is Δa/g ≈ 6.00×10⁻⁷ — within current measurement sensitivity."
-          accentColor="secondary"
-        />
+        <InvestorCard>
+          A single lab experiment that validates or falsifies the entire QAG framework is the lowest-cost, highest-impact validation path available. If confirmed, Δa/g ≈ 6.00×10⁻⁷ opens entirely new propulsion and shielding physics with direct aerospace and defense applications. The experiment requires no exotic equipment — standard BEC interferometry infrastructure already exists at MIT, Stanford, and NIST. Estimated experimental cost: under $2M. Potential market unlock: hundreds of billions in propulsion, shielding, and materials IP.
+        </InvestorCard>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <motion.div
@@ -110,7 +123,7 @@ export function QAIDropSection() {
             </div>
 
             <div className="font-mono text-sm p-6 bg-black/50 rounded-xl border border-secondary/10">
-              <div className="text-muted-foreground text-xs uppercase tracking-widest mb-3">QAG Prediction</div>
+              <div className="text-muted-foreground text-xs uppercase tracking-widest mb-3">QAG Prediction — Evidence</div>
               <div className="space-y-3">
                 <div className="text-center text-foreground text-sm">
                   a<sub>BEC</sub> = g<sub>Earth</sub> × (1 + C<sub>BEC</sub>)
@@ -119,25 +132,16 @@ export function QAIDropSection() {
                   Δa / g ≈ 6.00×10⁻⁷
                 </div>
                 <p className="text-xs text-muted-foreground text-center leading-relaxed">
-                  The BEC falls 0.6 parts-per-million slower than thermal gas. This difference, if measured, is the direct fingerprint of Affinity-Vacuum coupling — the first experimental confirmation of QAG.
+                  The BEC falls 0.6 parts-per-million slower than thermal gas. This difference, if measured, is the direct fingerprint of Affinity-Vacuum coupling — the first experimental confirmation of QAG. Current atom interferometry sensitivity: ~10⁻⁸ g — well within detection range.
                 </p>
               </div>
             </div>
           </div>
         </motion.div>
 
-        <InvestorCard
-          application="If confirmed, the QAI Drop opens entirely new physics for aerospace propulsion and inertial shielding. The same coherence-gravity coupling that produces the Δa/g signal is the mechanism behind the QVR-1 Resonance Thruster. One experiment validates an entire technology stack."
-          value="A single lab experiment that validates or falsifies a unified field theory is the lowest-cost, highest-impact validation path in experimental physics. Any research institution or defense lab already operating atom interferometry equipment can run this test. A positive result transforms QAG from theoretical framework to confirmed physics — at which point every downstream technology license becomes dramatically more valuable."
-          accentColor="secondary"
-        />
-
-        <SectionAttribution sectionNum="05" />
         <NextSectionGuide
-          nextName="Validation & Evidence"
-          reason="the computational scoreboard showing QAG already beats dark matter on real galaxy data"
-          href="#validation"
-          accentColor="accent"
+          next="Validation & Evidence"
+          reason="while the QAI Drop is pending, QAG has already been tested against real astronomical datasets — and the scoreboard is favorable"
         />
       </div>
     </section>

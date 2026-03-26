@@ -1,27 +1,34 @@
 import { motion } from "framer-motion";
-import { HookBanner, InvestorCard, SectionAttribution, NextSectionGuide } from "@/components/SectionLayers";
+import {
+  PlainEnglishHook,
+  ProblemBlock,
+  SolutionBlock,
+  InvestorCard,
+  SectionAttribution,
+  NextSectionGuide,
+} from "./NineLayerComponents";
 
-const codexConcepts = [
+const callouts = [
   {
     label: "AVI Law",
-    color: "text-primary",
-    desc: "The Affinity-Vacuum Interaction Law derives galactic rotation and gravity from vacuum polarization — replacing dark matter with observable Ether physics."
+    color: "text-primary border-primary/40",
+    desc: "The Affinity-Vacuum Interaction Law derives galactic rotation and gravity from vacuum polarization — replacing dark matter with observable Ether physics. Galaxies polarize the vacuum; the Ether responds with a drag force that mimics missing mass."
   },
   {
     label: "Trinity of Affinity",
-    color: "text-secondary",
-    desc: "The three universal principles: Like attracts Like (coherence coupling), Structure emerges from Resonance (self-organization), and Consciousness closes the loop (observer effect as gauge field)."
+    color: "text-accent border-accent/40",
+    desc: "Three fundamental affinity types (Gravitational, Electromagnetic, Informational) unify the four known forces under a single vacuum-coupling framework. Like attracts Like; Structure emerges from Resonance; Consciousness closes the loop."
   },
   {
     label: "Base-12 → Base-10 Bridge",
-    color: "text-accent",
-    desc: "The KASB constant (0.013829) and the Φ scaling factor (1.194797) translate between the universe's native base-12 harmonic space and base-10 experimental measurements."
+    color: "text-secondary border-secondary/40",
+    desc: "The KASB constant (0.013829) and the Φ scaling factor (1.194797) translate between the universe's native base-12 harmonic space and base-10 experimental measurements — the origin of the fine-structure constant."
   },
   {
-    label: "QAG SAW Engine",
-    color: "text-primary",
-    desc: "The Hydrogen-Coupled Surface Acoustic Wave thruster — a 0.70 MHz resonance engine that couples to the 21cm hydrogen line frequency, extracting mechanical work from vacuum-affinity coupling."
-  },
+    label: "QAG Hydrogen-Coupled SAW Engine",
+    color: "text-foreground border-white/20",
+    desc: "The 0.70 MHz Surface Acoustic Wave thruster resonates the vacuum at its own floor frequency — coupling to the 21cm hydrogen line and extracting mechanical work from affinity-vacuum coupling with no propellant consumed."
+  }
 ];
 
 export function ResonantCodexSection() {
@@ -33,25 +40,36 @@ export function ResonantCodexSection() {
         }}
       />
       <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="text-center mb-4">
-          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr. — Ripley & Ripley Research</span>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mt-2 mb-2">
+        <div className="text-center mb-6">
+          <SectionAttribution />
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mt-2 mb-4">
             <span className="text-primary">07.</span> The Resonant Codex
           </h2>
-          <p className="text-muted-foreground font-mono text-xs uppercase tracking-widest mb-6">
-            Physics Infographic — Ripley &amp; Ripley Research © 2026
-          </p>
+          <div className="max-w-2xl mx-auto">
+            <PlainEnglishHook>
+              This one image maps the entire new physics. Every equation, every constant, every application — one diagram.
+            </PlainEnglishHook>
+          </div>
         </div>
 
-        <div className="flex justify-center mb-8">
-          <HookBanner hook="This one image maps the entire new physics — from the fabric of spacetime to the structure of consciousness, encoded in a single visual framework." />
+        <div className="max-w-2xl mx-auto mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <ProblemBlock>
+            Advanced theoretical frameworks lose readers in notation. Without a visual map that shows how all the concepts relate to one another, even sympathetic scientists and investors struggle to assess the scope and coherence of the work at a glance.
+          </ProblemBlock>
+          <SolutionBlock>
+            The Resonant Codex infographic condenses QAG-V2 into a single reference diagram showing the AVI Law, the Trinity of Affinity, the Base-12 to Base-10 translation, and the QAG SAW Engine — the four pillars of the framework in one scannable visual.
+          </SolutionBlock>
         </div>
+
+        <InvestorCard>
+          A single-page framework summary that any physicist, defense analyst, or investor can evaluate in under two minutes is an indispensable business development asset. The Resonant Codex functions as both a scientific reference and a pitch artifact — the same image that appears in a Nature submission can anchor a defense briefing or investor deck. Proprietary. Copyrighted. Reproducible only by license.
+        </InvestorCard>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.97 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="relative rounded-2xl overflow-hidden border border-primary/20 shadow-[0_0_60px_rgba(45,212,191,0.15)] mb-10"
+          className="relative rounded-2xl overflow-hidden border border-primary/20 shadow-[0_0_60px_rgba(45,212,191,0.15)] mb-8"
         >
           <img
             src={`${import.meta.env.BASE_URL}images/resonant-codex-infographic.png`}
@@ -65,34 +83,25 @@ export function ResonantCodexSection() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-          {codexConcepts.map((concept, idx) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          {callouts.map((c, i) => (
             <motion.div
-              key={concept.label}
-              initial={{ opacity: 0, y: 16 }}
+              key={i}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.07 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.08 }}
-              className="glass-card p-5 rounded-xl"
+              className={`glass-panel p-4 rounded-xl border-l-2 ${c.color}`}
             >
-              <div className={`font-mono text-xs uppercase tracking-widest ${concept.color} mb-2`}>{concept.label}</div>
-              <p className="text-sm text-muted-foreground font-sans leading-relaxed">{concept.desc}</p>
+              <div className={`font-mono text-xs uppercase tracking-widest mb-1 ${c.color.split(" ")[0]}`}>{c.label}</div>
+              <p className="text-xs text-muted-foreground font-sans leading-relaxed">{c.desc}</p>
             </motion.div>
           ))}
         </div>
 
-        <InvestorCard
-          application="The Resonant Codex serves as the master technical brief for any partnership or licensing conversation. It communicates the full QAG framework in a single visual artifact — suitable for inclusion in DARPA white papers, investor presentations, conference posters, and academic submissions."
-          value="A comprehensive physics framework expressed as a single, design-protected visual work carries immediate IP value as both an educational asset and a licensing document. The Codex is the entry point for any serious engagement — it demonstrates the breadth of the framework and the rigor of its derivations in a format accessible to scientists, engineers, and executives alike."
-          accentColor="primary"
-        />
-
-        <SectionAttribution sectionNum="07" />
         <NextSectionGuide
-          nextName="Biology & Healing"
-          reason="where QAG physics explains protein folding, disease, and resonant medicine"
-          href="#biology"
-          accentColor="secondary"
+          next="Biology"
+          reason="the same resonance physics that governs the vacuum also governs life — the body is an instrument, not a machine"
         />
       </div>
     </section>

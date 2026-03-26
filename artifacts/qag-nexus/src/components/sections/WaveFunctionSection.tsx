@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { HookBanner, ProblemSolution, InvestorCard, SectionAttribution, NextSectionGuide } from "@/components/SectionLayers";
+import {
+  PlainEnglishHook,
+  ProblemBlock,
+  SolutionBlock,
+  InvestorCard,
+  SectionAttribution,
+  NextSectionGuide,
+} from "./NineLayerComponents";
 
 const echoAmplitudes = [
   { n: 1, A: 0.588502, Rn: 0.400000 },
@@ -23,24 +30,30 @@ export function WaveFunctionSection() {
         }}
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="mb-2 text-center">
-          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr. — Ripley & Ripley Research</span>
-        </div>
-        <div className="text-center mb-4">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+        <div className="text-center mb-6">
+          <SectionAttribution />
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
             <span className="text-primary">04.</span> Temporal Echo &amp; Wave Functions
           </h2>
+          <div className="max-w-3xl mx-auto">
+            <PlainEnglishHook>
+              Every massive event in the universe leaves echoes — like ripples from a stone dropped in water. QAG is the first framework that tracks exactly 8 of them, and uses them to build better AI.
+            </PlainEnglishHook>
+          </div>
         </div>
 
-        <div className="flex justify-center mb-8">
-          <HookBanner hook="Time is not a smooth river. It is a standing wave — and every gravitational event leaves eight echoes behind it, like a stone dropped in still Ether." />
+        <div className="max-w-3xl mx-auto mb-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <ProblemBlock>
+            Standard quantum mechanics loses contextual history across long time scales — what AI researchers call the "context window problem." A black hole merger happens, GR records the chirp, and everything before and after is discarded. This is the same failure mode in both physics and AI: no persistent memory of prior states means no ability to recognize patterns across scale.
+          </ProblemBlock>
+          <SolutionBlock>
+            Temporal Echo Memory (N=8 cascade) retains and cross-references history without degradation. The QAG wavefunction Ψ_QAG is not just the GR waveform — it is the GR waveform plus 8 decaying echo terms, each carrying information from earlier states. Total echo sum Σ = 2.7726 is preserved across all events. The universe does not forget; we simply lacked the mathematical framework to listen.
+          </SolutionBlock>
         </div>
 
-        <ProblemSolution
-          problem="Standard quantum mechanics loses informational context across long time scales — the AI 'context window problem' mirrors the physics 'memory loss' problem. After a gravitational wave event, standard GR predicts a clean signal. If that signal has post-merger echoes, GR cannot explain them."
-          solution="Temporal Echo Memory (N=8 cascade) modifies the gravitational wavefunction to include 8 memory echoes, each decaying with reflectivity R=0.4 and coefficient γ=0.1735. The total echo sum Σ=2.7726 is preserved across all events. This gives spacetime a persistent memory — and gives QAG-based AI a persistent context architecture."
-          accentColor="primary"
-        />
+        <InvestorCard>
+          The AI Brain dual-hemisphere edge processor applies Temporal Echo Memory to on-device artificial intelligence — a patentable architecture for neurodivergent cognitive scaffolding and secure defense applications that require offline-capable, context-persistent reasoning. Unlike transformer-based models, the N=8 echo cascade requires no cloud connection and produces no data exhaust. Target markets: autonomous defense systems, clinical neurocognitive tools, and hardened field intelligence platforms.
+        </InvestorCard>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <motion.div
@@ -157,18 +170,9 @@ export function WaveFunctionSection() {
           </div>
         </motion.div>
 
-        <InvestorCard
-          application="The QAG AI Brain dual-hemisphere edge processor implements Temporal Echo Memory as an on-device AI context architecture — validated on Android TensorFlow Lite (arm64-v8a, Tensor G4). Eight-echo exponential depth eliminates context-window degradation for secure, offline-capable autonomous systems."
-          value="Patentable on-device AI memory architecture for defense-grade cognitive scaffolding. Neurodivergent cognitive tools and high-security edge AI inference are both multi-billion dollar markets. The Temporal Echo Memory architecture is a direct commercial derivative of the same physics that predicts LIGO echo signals. A single IP framework covering both physics and AI is an exceptionally strong licensing position."
-          accentColor="primary"
-        />
-
-        <SectionAttribution sectionNum="04" />
         <NextSectionGuide
-          nextName="QAI Drop Experiment"
-          reason="the single lab test that can falsify or confirm the entire QAG framework"
-          href="#qai-drop"
-          accentColor="secondary"
+          next="The QAI Drop Experiment"
+          reason="Temporal Echo theory makes a precise, testable prediction about how coherent quantum systems fall — and one experiment can confirm or falsify it"
         />
       </div>
     </section>

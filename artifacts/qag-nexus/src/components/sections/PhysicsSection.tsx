@@ -1,7 +1,14 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Slider } from "@/components/ui/slider";
-import { HookBanner, ProblemSolution, InvestorCard, SectionAttribution, NextSectionGuide } from "@/components/SectionLayers";
+import {
+  PlainEnglishHook,
+  ProblemBlock,
+  SolutionBlock,
+  InvestorCard,
+  SectionAttribution,
+  NextSectionGuide,
+} from "./NineLayerComponents";
 
 export function PhysicsSection() {
   const [frequency, setFrequency] = useState(1000);
@@ -19,25 +26,28 @@ export function PhysicsSection() {
   return (
     <section id="physics" className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="mb-2">
-          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr. — Ripley & Ripley Research</span>
-        </div>
-        <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-          <span className="text-primary">01.</span> The Resonator
-        </h2>
+        <div className="mb-10">
+          <SectionAttribution />
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+            <span className="text-primary">01.</span> The Resonator
+          </h2>
 
-        <HookBanner hook="Gravity is not a force pulling you down — it is pressure pushing you in. Tune the vacuum, and the pressure lifts." />
+          <PlainEnglishHook>
+            Gravity is not a force pulling you down — it is pressure from the vacuum pushing you in. The resonator is the engine that learns to push back.
+          </PlainEnglishHook>
 
-        <ProblemSolution
-          problem="Newtonian and Einsteinian physics treat the vacuum as passive — an empty stage on which matter performs. This leaves propulsion permanently tethered to chemical reaction mass. Spacecraft must carry their own fuel; there is no external medium to push against."
-          solution="The vacuum is a ferroelectric superfluid that actively couples with coherent matter structures. By tuning a Base-12 resonator cavity to the natural frequency of the Ether, you can establish a negative impedance condition that modifies the effective mass of a target object — without any chemical reaction."
-          accentColor="primary"
-        />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <ProblemBlock>
+              Newtonian and Einsteinian gravity treat spacetime as a passive geometric backdrop — something that curves but does not respond. This makes mass reduction and gravity shielding theoretically impossible, leaving propulsion forever chained to chemical combustion.
+            </ProblemBlock>
+            <SolutionBlock>
+              QAG reveals the quantum vacuum as an active ferroelectric superfluid — the Ether. When driven at precise resonant frequencies (0.70 MHz, SAW geometry), it responds with Affinity coupling that directly reduces the effective mass of any coherent object placed within the field.
+            </SolutionBlock>
+          </div>
 
-        <div className="mb-6">
-          <p className="text-xl text-muted-foreground max-w-2xl">
-            Focusing vacuum fluctuations through Base-12 topology. Manipulating the Ether to achieve direct mass reduction and high-affinity shielding.
-          </p>
+          <InvestorCard>
+            The QVR-1 Tesla Resonance Thruster (0.70 MHz Surface Acoustic Wave engine) represents the first credible non-chemical propulsion mechanism grounded in a complete theoretical framework. Target markets include DARPA autonomous systems, MASC and APAC defense platforms, and commercial LEO satellite stationkeeping — a combined addressable market exceeding $40B. No exotic matter or fuel is consumed.
+          </InvestorCard>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -96,9 +106,17 @@ export function PhysicsSection() {
               }}
             >
               <div className="absolute inset-0 bg-background/60" />
+
               <motion.div
-                animate={{ scale: 1 + (amplitude * 0.05), rotate: isLevitating ? 360 : 0 }}
-                transition={{ duration: 2000 / frequency, repeat: Infinity, ease: "linear" }}
+                animate={{
+                  scale: 1 + (amplitude * 0.05),
+                  rotate: isLevitating ? 360 : 0
+                }}
+                transition={{
+                  duration: 2000 / frequency,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
                 className="relative z-10 w-32 h-32 rounded-full border-2 border-dashed border-secondary/50 flex items-center justify-center"
               >
                 <div
@@ -116,14 +134,22 @@ export function PhysicsSection() {
             >
               <DataBlock label="Wave Number (k)" value={waveNumber.toFixed(2)} unit="rad/m" />
               <DataBlock label="Energy Density" value={(eCore / 1000).toFixed(2)} unit="kJ/m³" />
-              <DataBlock label="Effective Mass" value={mEff > 0 ? mEff.toFixed(3) : "0.000"} unit="kg" highlight={isLevitating} />
+              <DataBlock
+                label="Effective Mass"
+                value={mEff > 0 ? mEff.toFixed(3) : "0.000"}
+                unit="kg"
+                highlight={isLevitating}
+              />
             </motion.div>
 
             <div className="glass-panel p-6 rounded-xl border-accent/20">
-              <div className="font-mono text-sm text-muted-foreground mb-2">Equation of State:</div>
+              <div className="font-mono text-sm text-muted-foreground mb-2">Equation of State — Technical Content:</div>
               <div className="font-display text-xl md:text-2xl text-foreground text-center py-4">
                 M<sub className="text-sm">eff</sub> = M<sub className="text-sm">0</sub> × (1 - α × [E<sub className="text-sm">core</sub> / E<sub className="text-sm">vac</sub>])
               </div>
+              <p className="text-xs text-muted-foreground font-sans mt-2">
+                <strong className="text-foreground">Real-World Application:</strong> The QVR-1 SAW thruster modulates α by pulsing at 0.70 MHz — the resonant frequency of the vacuum floor in base-12 topology. At full coupling, M_eff → 0 and the craft achieves inertial decoupling with no propellant expended.
+              </p>
               {isLevitating && (
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -134,21 +160,19 @@ export function PhysicsSection() {
                 </motion.div>
               )}
             </div>
+
+            <div className="glass-panel p-4 rounded-xl border border-primary/10">
+              <div className="text-[10px] font-mono uppercase tracking-widest text-primary/60 mb-1">Evidence / Validation</div>
+              <p className="text-xs text-muted-foreground font-sans leading-relaxed">
+                The M_eff reduction formula is derived directly from the QAG vacuum polarization tensor. SPARC galaxy rotation curves independently confirm the Affinity coupling constant α at the cosmological scale, providing cross-domain empirical grounding for the same mechanism operating here at the engineering scale.
+              </p>
+            </div>
           </div>
         </div>
 
-        <InvestorCard
-          application="QVR-1 Tesla Resonance Thruster — a 0.70 MHz Surface Acoustic Wave (SAW) engine with no propellant, no combustion, and no moving parts. Integrated into uncrewed aerial systems (UAS) and autonomous underwater vehicles (AUV) for unlimited endurance missions."
-          value="Non-chemical propulsion is the holy grail of autonomous defense systems. DARPA's MASC and APAC programs are actively seeking propellantless maneuvering solutions. QAG provides the only physics-grounded framework for such a technology. Licensing or joint development represents a transformative defense contract opportunity."
-          accentColor="secondary"
-        />
-
-        <SectionAttribution sectionNum="01" />
         <NextSectionGuide
-          nextName="Base-12 Topology"
-          reason="the mathematical language that makes the Resonator possible"
-          href="#base12"
-          accentColor="primary"
+          next="Base-12 Topology"
+          reason="the vacuum's resonant geometry is encoded in base-12 mathematics — understanding it reveals why 0.70 MHz is the operative frequency"
         />
       </div>
     </section>

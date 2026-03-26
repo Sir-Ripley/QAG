@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { HookBanner, ProblemSolution, InvestorCard, SectionAttribution, NextSectionGuide } from "@/components/SectionLayers";
+import {
+  PlainEnglishHook,
+  ProblemBlock,
+  SolutionBlock,
+  InvestorCard,
+  SectionAttribution,
+  NextSectionGuide,
+} from "./NineLayerComponents";
 
 const galaxyData = [
   { name: "NGC3198", chi2QAG: 58.455, chi2Bary: 112.310, rAff: "14.93 kpc", ML: 1.227, improvement: "1.9×", pValue: "0.000", rms: "41.04 km/s" },
@@ -21,24 +28,30 @@ export function ValidationSection() {
   return (
     <section id="validation" className="py-24 relative bg-gradient-to-b from-background via-card/20 to-background overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="mb-2 text-center">
-          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr. — Ripley & Ripley Research</span>
-        </div>
-        <div className="text-center mb-4">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+        <div className="text-center mb-6">
+          <SectionAttribution />
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
             <span className="text-accent">06.</span> Validation &amp; Evidence
           </h2>
+          <div className="max-w-3xl mx-auto">
+            <PlainEnglishHook>
+              The math already works. This is the scoreboard — real astronomical data, run through QAG equations, compared to the standard model. The results speak for themselves.
+            </PlainEnglishHook>
+          </div>
         </div>
 
-        <div className="flex justify-center mb-6">
-          <HookBanner hook="The math already works. Here is the scoreboard — real galaxy data, real gravitational wave events, real numbers." />
+        <div className="max-w-3xl mx-auto mb-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <ProblemBlock>
+            Theoretical frameworks without empirical grounding cannot attract serious scientific or investment interest. A framework that fits data only after introducing free parameters (like dark matter halo mass or cosmological constant) is not validated — it is tuned. QAG must earn its standing by fitting real data with fewer assumptions than the standard model.
+          </ProblemBlock>
+          <SolutionBlock>
+            QAG-V2 has been tested against SPARC galaxy rotation curves and LIGO gravitational wave timing predictions. The global chi-squared result of χ²/ν = 0.963 — labeled "Universal Harmony" — means the model fits the data better than expected by chance, without dark matter free parameters. LIGO echo delays are predicted from first principles using only total merger mass.
+          </SolutionBlock>
         </div>
 
-        <ProblemSolution
-          problem="Theoretical frameworks without empirical grounding cannot attract serious scientific or investment interest. Dark matter models require hundreds of free parameters per galaxy to produce acceptable fits. A theory that claims to replace them must be scored against the same data — and score better."
-          solution="QAG-V2 has been computationally tested against the SPARC galaxy database and LIGO GWTC gravitational wave catalog. The global χ²_red = 0.9632 (p = 0.9724) across 4 representative SPARC galaxies using only 3 universal constants. LIGO echo timing predictions are given to sub-millisecond precision — fully falsifiable by residual analysis of GWTC-3."
-          accentColor="accent"
-        />
+        <InvestorCard>
+          Validated frameworks unlock grant funding, defense contracts, and licensing revenue. QAG-V2 already passes the primary statistical tests used by academic physics (χ²/ν ≈ 1, p &gt; 0.97). This is not speculation — it is a scored result against publicly available astronomical datasets. The Fidelity Score F = 0.9645 means the framework reproduces observed galaxy dynamics with 96.45% fidelity across multiple independent galaxies with no dark halo tuning.
+        </InvestorCard>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -91,7 +104,7 @@ export function ValidationSection() {
             <span>QAG achieves better χ² fit than dark matter halo models on 3 of 4 galaxies</span>
           </div>
           <div className="mt-2 text-xs font-mono text-muted-foreground/50">
-            Global χ²_red = 0.9632 | p = 0.9724 | Fidelity Score F = 0.9645 — STATUS: UNIVERSAL HARMONY
+            Global χ²_red = 0.9632 | p = 0.9724 | Fidelity Score F = 0.9645 — STATUS: UNIVERSAL HARMONY ✓
           </div>
         </motion.div>
 
@@ -149,18 +162,9 @@ export function ValidationSection() {
           </p>
         </motion.div>
 
-        <InvestorCard
-          application="A validated framework unlocks NSF Physics grants, NASA Astrophysics Division funding, and DOE High Energy Physics program partnerships. The SPARC fits and LIGO predictions are formatted for direct submission to Physical Review Letters and Monthly Notices of the Royal Astronomical Society."
-          value="The QAG framework already passes the primary statistical tests used by academic physics to evaluate new theories. This is not speculative work — it is a scored, reproducible result that any independent lab can verify. Peer-reviewed publication is the next validation milestone, after which licensing and defense engagement become significantly easier and more valuable."
-          accentColor="accent"
-        />
-
-        <SectionAttribution sectionNum="06" />
         <NextSectionGuide
-          nextName="The Resonant Codex"
-          reason="the master infographic that maps all of QAG in a single image"
-          href="#codex"
-          accentColor="primary"
+          next="The Resonant Codex"
+          reason="the validated physics is condensed into a single reference infographic that maps the entire framework at a glance"
         />
       </div>
     </section>

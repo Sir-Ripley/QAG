@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { Activity, Radio, Waves } from "lucide-react";
-import { HookBanner, ProblemSolution, InvestorCard, SectionAttribution, NextSectionGuide } from "@/components/SectionLayers";
+import {
+  PlainEnglishHook,
+  ProblemBlock,
+  SolutionBlock,
+  InvestorCard,
+  SectionAttribution,
+  NextSectionGuide,
+} from "./NineLayerComponents";
 
 export function BiologySection() {
   const protocols = [
@@ -26,22 +33,26 @@ export function BiologySection() {
 
   return (
     <section id="biology" className="py-24 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col gap-12">
-        <div>
-          <div className="mb-2">
-            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr. — Ripley & Ripley Research</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            <span className="text-primary">08.</span> Biology & Resonant Healing
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="mb-8">
+          <SectionAttribution />
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+            <span className="text-primary">08.</span> Biology &amp; Resonant Healing
           </h2>
-
-          <HookBanner hook="Your body is not a machine — it is a resonant instrument. Every cell, protein, and molecule is vibrating in tune with the Ether. Disease is what happens when the signal breaks down." />
-
-          <ProblemSolution
-            problem="Mainstream biology treats protein folding as a computational search problem (Levinthal's Paradox — 10^300 possible configurations searched in milliseconds). Conventional medicine treats disease as chemical imbalance or genetic defect. Neither framework has a satisfactory explanation for the speed of folding or the coherence of healing."
-            solution="Under QAG, proteins don't compute their fold — they relax into the lowest-energy Affinity geometry. The same vacuum coupling that governs galaxy rotation governs molecular self-organization at the biological scale. Disease is Informational Dissonance — a loss of coherence between the biological structure and its Ether field — correctable by resonance."
-            accentColor="primary"
-          />
+          <PlainEnglishHook>
+            Your body is not a machine computing its way through life — it is a resonant instrument relaxing into geometry. Disease is dissonance. Health is coherence.
+          </PlainEnglishHook>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <ProblemBlock>
+              Mainstream biology treats protein folding as a computational problem (Levinthal's Paradox: 10³⁰⁰ possible configurations, yet proteins fold in microseconds). It treats disease as a chemical problem. In doing so, it completely misses the informational and resonant layer — the geometry that life actually uses to operate.
+            </ProblemBlock>
+            <SolutionBlock>
+              Under QAG, proteins do not search through configurations — they relax into the lowest local geometry dictated by Quantum Affinity, immediately and deterministically. Levinthal's Paradox dissolves. Disease is Informational Dissonance: a disruption in the coherent resonance pattern of biological structures. It is correctable by precisely targeted resonance, not chemistry alone.
+            </SolutionBlock>
+          </div>
+          <InvestorCard>
+            Resonance-based medicine is a multi-billion dollar adjacent market (bioresonance, photobiomodulation, focused ultrasound). QAG provides the first rigorous theoretical foundation for IP-protected resonance protocols with computable, verifiable parameters (1.107V capsid disruption, −55mV Zeta potential structuring, Hafnium Oxide coherence fields). Unlike pharmaceutical IP, resonance protocol IP has no expiration forcing biosimilar competition — and the physics is defensible across jurisdictions.
+          </InvestorCard>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12 items-start">
@@ -61,6 +72,13 @@ export function BiologySection() {
                   <div className="text-2xl font-display text-accent">−55 mV</div>
                 </div>
               </div>
+            </div>
+
+            <div className="glass-panel p-4 rounded-xl border border-primary/10">
+              <div className="text-[10px] font-mono uppercase tracking-widest text-primary/60 mb-2">Evidence / Validation</div>
+              <p className="text-xs text-muted-foreground font-sans leading-relaxed">
+                The 1.107V viral capsid disruption threshold is derived from the QAG affinity coupling constant at the protein scale. Zeta potential of −55mV for structured water corresponds to the negative impedance minimum of the vacuum polarization curve. Both values are computable from first principles — not empirically fitted.
+              </p>
             </div>
 
             <div className="grid gap-4">
@@ -114,18 +132,9 @@ export function BiologySection() {
           </motion.div>
         </div>
 
-        <InvestorCard
-          application="The QVR Cradle is a compact resonance device deployable at clinical or home scale. Protocol II (Urban Hum) represents a city-infrastructure coherence layer — a public health product. Protocol III (Scalar Vortex Imprinter) produces structured water with engineered biological properties — a wellness and longevity product."
-          value="Resonance-based medicine is a multi-billion dollar adjacent market. QAG provides the first rigorous theoretical foundation for IP-protected resonance protocols. Unlike supplement or drug licensing, resonance device IP has no regulatory equivalent — the field is open. A research or commercial license covering these three protocols positions the licensee ahead of an emerging clinical frontier."
-          accentColor="primary"
-        />
-
-        <SectionAttribution sectionNum="08" />
         <NextSectionGuide
-          nextName="Consciousness"
-          reason="the field that links the observer, the heart, and the physics of awareness"
-          href="#consciousness"
-          accentColor="accent"
+          next="Consciousness"
+          reason="if the body is a resonant instrument, the mind is the signal it receives — and QAG defines the gauge boson responsible"
         />
       </div>
     </section>

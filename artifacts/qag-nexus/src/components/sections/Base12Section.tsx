@@ -3,7 +3,14 @@ import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
-import { HookBanner, ProblemSolution, InvestorCard, SectionAttribution, NextSectionGuide } from "@/components/SectionLayers";
+import {
+  PlainEnglishHook,
+  ProblemBlock,
+  SolutionBlock,
+  InvestorCard,
+  SectionAttribution,
+  NextSectionGuide,
+} from "./NineLayerComponents";
 
 function MathBlock({ children }: { children: string }) {
   return (
@@ -27,24 +34,30 @@ export function Base12Section() {
         }}
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="mb-2 text-center">
-          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr. — Ripley & Ripley Research</span>
-        </div>
-        <div className="text-center mb-4">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+        <div className="text-center mb-6">
+          <SectionAttribution />
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
             <span className="text-primary">02.</span> The Source Code: Base-12 Topology
           </h2>
+          <div className="max-w-3xl mx-auto">
+            <PlainEnglishHook>
+              The universe counts in 12, not 10. Every equation that uses base-10 to describe quantum states is quietly introducing rounding errors that compound across the entire model.
+            </PlainEnglishHook>
+          </div>
         </div>
 
-        <div className="flex justify-center mb-8">
-          <HookBanner hook="The universe counts in 12, not 10. Every cycle in nature — from atomic structure to the cosmos — is built on the most harmonically perfect number that exists." />
+        <div className="max-w-3xl mx-auto mb-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <ProblemBlock>
+            Base-10 mathematics introduces fractional residuals when modeling cyclic quantum states — the 12 fermions, the 12-phase clock, the carbon backbone of life. These rounding errors are not cosmetic; they propagate through every cosmological and quantum field theory calculation, producing the numerical tensions (H₀, S₈) that dark matter and dark energy were invented to patch.
+          </ProblemBlock>
+          <SolutionBlock>
+            The duodecimal (base-12) system maps the 12 fermions, the 12-phase clock, and the carbon-12 nuclear structure without fractional degradation. The QAG canonical constant Φ = 1218/1019.42 = 1.194797 is the Rosetta Stone translating base-12 harmonic reality into base-10 observable measurements.
+          </SolutionBlock>
         </div>
 
-        <ProblemSolution
-          problem="Base-10 mathematics introduces rounding artifacts when modeling cyclic quantum states. The 12 fermions of the Standard Model, the 12-phase clock geometry, and the carbon-12 backbone of life cannot be expressed without fractions in base-10 — introducing cumulative error into every calculation."
-          solution="Base-12 (duodecimal) is the only number base in which 12 divides evenly by 2, 3, 4, and 6 — the harmonic ratios that govern quantum phase space. QAG uses base-12 topology as the native operating system of reality, eliminating rounding artifacts at the quantum scale."
-          accentColor="primary"
-        />
+        <InvestorCard>
+          Proprietary numerical architecture with strong patent potential for quantum computing interfaces. Software parsers and AI inference engines that natively compute quantum state space in base-12 eliminate an entire class of accumulated floating-point error currently built into every quantum simulation stack. First-mover IP in duodecimal quantum arithmetic is unoccupied territory.
+        </InvestorCard>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <motion.div
@@ -126,6 +139,9 @@ export function Base12Section() {
             <p className="text-xs text-muted-foreground mt-4 font-sans leading-relaxed">
               The fine-structure constant α links the 21cm hydrogen line to the vacuum floor via base-12 harmonic geometry. The universe broadcasts at a 12° tilt.
             </p>
+            <div className="mt-4 text-[10px] font-mono text-muted-foreground/50 border-t border-white/5 pt-3">
+              <span className="text-primary/50">Evidence:</span> α⁻¹ = 137.036 — matches the CODATA 2022 measured value to five significant figures using only natural vacuum geometry.
+            </div>
           </motion.div>
 
           <motion.div
@@ -149,21 +165,15 @@ export function Base12Section() {
             <p className="text-xs text-muted-foreground font-sans leading-relaxed">
               KASB is the bridge constant suppressing structure growth to match S₈ = 0.783 — the translation layer between base-12 harmonic clock ticks and base-10 cosmological measurements.
             </p>
+            <div className="mt-4 text-[10px] font-mono text-muted-foreground/50 border-t border-white/5 pt-3">
+              <span className="text-primary/50">Real-World Application:</span> AI and quantum simulation engines built on base-12 arithmetic natively reproduce S₈ without dark-sector correction terms.
+            </div>
           </motion.div>
         </div>
 
-        <InvestorCard
-          application="Software parsers and AI inference engines that compute quantum state space natively in base-12 eliminate the rounding-error artifacts that plague base-10 simulation of quantum circuits. The QAG AI Brain architecture implements this directly in its dual-hemisphere edge processor."
-          value="Proprietary base-12 numerical architecture has clear patent potential for quantum computing interfaces and specialized AI hardware. Any commercial QAG license includes the right to implement and sublicense the base-12 translation stack — a foundational IP layer with broad applicability across quantum simulation, cryptography, and high-precision sensing."
-          accentColor="secondary"
-        />
-
-        <SectionAttribution sectionNum="02" />
         <NextSectionGuide
-          nextName="Cosmology"
-          reason="where Base-12 eliminates dark matter and dark energy from the universe"
-          href="#cosmology"
-          accentColor="accent"
+          next="Cosmology"
+          reason="base-12 geometry directly resolves the H₀ and S₈ tensions that have destabilized the standard cosmological model"
         />
       </div>
     </section>

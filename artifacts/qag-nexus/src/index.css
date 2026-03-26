@@ -44,53 +44,53 @@
 }
 
 :root {
-  /* Deep cosmic black */
-  --background: 240 100% 2%;
-  --foreground: 210 40% 98%;
+  /* Deep navy — lighter & fresher than pure black */
+  --background: 222 28% 10%;
+  --foreground: 210 40% 96%;
   
-  /* Glowing Teal */
-  --primary: 173 80% 40%;
+  /* Glowing Teal — slightly brighter for contrast on lighter bg */
+  --primary: 173 85% 44%;
   --primary-foreground: 0 0% 0%;
   
   /* Gold */
-  --secondary: 46 65% 52%;
-  --secondary-foreground: 240 100% 2%;
+  --secondary: 46 70% 56%;
+  --secondary-foreground: 222 28% 10%;
   
   /* Cosmic Purple */
-  --accent: 271 91% 65%;
+  --accent: 271 91% 68%;
   --accent-foreground: 210 40% 98%;
   
-  --muted: 240 20% 10%;
-  --muted-foreground: 215 16% 65%;
+  --muted: 222 22% 17%;
+  --muted-foreground: 215 18% 62%;
   
-  --border: 173 80% 40%;
-  --input: 240 20% 15%;
-  --ring: 173 80% 40%;
+  --border: 173 85% 44%;
+  --input: 222 22% 20%;
+  --ring: 173 85% 44%;
   
-  --card: 240 50% 4%;
-  --card-foreground: 210 40% 98%;
+  --card: 222 30% 14%;
+  --card-foreground: 210 40% 96%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 210 40% 98%;
 }
 
 .dark {
-  /* Enforce the same dark theme universally */
-  --background: 240 100% 2%;
-  --foreground: 210 40% 98%;
-  --primary: 173 80% 40%;
+  /* Enforce the same fresh navy theme universally */
+  --background: 222 28% 10%;
+  --foreground: 210 40% 96%;
+  --primary: 173 85% 44%;
   --primary-foreground: 0 0% 0%;
-  --secondary: 46 65% 52%;
-  --secondary-foreground: 240 100% 2%;
-  --accent: 271 91% 65%;
+  --secondary: 46 70% 56%;
+  --secondary-foreground: 222 28% 10%;
+  --accent: 271 91% 68%;
   --accent-foreground: 210 40% 98%;
-  --muted: 240 20% 10%;
-  --muted-foreground: 215 16% 65%;
-  --border: 173 80% 40%;
-  --input: 240 20% 15%;
-  --ring: 173 80% 40%;
-  --card: 240 50% 4%;
-  --card-foreground: 210 40% 98%;
+  --muted: 222 22% 17%;
+  --muted-foreground: 215 18% 62%;
+  --border: 173 85% 44%;
+  --input: 222 22% 20%;
+  --ring: 173 85% 44%;
+  --card: 222 30% 14%;
+  --card-foreground: 210 40% 96%;
 }
 
 @layer base {

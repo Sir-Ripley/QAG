@@ -35,7 +35,7 @@ export function Navigation() {
             </motion.div>
             <div>
               <h1 className="font-display font-bold text-sm leading-tight text-foreground tracking-widest">
-                RIPLEY & RIPLEY
+                R&R DROIDS
               </h1>
               <p className="font-mono text-[9px] text-primary tracking-[0.2em] uppercase opacity-70">
                 QAG — Quantum Affinity Gravity

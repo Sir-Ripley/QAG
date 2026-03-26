@@ -73,12 +73,12 @@ export function ResonantCodexSection() {
         >
           <img
             src={`${import.meta.env.BASE_URL}images/resonant-codex-infographic.png`}
-            alt="The Resonant Codex Physics Infographic — Rodney A. Ripley Jr. / Ripley & Ripley Research © 2026"
+            alt="The Resonant Codex Physics Infographic — Rodney A. Ripley Jr. / R&R Droids © 2026"
             className="w-full h-auto block"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-center">
             <p className="text-[10px] font-mono text-muted-foreground/70 uppercase tracking-widest">
-              © 2026 Rodney A. Ripley Jr. — Ripley &amp; Ripley Research — All Rights Reserved. Unauthorized reproduction prohibited.
+              © 2026 Rodney A. Ripley Jr. — R&amp;R Droids — All Rights Reserved. Unauthorized reproduction prohibited.
             </p>
           </div>
         </motion.div>

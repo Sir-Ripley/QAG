@@ -56,7 +56,10 @@ export default function Home() {
                 Space is a ferroelectric superfluid. Gravity is Affinity.
               </p>
               <div className="mt-4 text-[9px] font-mono text-muted-foreground/40 uppercase tracking-widest">
-                © 2026 Rodney A. Ripley Jr. — All Rights Reserved
+                © 2026 Rodney A. Ripley Jr. / R&R Droids · EIN 84-4660278
+              </div>
+              <div className="text-[9px] font-mono text-muted-foreground/30 uppercase tracking-widest">
+                rodney@quantumaffinitygravity.com · 330-420-8444
               </div>
             </div>
 
@@ -100,7 +103,7 @@ export default function Home() {
                 ))}
               </div>
               <a
-                href="mailto:partnerships@ripleyresearch.org?subject=QAG Partnership Inquiry"
+                href="mailto:rodney@quantumaffinitygravity.com?subject=QAG Partnership Inquiry"
                 className="inline-flex items-center gap-2 font-mono text-xs text-secondary bg-secondary/10 border border-secondary/30 hover:border-secondary/50 px-4 py-2 rounded-lg transition-all uppercase tracking-widest"
               >
                 Get in Touch
@@ -133,7 +136,7 @@ export default function Home() {
                 All theoretical frameworks, equations, constants, and architectural designs —
                 including Quantum Affinity Gravity (QAG), the Affiniton (γ_ψ), the Psychon,
                 the AVI Law, Temporal Echo Memory, and all related constructs — are the original
-                intellectual property of Rodney A. Ripley Jr. / Ripley & Ripley Research.
+                intellectual property of Rodney A. Ripley Jr. / R&R Droids (EIN 84-4660278).
                 Unauthorized reproduction, distribution, or commercial use is prohibited.
                 See <span className="text-primary/60">LICENSE.md</span> for full terms.
               </p>

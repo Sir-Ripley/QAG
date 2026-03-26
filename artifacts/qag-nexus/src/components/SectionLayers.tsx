@@ -93,7 +93,7 @@ export function SectionAttribution({ sectionNum }: SectionAttributionProps) {
   return (
     <div className="mt-4 flex items-center justify-between flex-wrap gap-2">
       <span className="text-[9px] font-mono text-muted-foreground/40 uppercase tracking-widest">
-        © 2026 Rodney A. Ripley Jr. — Ripley & Ripley Research — QAG-V2 Framework
+        © 2026 Rodney A. Ripley Jr. — R&R Droids — QAG-V2 Framework
       </span>
       {sectionNum && (
         <span className="text-[9px] font-mono text-muted-foreground/30 uppercase tracking-widest">

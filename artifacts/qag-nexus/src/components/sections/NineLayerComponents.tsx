@@ -53,7 +53,7 @@ export function SectionAttribution() {
   return (
     <div className="mt-2 mb-4">
       <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-muted-foreground/50">
-        © Rodney A. Ripley Jr. / Ripley &amp; Ripley Research — QAG-V2
+        © Rodney A. Ripley Jr. / R&amp;R Droids — QAG-V2
       </span>
     </div>
   );

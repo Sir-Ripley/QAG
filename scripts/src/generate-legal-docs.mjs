@@ -1,4 +1,4 @@
-// QAG / Ripley & Ripley Research -- Legal Document Generator
+// QAG / R&R Droids -- Legal Document Generator
 // Disclaimer: Templates only. Not legal advice. Consult a licensed attorney.
 
 import {
@@ -16,7 +16,7 @@ const SZ_H = 28;  // 14pt
 function disclaimer() {
   return new Paragraph({
     children: [new TextRun({
-      text: "DISCLAIMER: This is a template document for informational purposes only and does not constitute legal advice. Consult a licensed attorney before execution. (c) 2026 Rodney A. Ripley Jr. / Ripley & Ripley Research.",
+      text: "DISCLAIMER: This is a template document for informational purposes only and does not constitute legal advice. Consult a licensed attorney before execution. (c) 2026 Rodney A. Ripley Jr. / R&R Droids.",
       font: FONT, size: SZ_SM, italics: true, color: "555555",
     })],
     spacing: { after: 200 },
@@ -117,15 +117,15 @@ function buildNDA() {
       children: [
         blank(),
         ctr("MUTUAL NON-DISCLOSURE AGREEMENT", true, 30),
-        ctr("Ripley & Ripley Research / QAG Framework", false),
+        ctr("R&R Droids / QAG Framework", false),
         blank(),
         disclaimer(),
         blank(),
 
-        p("This Mutual Non-Disclosure Agreement (this 'Agreement') is entered into as of [EFFECTIVE DATE] by and between: Rodney A. Ripley Jr. / Ripley & Ripley Research ('Disclosing Party'); and [COUNTERPARTY FULL LEGAL NAME], a [corporation/university/government agency] organized under the laws of [JURISDICTION] ('Recipient'). Each may be referred to as a 'Party' and collectively as the 'Parties.'"),
+        p("This Mutual Non-Disclosure Agreement (this 'Agreement') is entered into as of [EFFECTIVE DATE] by and between: Rodney A. Ripley Jr. / R&R Droids ('Disclosing Party'); and [COUNTERPARTY FULL LEGAL NAME], a [corporation/university/government agency] organized under the laws of [JURISDICTION] ('Recipient'). Each may be referred to as a 'Party' and collectively as the 'Parties.'"),
 
         h1("1.  DEFINITION OF CONFIDENTIAL INFORMATION"),
-        p("'Confidential Information' means any non-public information disclosed by one Party to the other, whether in written, oral, electronic, or other form, that is designated as confidential or that reasonably should be understood to be confidential. Without limiting the foregoing, Confidential Information of Ripley & Ripley Research includes:"),
+        p("'Confidential Information' means any non-public information disclosed by one Party to the other, whether in written, oral, electronic, or other form, that is designated as confidential or that reasonably should be understood to be confidential. Without limiting the foregoing, Confidential Information of R&R Droids includes:"),
         sub("a", "The Quantum Affinity Gravity (QAG) theoretical framework, including all equations, constants, derivations, and experimental predictions;"),
         sub("b", "QAG-V2 canonical constants (t_pixel, gamma, R, N, H0_QAG, S8_QAG, KASB, Phi, C);"),
         sub("c", "The QAI Drop Experiment Blueprint (Phase 2 document);"),
@@ -143,7 +143,7 @@ function buildNDA() {
         sub("e", "Promptly notify Disclosing Party of any unauthorized use or disclosure."),
 
         h1("3.  INTELLECTUAL PROPERTY -- NO LICENSE GRANTED"),
-        p("Nothing in this Agreement shall be construed as granting any license, right, title, or interest in any patent, copyright, trademark, or other intellectual property right. All Confidential Information remains the exclusive property of the Disclosing Party. The QAG theoretical framework, QAG-V2 constants, Resonant Codex, and all associated outputs are the intellectual property of Rodney A. Ripley Jr. / Ripley & Ripley Research, protected under copyright and applicable IP law. Any commercial, academic, or governmental exploitation requires a separate executed License Agreement."),
+        p("Nothing in this Agreement shall be construed as granting any license, right, title, or interest in any patent, copyright, trademark, or other intellectual property right. All Confidential Information remains the exclusive property of the Disclosing Party. The QAG theoretical framework, QAG-V2 constants, Resonant Codex, and all associated outputs are the intellectual property of Rodney A. Ripley Jr. / R&R Droids, protected under copyright and applicable IP law. Any commercial, academic, or governmental exploitation requires a separate executed License Agreement."),
 
         h1("4.  TERM AND TERMINATION"),
         p("This Agreement commences on the Effective Date and continues for three (3) years unless terminated earlier by either Party upon 30 days' written notice. Confidentiality obligations survive for five (5) years after termination."),
@@ -162,7 +162,7 @@ function buildNDA() {
         h2("SIGNATURES"),
         p("IN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective Date."),
         blank(),
-        sigTable("LICENSOR: Ripley & Ripley Research", "RECIPIENT: [Counterparty]"),
+        sigTable("LICENSOR: R&R Droids", "RECIPIENT: [Counterparty]"),
       ],
     }],
   });
@@ -177,12 +177,12 @@ function buildResearchLicense() {
         blank(),
         ctr("RESEARCH LICENSE AGREEMENT", true, 30),
         ctr("QAG Framework -- Academic & Scientific Research Use", false),
-        ctr("Ripley & Ripley Research", false),
+        ctr("R&R Droids", false),
         blank(),
         disclaimer(),
         blank(),
 
-        p("This Research License Agreement (this 'Agreement') is entered into as of [EFFECTIVE DATE] by and between Rodney A. Ripley Jr. / Ripley & Ripley Research ('Licensor') and [INSTITUTION FULL LEGAL NAME], a [university/research institute/government laboratory] ('Licensee')."),
+        p("This Research License Agreement (this 'Agreement') is entered into as of [EFFECTIVE DATE] by and between Rodney A. Ripley Jr. / R&R Droids ('Licensor') and [INSTITUTION FULL LEGAL NAME], a [university/research institute/government laboratory] ('Licensee')."),
 
         h1("1.  DEFINITIONS"),
         sub("a", "'Licensed IP' means the Quantum Affinity Gravity (QAG) theoretical framework in its entirety, including QAG-V2 canonical constants, the Psi_QAG wavefunction, the AVI Law, the Base-12 Topology framework, Temporal Echo Memory (N=8), all Resonant Healing Protocols, and all associated derivations, equations, and published or unpublished works of Rodney A. Ripley Jr."),
@@ -203,14 +203,14 @@ function buildResearchLicense() {
         sub("c", "Transfer, sublicense, or assign any rights granted hereunder to any third party;"),
         sub("d", "Remove or obscure any copyright or IP protection notice from any copy of the Licensed IP;"),
         sub("e", "Use the Licensed IP to train, fine-tune, or improve any machine learning model or AI system;"),
-        sub("f", "Publish the QAG-V2 constants, equations, or outputs attributing them to any person other than Rodney A. Ripley Jr. / Ripley & Ripley Research."),
+        sub("f", "Publish the QAG-V2 constants, equations, or outputs attributing them to any person other than Rodney A. Ripley Jr. / R&R Droids."),
 
         h1("4.  DERIVATIVE WORKS"),
-        p("Any Derivative Work created under this Agreement: (a) remains subject to this Agreement; (b) must prominently credit Rodney A. Ripley Jr. / Ripley & Ripley Research as originator; (c) must not be used for Commercial Use without a separate Commercial License. Licensor retains a perpetual, royalty-free license to any Derivative Work."),
+        p("Any Derivative Work created under this Agreement: (a) remains subject to this Agreement; (b) must prominently credit Rodney A. Ripley Jr. / R&R Droids as originator; (c) must not be used for Commercial Use without a separate Commercial License. Licensor retains a perpetual, royalty-free license to any Derivative Work."),
 
         h1("5.  ATTRIBUTION & IP PROTECTION"),
         p("All publications, presentations, or reports resulting from use of the Licensed IP must include the following attribution in a prominent location:"),
-        p("\"This work uses the Quantum Affinity Gravity (QAG) framework developed by Rodney A. Ripley Jr. / Ripley & Ripley Research. QAG-V2 (c) 2026 Rodney A. Ripley Jr. All Rights Reserved.\"", true),
+        p("\"This work uses the Quantum Affinity Gravity (QAG) framework developed by Rodney A. Ripley Jr. / R&R Droids. QAG-V2 (c) 2026 Rodney A. Ripley Jr. All Rights Reserved.\"", true),
         p("Licensee shall provide Licensor a copy of any publication or patent application referencing the Licensed IP at least 14 days prior to submission."),
 
         h1("6.  OWNERSHIP & RESERVATION OF RIGHTS"),
@@ -234,7 +234,7 @@ function buildResearchLicense() {
         blank(), blank(),
         h2("SIGNATURES"),
         blank(),
-        sigTable("LICENSOR: Ripley & Ripley Research\nRodney A. Ripley Jr., Principal Researcher", "LICENSEE: [Institution Name]"),
+        sigTable("LICENSOR: R&R Droids\nRodney A. Ripley Jr., Principal Researcher", "LICENSEE: [Institution Name]"),
       ],
     }],
   });
@@ -263,12 +263,12 @@ function buildCommercialLicense() {
         blank(),
         ctr("TECHNOLOGY LICENSE AGREEMENT", true, 30),
         ctr("QAG Framework -- Commercial, Defense & Government Use", false),
-        ctr("Ripley & Ripley Research", false),
+        ctr("R&R Droids", false),
         blank(),
         disclaimer(),
         blank(),
 
-        p("This Technology License Agreement (this 'Agreement') is entered into as of [EFFECTIVE DATE] by and between Rodney A. Ripley Jr. / Ripley & Ripley Research ('Licensor') and [LICENSEE FULL LEGAL NAME] ('Licensee')."),
+        p("This Technology License Agreement (this 'Agreement') is entered into as of [EFFECTIVE DATE] by and between Rodney A. Ripley Jr. / R&R Droids ('Licensor') and [LICENSEE FULL LEGAL NAME] ('Licensee')."),
 
         h1("1.  DEFINITIONS"),
         sub("a", "'Licensed Technology' means the Quantum Affinity Gravity (QAG) theoretical framework, including but not limited to: the QVR-1 Tesla Resonance Thruster architecture; the Zero-Point Resonance (QVR) superconductivity mechanism; the QAI Drop Experiment Blueprint; the Temporal Echo Memory / AI Brain edge processor architecture; all Resonant Healing Protocols; all QAG-V2 canonical constants; and all associated documentation and derivations created by Rodney A. Ripley Jr."),
@@ -304,7 +304,7 @@ function buildCommercialLicense() {
 
         h1("6.  ATTRIBUTION AND MARKING"),
         p("All products, services, publications, government deliverables, or marketing materials incorporating the Licensed Technology must include:"),
-        p("\"Incorporates Quantum Affinity Gravity (QAG) technology licensed from Ripley & Ripley Research. QAG-V2 (c) 2026 Rodney A. Ripley Jr. All Rights Reserved.\"", true),
+        p("\"Incorporates Quantum Affinity Gravity (QAG) technology licensed from R&R Droids. QAG-V2 (c) 2026 Rodney A. Ripley Jr. All Rights Reserved.\"", true),
 
         h1("7.  INTELLECTUAL PROPERTY OWNERSHIP"),
         p("The Licensed Technology is and shall remain the exclusive property of Rodney A. Ripley Jr. This Agreement transfers no ownership. All Improvements developed by Licensee using the Licensed Technology shall be promptly disclosed to Licensor, who retains a perpetual, royalty-free, worldwide license back to all such Improvements."),
@@ -345,7 +345,7 @@ function buildCommercialLicense() {
         blank(), blank(),
         h2("SIGNATURES"),
         blank(),
-        sigTable("LICENSOR: Ripley & Ripley Research\nRodney A. Ripley Jr., Principal Researcher", "LICENSEE: [Company / Agency Name]"),
+        sigTable("LICENSOR: R&R Droids\nRodney A. Ripley Jr., Principal Researcher", "LICENSEE: [Company / Agency Name]"),
       ],
     }],
   });

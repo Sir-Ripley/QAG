@@ -91,7 +91,7 @@ export function HeroSection() {
               Core Axiom Active
             </div>
             <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground/60">
-              by Rodney A. Ripley Jr. — Ripley & Ripley Research
+              by Rodney A. Ripley Jr. — R&R Droids
             </div>
           </div>
 

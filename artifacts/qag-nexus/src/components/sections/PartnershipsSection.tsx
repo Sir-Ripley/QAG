@@ -78,7 +78,7 @@ const faqs = [
   },
   {
     q: "Can I use QAG equations in my paper?",
-    a: "Yes, with attribution. Cite: 'Ripley Jr., Rodney A. Quantum Affinity Gravity: A Unified Field Theory. Ripley & Ripley Research, 2026.' Contact us for the full citation package.",
+    a: "Yes, with attribution. Cite: 'Ripley Jr., Rodney A. Quantum Affinity Gravity: A Unified Field Theory. R&R Droids, 2026.' Contact us for the full citation package.",
   },
   {
     q: "What TRL are the technologies?",
@@ -87,7 +87,7 @@ const faqs = [
 ];
 
 export function PartnershipsSection() {
-  const email = "partnerships@ripleyresearch.org";
+  const email = "rodney@quantumaffinitygravity.com";
 
   return (
     <section id="partnerships" className="py-28 relative overflow-hidden">
@@ -259,15 +259,27 @@ export function PartnershipsSection() {
           <p className="text-muted-foreground font-sans mb-6 max-w-xl mx-auto">
             Reach Rodney A. Ripley Jr. directly. Whether it's a research collaboration, a technical briefing for a program office, or a licensing conversation — the Codex is open.
           </p>
-          <a
-            href={`mailto:${email}?subject=QAG Partnership Inquiry`}
-            className="inline-flex items-center gap-3 font-mono text-sm text-secondary bg-secondary/10 hover:bg-secondary/20 border border-secondary/40 hover:border-secondary/60 px-10 py-4 rounded-xl transition-all uppercase tracking-widest shadow-[0_0_30px_rgba(212,175,55,0.15)] hover:shadow-[0_0_40px_rgba(212,175,55,0.25)]"
-          >
-            <Mail className="w-4 h-4" />
-            {email}
-          </a>
-          <div className="mt-6 text-[10px] font-mono text-muted-foreground/40 uppercase tracking-widest">
-            © 2026 Rodney A. Ripley Jr. / Ripley & Ripley Research — All IP Rights Reserved
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+            <a
+              href={`mailto:${email}?subject=QAG Partnership Inquiry`}
+              className="inline-flex items-center gap-3 font-mono text-sm text-secondary bg-secondary/10 hover:bg-secondary/20 border border-secondary/40 hover:border-secondary/60 px-8 py-4 rounded-xl transition-all uppercase tracking-widest shadow-[0_0_30px_rgba(212,175,55,0.15)] hover:shadow-[0_0_40px_rgba(212,175,55,0.25)]"
+            >
+              <Mail className="w-4 h-4" />
+              {email}
+            </a>
+            <a
+              href="tel:+13304208444"
+              className="inline-flex items-center gap-3 font-mono text-sm text-primary bg-primary/10 hover:bg-primary/20 border border-primary/40 hover:border-primary/60 px-8 py-4 rounded-xl transition-all uppercase tracking-widest"
+            >
+              <span className="w-4 h-4 flex items-center justify-center text-xs">📞</span>
+              330-420-8444
+            </a>
+          </div>
+          <div className="text-[9px] font-mono text-muted-foreground/30 uppercase tracking-widest mb-4">
+            Rodney A. Ripley Jr. · R&R Droids · EIN 84-4660278 · Salineville, OH
+          </div>
+          <div className="text-[10px] font-mono text-muted-foreground/40 uppercase tracking-widest">
+            © 2026 Rodney A. Ripley Jr. / R&R Droids — All IP Rights Reserved
           </div>
         </motion.div>
       </div>

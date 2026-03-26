@@ -1,5 +1,5 @@
 # QAG Outreach Email Templates — 2026
-## Ripley & Ripley Research | partnerships@ripleyresearch.org
+## R&R Droids | rodney@quantumaffinitygravity.com
 
 ---
 
@@ -14,14 +14,14 @@
 ## EMAIL 1 — DARPA White Paper Submission (RoQS / Otter)
 
 **To:** Dr. John Burke <john.burke@darpa.mil> *(or Dr. Sarah Popkin for Otter)*
-**CC:** partnerships@ripleyresearch.org
+**CC:** rodney@quantumaffinitygravity.com
 **Subject:** White Paper: Quantum Affinity Gravity Framework — Novel Theoretical Basis for Atom Interferometry Calibration (RoQS)
 
 ---
 
 Dr. Burke,
 
-I am writing to submit a brief white paper introduction for the Robust Quantum Sensors (RoQS) program. I am Dr. Rodney A. Ripley Jr., principal researcher and founder of Ripley & Ripley Research, where I have developed the **Quantum Affinity Gravity (QAG) framework** — a unified theoretical system that predicts gravitational structure at the quantum pixel scale.
+I am writing to submit a brief white paper introduction for the Robust Quantum Sensors (RoQS) program. I am Dr. Rodney A. Ripley Jr., principal researcher and founder of R&R Droids, where I have developed the **Quantum Affinity Gravity (QAG) framework** — a unified theoretical system that predicts gravitational structure at the quantum pixel scale.
 
 **Why This Is Relevant to RoQS:**
 
@@ -42,8 +42,8 @@ I welcome the opportunity to discuss how QAG's predictions can be experimentally
 Respectfully,
 
 **Dr. Rodney A. Ripley Jr.**
-Principal Researcher, Ripley & Ripley Research
-partnerships@ripleyresearch.org
+Principal Researcher, R&R Droids
+rodney@quantumaffinitygravity.com
 https://qag-nexus.replit.app/
 
 *Attachment: QAG_Technical_Brief_2026.pdf*
@@ -61,7 +61,7 @@ DIU Emerging Technology Team,
 
 I am submitting this solution brief in response to the Transition of Quantum Sensors (TQS) challenge (PROJ00538).
 
-**Organization:** Ripley & Ripley Research
+**Organization:** R&R Droids
 **Solution Name:** QAG Gravitational Baseline Calibration System
 **TRL Level:** 2–3 (theoretical with testable predictions)
 
@@ -75,7 +75,7 @@ I am submitting this solution brief in response to the Transition of Quantum Sen
 
 Full technical documentation available under Mutual NDA. Public overview: https://qag-nexus.replit.app/
 
-**Dr. Rodney A. Ripley Jr.** | partnerships@ripleyresearch.org
+**Dr. Rodney A. Ripley Jr.** | rodney@quantumaffinitygravity.com
 
 ---
 
@@ -90,7 +90,7 @@ Dr. Morrison,
 
 I write to express interest in responding to ONR's Long-Range BAA (N00014-25-S-B001) with a proposal addressing quantum memory and precision gravity sensing.
 
-**Research Organization:** Ripley & Ripley Research | Principal Investigator: Dr. Rodney A. Ripley Jr.
+**Research Organization:** R&R Droids | Principal Investigator: Dr. Rodney A. Ripley Jr.
 
 **Proposed Research:** Theoretical validation and experimental design for the **QAG Temporal Echo Memory** architecture — an N=8 quantum state memory system derived from the QAG framework's Base-12 topology. This architecture predicts specific coherence retention properties at the t_pixel timescale that are testable against existing ONR quantum memory infrastructure.
 
@@ -101,9 +101,9 @@ I write to express interest in responding to ONR's Long-Range BAA (N00014-25-S-B
 
 I would welcome a pre-proposal conversation to ensure alignment with your current portfolio priorities before submitting a full white paper.
 
-Full overview: https://qag-nexus.replit.app/ | partnerships@ripleyresearch.org
+Full overview: https://qag-nexus.replit.app/ | rodney@quantumaffinitygravity.com
 
-**Dr. Rodney A. Ripley Jr.**, Ripley & Ripley Research
+**Dr. Rodney A. Ripley Jr.**, R&R Droids
 
 ---
 
@@ -131,7 +131,7 @@ I have attached a 4-page technical brief. The public framework overview is at ht
 Thank you for your consideration.
 
 **Dr. Rodney A. Ripley Jr.**
-Ripley & Ripley Research | partnerships@ripleyresearch.org
+R&R Droids | rodney@quantumaffinitygravity.com
 
 *Attachment: QAG_Technical_Brief_2026.pdf*
 
@@ -148,7 +148,7 @@ Dear Templeton Foundation Grants Team,
 
 I submit this Letter of Inquiry for the **Science & Big Questions** program.
 
-**Organization:** Ripley & Ripley Research
+**Organization:** R&R Droids
 **Principal Investigator:** Dr. Rodney A. Ripley Jr.
 **Project Title:** The Quantum Pixel: Deriving Cosmological and Gravitational Constants from First Principles
 **Requested Amount:** $750,000 over 2 years
@@ -158,7 +158,7 @@ The Quantum Affinity Gravity (QAG) framework proposes that gravity operates thro
 
 This research addresses Templeton's core interest in the boundaries of human knowledge, the nature of time, and the relationship between fundamental physics and the cosmos.
 
-**Dr. Rodney A. Ripley Jr.** | partnerships@ripleyresearch.org | https://qag-nexus.replit.app/
+**Dr. Rodney A. Ripley Jr.** | rodney@quantumaffinitygravity.com | https://qag-nexus.replit.app/
 
 ---
 
@@ -171,7 +171,7 @@ This research addresses Templeton's core interest in the boundaries of human kno
 
 HeartMath Research Team,
 
-I am Dr. Rodney A. Ripley Jr., founder of Ripley & Ripley Research. I write to propose a research collaboration at the intersection of quantum field theory and bioelectric health.
+I am Dr. Rodney A. Ripley Jr., founder of R&R Droids. I write to propose a research collaboration at the intersection of quantum field theory and bioelectric health.
 
 The **Quantum Affinity Gravity (QAG) framework** — which successfully predicts cosmological constants from first principles — also generates a set of **Resonant Healing Protocols** based on quantum field resonance principles. These include:
 
@@ -185,7 +185,7 @@ If results are positive, we propose a co-development agreement and royalty-beari
 
 Full technical overview: https://qag-nexus.replit.app/ | Formal partnership terms under Mutual NDA.
 
-**Dr. Rodney A. Ripley Jr.** | partnerships@ripleyresearch.org
+**Dr. Rodney A. Ripley Jr.** | rodney@quantumaffinitygravity.com
 
 ---
 
@@ -200,7 +200,7 @@ Business Development Team,
 
 I am reaching out regarding a potential technology licensing opportunity relevant to your advanced propulsion and quantum sensing programs.
 
-**Licensor:** Ripley & Ripley Research | Dr. Rodney A. Ripley Jr.
+**Licensor:** R&R Droids | Dr. Rodney A. Ripley Jr.
 
 **Technology:** The **QVR-1 Tesla Resonance Thruster** — a propulsion architecture derived from the Quantum Affinity Gravity (QAG) framework, which predicts thrust generation through controlled quantum vacuum resonance without propellant exhaust. QAG also provides a novel theoretical calibration baseline for GPS-denied quantum inertial navigation, directly complementary to your current DARPA RoQS program work.
 
@@ -211,7 +211,7 @@ I am reaching out regarding a potential technology licensing opportunity relevan
 
 I propose an NDA and technical overview call. Full public introduction: https://qag-nexus.replit.app/
 
-**Dr. Rodney A. Ripley Jr.** | partnerships@ripleyresearch.org
+**Dr. Rodney A. Ripley Jr.** | rodney@quantumaffinitygravity.com
 
 ---
 
@@ -223,7 +223,7 @@ I propose an NDA and technical overview call. Full public introduction: https://
 
 [Name],
 
-I wanted to follow up on my email from [DATE] regarding a potential collaboration between Ripley & Ripley Research and [Organization].
+I wanted to follow up on my email from [DATE] regarding a potential collaboration between R&R Droids and [Organization].
 
 If this has reached the wrong person or you could direct me to the appropriate contact for [quantum sensing / advanced propulsion / biomedical research / licensing], I would greatly appreciate the introduction.
 
@@ -232,9 +232,9 @@ If you have had a chance to review the QAG framework introduction at https://qag
 Thank you for your time.
 
 **Dr. Rodney A. Ripley Jr.**
-Ripley & Ripley Research | partnerships@ripleyresearch.org
+R&R Droids | rodney@quantumaffinitygravity.com
 
 ---
 
-*Templates prepared by Ripley & Ripley Research AI Platform | March 2026*
-*All partnership inquiries: partnerships@ripleyresearch.org*
+*Templates prepared by R&R Droids AI Platform | March 2026*
+*All partnership inquiries: rodney@quantumaffinitygravity.com*

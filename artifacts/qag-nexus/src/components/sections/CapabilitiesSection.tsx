@@ -144,7 +144,7 @@ export function CapabilitiesSection() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-secondary/30 bg-secondary/5 text-secondary font-mono text-[10px] tracking-widest uppercase mb-6"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
-            Technology Capabilities — Ripley & Ripley Research
+            Technology Capabilities — R&R Droids
           </motion.div>
 
           <motion.h2
@@ -272,7 +272,7 @@ export function CapabilitiesSection() {
 
         <div className="text-right mt-8">
           <span className="text-[10px] font-mono text-muted-foreground/40 uppercase tracking-widest">
-            © 2026 Rodney A. Ripley Jr. — Ripley & Ripley Research — Protected IP
+            © 2026 Rodney A. Ripley Jr. — R&R Droids — Protected IP
           </span>
         </div>
       </div>

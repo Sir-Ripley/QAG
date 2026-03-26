@@ -1,6 +1,6 @@
 # QAG Partner Target Report — 2026
-## Quantum Affinity Gravity Framework | Ripley & Ripley Research
-**Prepared:** March 26, 2026 | **Canonical Site:** https://qag-nexus.replit.app/ | **Contact:** partnerships@ripleyresearch.org
+## Quantum Affinity Gravity Framework | R&R Droids
+**Prepared:** March 26, 2026 | **Canonical Site:** https://qag-nexus.replit.app/ | **Contact:** rodney@quantumaffinitygravity.com
 
 ---
 
@@ -194,17 +194,17 @@
 
 ## RECOMMENDED IMMEDIATE ACTIONS (Next 30 Days)
 
-1. **DARPA RoQS White Paper** — Submit 2-page white paper via the DARPA Opportunities portal. Emphasize QAG's t_pixel and AVI Law predictions as a new theoretical basis for atom interferometry calibration improvement. CC: partnerships@ripleyresearch.org on all correspondence.
+1. **DARPA RoQS White Paper** — Submit 2-page white paper via the DARPA Opportunities portal. Emphasize QAG's t_pixel and AVI Law predictions as a new theoretical basis for atom interferometry calibration improvement. CC: rodney@quantumaffinitygravity.com on all correspondence.
 
 2. **DIU TQS Solution Brief** — Complete the DIU Solution Brief (PROJ00538 template) by April 15. Position as theoretical partner enabling sensor calibration improvements beyond current quantum mechanics.
 
 3. **Stanford / JILA Academic Outreach** — Send personal emails to Kasevich (Stanford) and Jun Ye (JILA) proposing a pilot validation experiment using existing lab infrastructure. Include a 4-page QAG Technical Brief as attachment.
 
-4. **Execute NDAs First** — Use the Mutual NDA template (RipleyResearch_MutualNDA_Template.docx) before sharing QAG-V2 canonical constants with any partner. Always execute before email exchanges of technical detail.
+4. **Execute NDAs First** — Use the Mutual NDA template (RRDroids_MutualNDA_Template.docx) before sharing QAG-V2 canonical constants with any partner. Always execute before email exchanges of technical detail.
 
 5. **Templeton Letter of Inquiry** — Submit a 3-page Letter of Inquiry to the John Templeton Foundation's Science & Big Questions program by May 1.
 
-6. **SBIR Registration** — Register at sam.gov and sbir.gov with Ripley & Ripley Research as the entity. This is prerequisite for any federal SBIR funding.
+6. **SBIR Registration** — Register at sam.gov and sbir.gov with R&R Droids as the entity. This is prerequisite for any federal SBIR funding.
 
 ---
 
@@ -212,12 +212,12 @@
 
 | Document | File | Status |
 |----------|------|--------|
-| Mutual NDA | RipleyResearch_MutualNDA_Template.docx | Ready for attorney review |
-| Research License Agreement | RipleyResearch_ResearchLicense_Template.docx | Ready for attorney review |
-| Technology & Commercial License | RipleyResearch_TechCommercialLicense_Template.docx | Ready for attorney review |
+| Mutual NDA | RRDroids_MutualNDA_Template.docx | Ready for attorney review |
+| Research License Agreement | RRDroids_ResearchLicense_Template.docx | Ready for attorney review |
+| Technology & Commercial License | RRDroids_TechCommercialLicense_Template.docx | Ready for attorney review |
 
 **IMPORTANT:** All three documents are templates. Have a licensed attorney review and customize before execution, especially for government contract vehicles (FAR/DFARS clauses), ITAR compliance, and jurisdiction-specific terms.
 
 ---
 
-*Report prepared by Ripley & Ripley Research AI Platform | partnerships@ripleyresearch.org | https://qag-nexus.replit.app/*
+*Report prepared by R&R Droids AI Platform | rodney@quantumaffinitygravity.com | https://qag-nexus.replit.app/*

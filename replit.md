@@ -4,6 +4,15 @@
 
 pnpm workspace monorepo using TypeScript. This project is the definitive internet presence for **Quantum Affinity Gravity (QAG)** — the unified field theory by **Dr. Rodney A. Ripley Jr.**
 
+## Business Entity (IRS-Registered)
+- **Legal Name:** Rodney Ripley (Sole Proprietor)
+- **DBA / Sort Name:** R&R Droids
+- **EIN:** 84-4660278
+- **Address:** 37026 Hazel Run Rd, Salineville, OH 43945
+- **Email:** rodney@quantumaffinitygravity.com
+- **Phone:** 330-420-8444
+- **IRS Established:** February 2020 | NAICS: 454110
+
 ## Stack
 
 - **Monorepo tool**: pnpm workspaces

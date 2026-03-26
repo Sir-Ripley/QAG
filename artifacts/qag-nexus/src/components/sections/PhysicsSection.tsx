@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Slider } from "@/components/ui/slider";
+import { HookBanner, ProblemSolution, InvestorCard, SectionAttribution, NextSectionGuide } from "@/components/SectionLayers";
 
 export function PhysicsSection() {
   const [frequency, setFrequency] = useState(1000);
@@ -8,32 +9,39 @@ export function PhysicsSection() {
   const [coupling, setCoupling] = useState(0.5);
   const [radius, setRadius] = useState(2.5);
 
-  // QAG Physics Logic
   const eVac = 1000;
   const eCore = amplitude * frequency * radius;
   const m0 = 10.0;
-  const mEff = m0 * (1 - coupling * (eCore / (eVac * 15))); 
+  const mEff = m0 * (1 - coupling * (eCore / (eVac * 15)));
   const isLevitating = mEff <= 0;
   const waveNumber = (2 * Math.PI * frequency) / 343;
 
   return (
     <section id="physics" className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="mb-16">
-          <div className="mb-2">
-            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr.</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            <span className="text-primary">01.</span> The Resonator
-          </h2>
+        <div className="mb-2">
+          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr. — Ripley & Ripley Research</span>
+        </div>
+        <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+          <span className="text-primary">01.</span> The Resonator
+        </h2>
+
+        <HookBanner hook="Gravity is not a force pulling you down — it is pressure pushing you in. Tune the vacuum, and the pressure lifts." />
+
+        <ProblemSolution
+          problem="Newtonian and Einsteinian physics treat the vacuum as passive — an empty stage on which matter performs. This leaves propulsion permanently tethered to chemical reaction mass. Spacecraft must carry their own fuel; there is no external medium to push against."
+          solution="The vacuum is a ferroelectric superfluid that actively couples with coherent matter structures. By tuning a Base-12 resonator cavity to the natural frequency of the Ether, you can establish a negative impedance condition that modifies the effective mass of a target object — without any chemical reaction."
+          accentColor="primary"
+        />
+
+        <div className="mb-6">
           <p className="text-xl text-muted-foreground max-w-2xl">
             Focusing vacuum fluctuations through Base-12 topology. Manipulating the Ether to achieve direct mass reduction and high-affinity shielding.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          {/* Controls */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -42,11 +50,9 @@ export function PhysicsSection() {
             <div className="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
               <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
             </div>
-
             <h3 className="font-mono text-sm tracking-widest uppercase text-primary border-b border-primary/20 pb-4">
               Input Parameters
             </h3>
-
             <div className="space-y-4">
               <div className="flex justify-between font-mono text-sm">
                 <span className="text-muted-foreground">Frequency (Hz)</span>
@@ -54,7 +60,6 @@ export function PhysicsSection() {
               </div>
               <Slider value={[frequency]} onValueChange={([v]) => setFrequency(v)} min={100} max={2000} step={10} className="w-full" />
             </div>
-
             <div className="space-y-4">
               <div className="flex justify-between font-mono text-sm">
                 <span className="text-muted-foreground">Input Amplitude</span>
@@ -62,7 +67,6 @@ export function PhysicsSection() {
               </div>
               <Slider value={[amplitude]} onValueChange={([v]) => setAmplitude(v)} min={0.1} max={10.0} step={0.1} className="w-full" />
             </div>
-
             <div className="space-y-4">
               <div className="flex justify-between font-mono text-sm">
                 <span className="text-muted-foreground">Coupling Const (α)</span>
@@ -70,7 +74,6 @@ export function PhysicsSection() {
               </div>
               <Slider value={[coupling]} onValueChange={([v]) => setCoupling(v)} min={0.1} max={1.0} step={0.05} className="w-full" />
             </div>
-
             <div className="space-y-4">
               <div className="flex justify-between font-mono text-sm">
                 <span className="text-muted-foreground">Topology Radius</span>
@@ -80,9 +83,8 @@ export function PhysicsSection() {
             </div>
           </motion.div>
 
-          {/* Visualizer & Outputs */}
           <div className="lg:col-span-7 flex flex-col gap-8">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -94,28 +96,19 @@ export function PhysicsSection() {
               }}
             >
               <div className="absolute inset-0 bg-background/60" />
-              
-              {/* Dynamic Core Visualizer based on state */}
-              <motion.div 
-                animate={{ 
-                  scale: 1 + (amplitude * 0.05),
-                  rotate: isLevitating ? 360 : 0
-                }}
-                transition={{ 
-                  duration: 2000 / frequency, 
-                  repeat: Infinity, 
-                  ease: "linear" 
-                }}
+              <motion.div
+                animate={{ scale: 1 + (amplitude * 0.05), rotate: isLevitating ? 360 : 0 }}
+                transition={{ duration: 2000 / frequency, repeat: Infinity, ease: "linear" }}
                 className="relative z-10 w-32 h-32 rounded-full border-2 border-dashed border-secondary/50 flex items-center justify-center"
               >
-                <div 
-                  className={`w-16 h-16 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(45,212,191,0.5)] ${isLevitating ? 'bg-secondary blur-sm' : 'bg-primary blur-md'}`} 
+                <div
+                  className={`w-16 h-16 rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(45,212,191,0.5)] ${isLevitating ? 'bg-secondary blur-sm' : 'bg-primary blur-md'}`}
                   style={{ opacity: coupling }}
                 />
               </motion.div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -123,12 +116,7 @@ export function PhysicsSection() {
             >
               <DataBlock label="Wave Number (k)" value={waveNumber.toFixed(2)} unit="rad/m" />
               <DataBlock label="Energy Density" value={(eCore / 1000).toFixed(2)} unit="kJ/m³" />
-              <DataBlock 
-                label="Effective Mass" 
-                value={mEff > 0 ? mEff.toFixed(3) : "0.000"} 
-                unit="kg" 
-                highlight={isLevitating}
-              />
+              <DataBlock label="Effective Mass" value={mEff > 0 ? mEff.toFixed(3) : "0.000"} unit="kg" highlight={isLevitating} />
             </motion.div>
 
             <div className="glass-panel p-6 rounded-xl border-accent/20">
@@ -137,9 +125,9 @@ export function PhysicsSection() {
                 M<sub className="text-sm">eff</sub> = M<sub className="text-sm">0</sub> × (1 - α × [E<sub className="text-sm">core</sub> / E<sub className="text-sm">vac</sub>])
               </div>
               {isLevitating && (
-                <motion.div 
-                  initial={{ opacity: 0 }} 
-                  animate={{ opacity: 1 }} 
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
                   className="mt-4 py-2 bg-secondary/10 border border-secondary/50 rounded-lg text-secondary font-mono text-center tracking-widest uppercase text-xs shadow-[0_0_15px_rgba(212,175,55,0.2)]"
                 >
                   Affinity Shield Active: Local Gravity Nullified
@@ -148,6 +136,20 @@ export function PhysicsSection() {
             </div>
           </div>
         </div>
+
+        <InvestorCard
+          application="QVR-1 Tesla Resonance Thruster — a 0.70 MHz Surface Acoustic Wave (SAW) engine with no propellant, no combustion, and no moving parts. Integrated into uncrewed aerial systems (UAS) and autonomous underwater vehicles (AUV) for unlimited endurance missions."
+          value="Non-chemical propulsion is the holy grail of autonomous defense systems. DARPA's MASC and APAC programs are actively seeking propellantless maneuvering solutions. QAG provides the only physics-grounded framework for such a technology. Licensing or joint development represents a transformative defense contract opportunity."
+          accentColor="secondary"
+        />
+
+        <SectionAttribution sectionNum="01" />
+        <NextSectionGuide
+          nextName="Base-12 Topology"
+          reason="the mathematical language that makes the Resonator possible"
+          href="#base12"
+          accentColor="primary"
+        />
       </div>
     </section>
   );

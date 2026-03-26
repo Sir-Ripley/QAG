@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { HookBanner, ProblemSolution, InvestorCard, SectionAttribution, NextSectionGuide } from "@/components/SectionLayers";
 
 export function QAIDropSection() {
   return (
@@ -9,20 +10,27 @@ export function QAIDropSection() {
         }}
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="mb-4 text-center">
-          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-secondary/60">by Rodney A. Ripley Jr.</span>
+        <div className="mb-2 text-center">
+          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-secondary/60">by Rodney A. Ripley Jr. — Ripley & Ripley Research</span>
         </div>
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-xs tracking-widest uppercase mb-6">
+        <div className="text-center mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-xs tracking-widest uppercase mb-4">
             Phase 2 — Experimental Blueprint
           </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
             <span className="text-secondary">05.</span> The Smoking Gun: QAI Drop Experiment
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A Mach-Zehnder atom interferometer. Two clouds of atoms — one coherent, one classical. One measurement to rewrite physics.
-          </p>
         </div>
+
+        <div className="flex justify-center mb-6">
+          <HookBanner hook="We can prove Einstein was only half right — and we can do it with one experiment, already within reach of existing atom interferometry labs." />
+        </div>
+
+        <ProblemSolution
+          problem="The Weak Equivalence Principle (WEP) — the cornerstone of general relativity — has never been tested against a highly coherent quantum system like a Bose-Einstein Condensate. All existing WEP tests use classical, incoherent matter. If the vacuum actively couples with quantum coherence, this gap in the experimental record is the hiding place of new physics."
+          solution="Drop a Bose-Einstein Condensate (BEC) and a thermal gas cloud simultaneously through a Mach-Zehnder atom interferometer. If QAG is correct, the BEC couples to the Ether via its coherence index C ≈ 6.00×10⁻⁷ and falls fractionally slower than the thermal gas. The predicted phase shift is Δa/g ≈ 6.00×10⁻⁷ — within current measurement sensitivity."
+          accentColor="secondary"
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <motion.div
@@ -118,11 +126,19 @@ export function QAIDropSection() {
           </div>
         </motion.div>
 
-        <div className="text-right mt-4">
-          <span className="text-[10px] font-mono text-muted-foreground/40 uppercase tracking-widest">
-            © 2026 Rodney A. Ripley Jr. — Ripley &amp; Ripley Research — All Rights Reserved
-          </span>
-        </div>
+        <InvestorCard
+          application="If confirmed, the QAI Drop opens entirely new physics for aerospace propulsion and inertial shielding. The same coherence-gravity coupling that produces the Δa/g signal is the mechanism behind the QVR-1 Resonance Thruster. One experiment validates an entire technology stack."
+          value="A single lab experiment that validates or falsifies a unified field theory is the lowest-cost, highest-impact validation path in experimental physics. Any research institution or defense lab already operating atom interferometry equipment can run this test. A positive result transforms QAG from theoretical framework to confirmed physics — at which point every downstream technology license becomes dramatically more valuable."
+          accentColor="secondary"
+        />
+
+        <SectionAttribution sectionNum="05" />
+        <NextSectionGuide
+          nextName="Validation & Evidence"
+          reason="the computational scoreboard showing QAG already beats dark matter on real galaxy data"
+          href="#validation"
+          accentColor="accent"
+        />
       </div>
     </section>
   );

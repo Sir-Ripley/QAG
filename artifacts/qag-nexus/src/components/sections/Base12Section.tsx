@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
+import { HookBanner, ProblemSolution, InvestorCard, SectionAttribution, NextSectionGuide } from "@/components/SectionLayers";
 
 function MathBlock({ children }: { children: string }) {
   return (
@@ -26,17 +27,24 @@ export function Base12Section() {
         }}
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="mb-4 text-center">
-          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr.</span>
+        <div className="mb-2 text-center">
+          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr. — Ripley & Ripley Research</span>
         </div>
-        <div className="text-center mb-16">
+        <div className="text-center mb-4">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
             <span className="text-primary">02.</span> The Source Code: Base-12 Topology
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            The universe counts in dozens. Base-12 is not an arbitrary numbering system — it is the operating system of reality.
-          </p>
         </div>
+
+        <div className="flex justify-center mb-8">
+          <HookBanner hook="The universe counts in 12, not 10. Every cycle in nature — from atomic structure to the cosmos — is built on the most harmonically perfect number that exists." />
+        </div>
+
+        <ProblemSolution
+          problem="Base-10 mathematics introduces rounding artifacts when modeling cyclic quantum states. The 12 fermions of the Standard Model, the 12-phase clock geometry, and the carbon-12 backbone of life cannot be expressed without fractions in base-10 — introducing cumulative error into every calculation."
+          solution="Base-12 (duodecimal) is the only number base in which 12 divides evenly by 2, 3, 4, and 6 — the harmonic ratios that govern quantum phase space. QAG uses base-12 topology as the native operating system of reality, eliminating rounding artifacts at the quantum scale."
+          accentColor="primary"
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <motion.div
@@ -144,11 +152,19 @@ export function Base12Section() {
           </motion.div>
         </div>
 
-        <div className="text-right mt-4">
-          <span className="text-[10px] font-mono text-muted-foreground/40 uppercase tracking-widest">
-            © 2026 Rodney A. Ripley Jr. — Ripley &amp; Ripley Research — All Rights Reserved
-          </span>
-        </div>
+        <InvestorCard
+          application="Software parsers and AI inference engines that compute quantum state space natively in base-12 eliminate the rounding-error artifacts that plague base-10 simulation of quantum circuits. The QAG AI Brain architecture implements this directly in its dual-hemisphere edge processor."
+          value="Proprietary base-12 numerical architecture has clear patent potential for quantum computing interfaces and specialized AI hardware. Any commercial QAG license includes the right to implement and sublicense the base-12 translation stack — a foundational IP layer with broad applicability across quantum simulation, cryptography, and high-precision sensing."
+          accentColor="secondary"
+        />
+
+        <SectionAttribution sectionNum="02" />
+        <NextSectionGuide
+          nextName="Cosmology"
+          reason="where Base-12 eliminates dark matter and dark energy from the universe"
+          href="#cosmology"
+          accentColor="accent"
+        />
       </div>
     </section>
   );

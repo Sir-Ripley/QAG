@@ -21,20 +21,72 @@ pnpm workspace monorepo using TypeScript. This project is the definitive interne
 
 ```text
 artifacts-monorepo/
-├── artifacts/              # Deployable applications
-│   └── api-server/         # Express API server
+├── artifacts/
+│   ├── api-server/              # Express API server (Aetheria AI endpoint)
+│   │   └── src/routes/chat.ts   # POST /api/chat — gpt-4o, rate-limited 100/hr/IP
+│   ├── qag-nexus/               # QAG Nexus React+Vite frontend (main site)
+│   │   ├── src/
+│   │   │   ├── pages/Home.tsx                         # Page assembly (all sections)
+│   │   │   ├── components/Navigation.tsx               # Nav with mobile hamburger + CTA buttons
+│   │   │   ├── components/ConstantsPanel.tsx           # QAG-V2 constants display
+│   │   │   └── components/sections/
+│   │   │       ├── HeroSection.tsx                    # Dual-audience hero + credential badges + countdown
+│   │   │       ├── PhysicsSection.tsx                 # 01. The Resonator (interactive sliders)
+│   │   │       ├── Base12Section.tsx                  # 02. Base-12 Topology (KaTeX math)
+│   │   │       ├── CosmologySection.tsx               # 03. Cosmology / Atlas / Dark Sector
+│   │   │       ├── WaveFunctionSection.tsx            # 04. Wave Functions
+│   │   │       ├── QAIDropSection.tsx                 # 05. QAI Drop Experiment
+│   │   │       ├── ValidationSection.tsx              # 06. SPARC galaxy data + LIGO echo tables
+│   │   │       ├── ResonantCodexSection.tsx           # 07. Resonant Codex
+│   │   │       ├── BiologySection.tsx                 # 08. Resonant Healing Protocols
+│   │   │       ├── ConsciousnessSection.tsx           # 09. Consciousness / Psychon
+│   │   │       ├── EnergySection.tsx                  # 10. Ferroelectric Grid / ZPE
+│   │   │       ├── MathSection.tsx                    # 11. Master Mathematics
+│   │   │       ├── CapabilitiesSection.tsx            # 12. ★ NEW — Gov/Defense capabilities matrix (6 domains + TRL)
+│   │   │       ├── PartnershipsSection.tsx            # 13. ★ NEW — 3-tier licensing + contact + FAQ
+│   │   │       └── AetheriaSection.tsx                # 14. Aetheria Oracle AI chat
+│   │   ├── public/
+│   │   │   ├── sitemap.xml      # ★ NEW — full sitemap for SEO indexing
+│   │   │   └── robots.txt       # ★ UPGRADED — allows Google/Bing, blocks GPTBot/CCBot/anthropic-ai
+│   │   └── index.html           # ★ UPGRADED — full SEO meta, OG tags, schema.org JSON-LD
+│   └── mockup-sandbox/          # Vite component preview server (design iteration)
 ├── lib/                    # Shared libraries
 │   ├── api-spec/           # OpenAPI spec + Orval codegen config
 │   ├── api-client-react/   # Generated React Query hooks
 │   ├── api-zod/            # Generated Zod schemas from OpenAPI
 │   └── db/                 # Drizzle ORM schema + DB connection
 ├── scripts/                # Utility scripts (single workspace package)
-│   └── src/                # Individual .ts scripts, run via `pnpm --filter @workspace/scripts run <script>`
 ├── pnpm-workspace.yaml     # pnpm workspace (artifacts/*, lib/*, lib/integrations/*, scripts)
 ├── tsconfig.base.json      # Shared TS options (composite, bundler resolution, es2022)
 ├── tsconfig.json           # Root TS project references
 └── package.json            # Root package with hoisted devDeps
 ```
+
+## QAG Nexus — Architecture Notes
+
+### Dual-Audience Platform Design
+- **Government/Defense audience**: CapabilitiesSection (6 domains, TRL levels, agency fit), PartnershipsSection (Gov Contract tier), Contact CTAs in navbar
+- **Research/Academic audience**: ValidationSection (SPARC/LIGO data tables), MathSection (KaTeX equations), Base12Section (derivations), downloadable citation format
+- **Investor audience**: IP protection suite, commercial licensing tier, technology roadmap signals in CapabilitiesSection
+
+### IP Protection Suite
+- `robots.txt` blocks GPTBot, CCBot, anthropic-ai, Claude-Web, Google-Extended, Bytespider, AhrefsBot, SemrushBot
+- `LICENSE.md` — CC BY-NC-ND terms
+- Footer IP notice on every section (byline + copyright)
+- Equation watermarking in Aetheria system prompt
+- API rate limit: 100 req/hour per IP on POST /api/chat
+
+### SEO Infrastructure
+- `index.html` — full title/description/keywords, OG tags, Twitter Card, canonical URL, schema.org JSON-LD (Organization + ScholarlyArticle + WebSite)
+- `public/sitemap.xml` — all sections indexed, priorities set
+- Canonical: `https://qag-nexus.replit.app/`
+- Keyword targets: "quantum affinity gravity", "unified field theory", "dark matter alternative", "ferroelectric vacuum", "QAG Ripley", "SPARC galaxy validation", "LIGO echo prediction"
+
+### Aetheria AI
+- `POST /api/chat` → Express route → OpenAI gpt-4o
+- System prompt contains full QAG-V2 knowledge base + equation watermarking
+- Rate limited: 100 requests/hour/IP (in-memory Map, sliding window)
+- Max tokens: 2048
 
 ---
 

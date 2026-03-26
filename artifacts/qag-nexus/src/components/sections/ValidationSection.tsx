@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { HookBanner, ProblemSolution, InvestorCard, SectionAttribution, NextSectionGuide } from "@/components/SectionLayers";
 
 const galaxyData = [
   { name: "NGC3198", chi2QAG: 58.455, chi2Bary: 112.310, rAff: "14.93 kpc", ML: 1.227, improvement: "1.9×", pValue: "0.000", rms: "41.04 km/s" },
@@ -20,17 +21,24 @@ export function ValidationSection() {
   return (
     <section id="validation" className="py-24 relative bg-gradient-to-b from-background via-card/20 to-background overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="mb-4 text-center">
-          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr.</span>
+        <div className="mb-2 text-center">
+          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr. — Ripley & Ripley Research</span>
         </div>
-        <div className="text-center mb-16">
+        <div className="text-center mb-4">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
             <span className="text-accent">06.</span> Validation &amp; Evidence
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            QAG is not philosophy. It generates precise, falsifiable numerical predictions — and they match the data.
-          </p>
         </div>
+
+        <div className="flex justify-center mb-6">
+          <HookBanner hook="The math already works. Here is the scoreboard — real galaxy data, real gravitational wave events, real numbers." />
+        </div>
+
+        <ProblemSolution
+          problem="Theoretical frameworks without empirical grounding cannot attract serious scientific or investment interest. Dark matter models require hundreds of free parameters per galaxy to produce acceptable fits. A theory that claims to replace them must be scored against the same data — and score better."
+          solution="QAG-V2 has been computationally tested against the SPARC galaxy database and LIGO GWTC gravitational wave catalog. The global χ²_red = 0.9632 (p = 0.9724) across 4 representative SPARC galaxies using only 3 universal constants. LIGO echo timing predictions are given to sub-millisecond precision — fully falsifiable by residual analysis of GWTC-3."
+          accentColor="accent"
+        />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -141,11 +149,19 @@ export function ValidationSection() {
           </p>
         </motion.div>
 
-        <div className="text-right mt-4">
-          <span className="text-[10px] font-mono text-muted-foreground/40 uppercase tracking-widest">
-            © 2026 Rodney A. Ripley Jr. — Ripley &amp; Ripley Research — All Rights Reserved
-          </span>
-        </div>
+        <InvestorCard
+          application="A validated framework unlocks NSF Physics grants, NASA Astrophysics Division funding, and DOE High Energy Physics program partnerships. The SPARC fits and LIGO predictions are formatted for direct submission to Physical Review Letters and Monthly Notices of the Royal Astronomical Society."
+          value="The QAG framework already passes the primary statistical tests used by academic physics to evaluate new theories. This is not speculative work — it is a scored, reproducible result that any independent lab can verify. Peer-reviewed publication is the next validation milestone, after which licensing and defense engagement become significantly easier and more valuable."
+          accentColor="accent"
+        />
+
+        <SectionAttribution sectionNum="06" />
+        <NextSectionGuide
+          nextName="The Resonant Codex"
+          reason="the master infographic that maps all of QAG in a single image"
+          href="#codex"
+          accentColor="primary"
+        />
       </div>
     </section>
   );

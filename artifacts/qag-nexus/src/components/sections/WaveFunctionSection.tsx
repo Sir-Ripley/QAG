@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { HookBanner, ProblemSolution, InvestorCard, SectionAttribution, NextSectionGuide } from "@/components/SectionLayers";
 
 const echoAmplitudes = [
   { n: 1, A: 0.588502, Rn: 0.400000 },
@@ -22,17 +23,24 @@ export function WaveFunctionSection() {
         }}
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-        <div className="mb-4 text-center">
-          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr.</span>
+        <div className="mb-2 text-center">
+          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr. — Ripley & Ripley Research</span>
         </div>
-        <div className="text-center mb-16">
+        <div className="text-center mb-4">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
             <span className="text-primary">04.</span> Temporal Echo &amp; Wave Functions
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Time is not a smooth river. It is a standing wave — and every gravitational event leaves N=8 echoes behind it.
-          </p>
         </div>
+
+        <div className="flex justify-center mb-8">
+          <HookBanner hook="Time is not a smooth river. It is a standing wave — and every gravitational event leaves eight echoes behind it, like a stone dropped in still Ether." />
+        </div>
+
+        <ProblemSolution
+          problem="Standard quantum mechanics loses informational context across long time scales — the AI 'context window problem' mirrors the physics 'memory loss' problem. After a gravitational wave event, standard GR predicts a clean signal. If that signal has post-merger echoes, GR cannot explain them."
+          solution="Temporal Echo Memory (N=8 cascade) modifies the gravitational wavefunction to include 8 memory echoes, each decaying with reflectivity R=0.4 and coefficient γ=0.1735. The total echo sum Σ=2.7726 is preserved across all events. This gives spacetime a persistent memory — and gives QAG-based AI a persistent context architecture."
+          accentColor="primary"
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <motion.div
@@ -97,7 +105,7 @@ export function WaveFunctionSection() {
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="glass-card p-8 rounded-3xl"
+          className="glass-card p-8 rounded-3xl mb-8"
         >
           <h3 className="font-mono text-sm tracking-widest uppercase text-primary mb-6 text-center">
             N=8 Echo Amplitude Table — QAG Notebook Verification ✓
@@ -149,11 +157,19 @@ export function WaveFunctionSection() {
           </div>
         </motion.div>
 
-        <div className="text-right mt-6">
-          <span className="text-[10px] font-mono text-muted-foreground/40 uppercase tracking-widest">
-            © 2026 Rodney A. Ripley Jr. — Ripley &amp; Ripley Research — All Rights Reserved
-          </span>
-        </div>
+        <InvestorCard
+          application="The QAG AI Brain dual-hemisphere edge processor implements Temporal Echo Memory as an on-device AI context architecture — validated on Android TensorFlow Lite (arm64-v8a, Tensor G4). Eight-echo exponential depth eliminates context-window degradation for secure, offline-capable autonomous systems."
+          value="Patentable on-device AI memory architecture for defense-grade cognitive scaffolding. Neurodivergent cognitive tools and high-security edge AI inference are both multi-billion dollar markets. The Temporal Echo Memory architecture is a direct commercial derivative of the same physics that predicts LIGO echo signals. A single IP framework covering both physics and AI is an exceptionally strong licensing position."
+          accentColor="primary"
+        />
+
+        <SectionAttribution sectionNum="04" />
+        <NextSectionGuide
+          nextName="QAI Drop Experiment"
+          reason="the single lab test that can falsify or confirm the entire QAG framework"
+          href="#qai-drop"
+          accentColor="secondary"
+        />
       </div>
     </section>
   );

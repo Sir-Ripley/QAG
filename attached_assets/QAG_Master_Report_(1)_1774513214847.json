@@ -1,0 +1,114 @@
+{
+  "framework": "QAG-V2",
+  "author": "Rodney A. Ripley Jr.",
+  "date": "2026-03-03",
+  "constants": {
+    "t_pixel": 3.41e-07,
+    "gamma": 0.1735,
+    "R": 0.4,
+    "N_echoes": 8,
+    "f_coupling": 0.7,
+    "echo_sum": 2.772598,
+    "vel_factor": 1.942318,
+    "H0_QAG": 76.55,
+    "S8_QAG": 0.783,
+    "KASB": 0.013829,
+    "Phi": 1.194797041454945
+  },
+  "echo_verification": {
+    "echo_sum": 2.772598,
+    "echo_sum_pass": true,
+    "A8": 0.174702,
+    "A8_pass": true,
+    "vel_factor": 1.942318,
+    "vf_pass": true
+  },
+  "galaxy_fits": {
+    "NGC3198": {
+      "chi2_red_QAG": 58.455161,
+      "chi2_red_bary": 112.31049,
+      "r_aff_kpc": 14.933205,
+      "ML": 1.227127,
+      "improvement_x": 1.92131,
+      "rms_kms": 41.037831,
+      "p_value": 0.0
+    },
+    "DDO154": {
+      "chi2_red_QAG": 0.094701,
+      "chi2_red_bary": 9.525807,
+      "r_aff_kpc": 5.953126,
+      "ML": 3.328862,
+      "improvement_x": 100.587771,
+      "rms_kms": 0.9811,
+      "p_value": 0.999994
+    },
+    "UGC2259": {
+      "chi2_red_QAG": 0.362845,
+      "chi2_red_bary": 3.258135,
+      "r_aff_kpc": 10.63078,
+      "ML": 1.322718,
+      "improvement_x": 8.97941,
+      "rms_kms": 2.954095,
+      "p_value": 0.962556
+    },
+    "NGC3741": {
+      "chi2_red_QAG": 0.046517,
+      "chi2_red_bary": 2.505343,
+      "r_aff_kpc": 5.363044,
+      "ML": 1.590931,
+      "improvement_x": 53.85874,
+      "rms_kms": 0.703856,
+      "p_value": 0.999995
+    }
+  },
+  "ligo_predictions_ms": {
+    "GW150914": 45.511146,
+    "GW151226": 37.652993,
+    "GW170817": 26.27405,
+    "GW190425": 27.234605,
+    "GW190814": 38.795809,
+    "GW200225": 41.017127
+  },
+  "tensions": {
+    "H0_vs_Planck_sigma": 4.436147,
+    "H0_vs_SHOES_sigma": 1.557065,
+    "H0_vs_DESI_sigma": 3.834957,
+    "S8_vs_Planck_sigma": 1.733156,
+    "S8_vs_DES_sigma": 0.312348,
+    "S8_vs_KiDS_sigma": 0.828529
+  },
+  "global_chi2": {
+    "chi2_red": 0.963158,
+    "p_value": 0.972413,
+    "fidelity": 0.964467,
+    "status": "UNIVERSAL HARMONY"
+  },
+  "growth_S8": {
+    "Exhale (\u2212KASB)": {
+      "sigma8": 0.816047,
+      "S8": 0.816047
+    },
+    "Inhale (+KASB)": {
+      "sigma8": 0.805953,
+      "S8": 0.805953
+    },
+    "\u039bCDM ref": {
+      "sigma8": 0.811,
+      "S8": 0.811
+    }
+  },
+  "outputs": [
+    "QAG_Dashboard_v2.png",
+    "echo_amplitudes.csv",
+    "expansion_history.csv",
+    "global_chi2_harmony.csv",
+    "h0_tension_analysis.csv",
+    "harmonic_constants.json",
+    "ligo_echo_predictions.csv",
+    "qag_constants.json",
+    "s8_tension_analysis.csv",
+    "saw_propulsion.csv",
+    "sparc_fit_results.json",
+    "structure_growth.csv"
+  ]
+}

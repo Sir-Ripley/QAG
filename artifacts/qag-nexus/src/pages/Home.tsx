@@ -29,7 +29,10 @@ export default function Home() {
           RIPLEY & RIPLEY <span className="text-primary">RESEARCH</span>
         </div>
         <p className="text-muted-foreground font-mono text-xs uppercase tracking-widest opacity-50">
-          The Living Universe &copy; 2026
+          The Living Universe &copy; 2026 — All Rights Reserved
+        </p>
+        <p className="text-muted-foreground font-mono text-[0.65rem] uppercase tracking-widest opacity-40 mt-2">
+          Quantum Affinity Gravity, Affiniton, Psychon, and related theoretical frameworks are protected intellectual property of Rodney A. Ripley Jr. / Ripley & Ripley Research. Unauthorized reproduction, distribution, or commercial use prohibited. See LICENSE.md for terms.
         </p>
       </footer>
     </div>

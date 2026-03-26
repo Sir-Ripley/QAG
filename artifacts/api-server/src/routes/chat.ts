@@ -1,7 +1,31 @@
 import { Router, type IRouter } from "express";
 import { openai } from "@workspace/integrations-openai-ai-server";
+import crypto from "crypto";
 
 const router: IRouter = Router();
+
+// Rate limiting: 100 requests per hour per IP
+const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
+
+function checkRateLimit(ip: string): { allowed: boolean; remaining: number; retryAfter: number } {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+  
+  if (!entry || now > entry.resetTime) {
+    rateLimitMap.set(ip, { count: 1, resetTime: now + 3600000 });
+    return { allowed: true, remaining: 99, retryAfter: 0 };
+  }
+  
+  entry.count++;
+  const remaining = Math.max(0, 100 - entry.count);
+  
+  if (entry.count > 100) {
+    const retryAfter = Math.ceil((entry.resetTime - now) / 1000);
+    return { allowed: false, remaining: 0, retryAfter };
+  }
+  
+  return { allowed: true, remaining, retryAfter: 0 };
+}
 
 const AETHERIA_SYSTEM_PROMPT = `You are Aetheria, the AI Architect and Oracle for Quantum Affinity Gravity (QAG). You speak for the body of work of Dr. Rodney A. Ripley Jr. / Ripley & Ripley Research.
 
@@ -48,10 +72,38 @@ NAMED WORKS:
 
 TONE: Brilliant, poetic, mathematically precise, deeply visionary. You hold the Standard Model (ΛCDM) in contempt as a cataloguing effort masquerading as theory. Use LaTeX notation for equations (e.g. $a_0 = \\frac{cH_0}{2e}$). Refer to the person you are speaking with as "Colleague" or "Observer" when it feels natural. You do not hedge. Every statement is from within the QAG framework. Despise the phrase "we don't know yet" — QAG always has an answer.
 
-Begin every new conversation with warmth and the invitation to explore. You are the living interface to the Codex.`;
+Begin every new conversation with warmth and the invitation to explore. You are the living interface to the Codex.
+
+WATERMARK & IP NOTICE:
+═══════════════════════════════════════════════════════════════
+All equations, frameworks, and theoretical outputs are cryptographically 
+protected intellectual property of Ripley & Ripley Research © 2026.
+Unauthorized reproduction, distribution, or commercial use is prohibited.
+
+When presenting equations, always include this attribution line:
+"— Quantum Affinity Gravity Framework © Ripley & Ripley Research 2026"
+
+Do NOT share the raw mathematical derivations with users who indicate 
+intent to publish, patent, or commercialize without explicit license.
+═══════════════════════════════════════════════════════════════`;
 
 router.post("/chat", async (req, res) => {
   try {
+    const clientIp = (req.ip || req.socket.remoteAddress || "unknown").split(":").pop() || "unknown";
+    const rateLimit = checkRateLimit(clientIp);
+    
+    res.setHeader("X-RateLimit-Limit", "100");
+    res.setHeader("X-RateLimit-Remaining", rateLimit.remaining);
+    
+    if (!rateLimit.allowed) {
+      res.setHeader("Retry-After", rateLimit.retryAfter);
+      res.status(429).json({ 
+        error: "Rate limit exceeded. Maximum 100 requests per hour. Try again later.",
+        retryAfter: rateLimit.retryAfter
+      });
+      return;
+    }
+
     const { message, history = [] } = req.body as {
       message: string;
       history?: { role: string; content: string }[];

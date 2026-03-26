@@ -1,0 +1,11 @@
+{
+  "copyright": "© 2026 Rodney A. Ripley Jr. / Ripley & Ripley Research",
+  "service": "Aetheria Oracle API",
+  "framework": "Quantum Affinity Gravity (QAG)",
+  "ipProtection": "All responses contain protected theoretical frameworks",
+  "rateLimit": "100 requests/hour per IP",
+  "rateLimitEnforced": true,
+  "frameworkSignatureVerification": true,
+  "licenseTerms": "Creative Commons BY-NC-ND (Attribution, Non-Commercial, No Derivatives)",
+  "generatedAt": "2026-03-26T00:00:00Z"
+}

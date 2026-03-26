@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 export function Navigation() {
   const links = [
     { name: "Physics", href: "#physics" },
+    { name: "Base-12", href: "#base12" },
     { name: "Cosmology", href: "#cosmology" },
+    { name: "Wave Fns", href: "#wavefunctions" },
+    { name: "QAI Drop", href: "#qai-drop" },
+    { name: "Validation", href: "#validation" },
     { name: "Biology", href: "#biology" },
     { name: "Consciousness", href: "#consciousness" },
     { name: "Energy", href: "#energy" },
@@ -32,12 +36,12 @@ export function Navigation() {
           </div>
         </a>
         
-        <div className="hidden lg:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-4">
           {links.map(link => (
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-xs font-mono text-muted-foreground hover:text-secondary hover:-translate-y-0.5 transition-all tracking-widest uppercase"
+              className="text-[10px] font-mono text-muted-foreground hover:text-secondary hover:-translate-y-0.5 transition-all tracking-widest uppercase"
             >
               {link.name}
             </a>

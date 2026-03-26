@@ -36,8 +36,11 @@ export function EnergySection() {
 
           <div className="lg:w-1/2 w-full order-1 lg:order-2">
             <Zap className="w-12 h-12 text-secondary mb-6 opacity-80" />
+            <div className="mb-2">
+              <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-secondary/60">by Rodney A. Ripley Jr.</span>
+            </div>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
-              <span className="text-secondary">05.</span> Energy
+              <span className="text-secondary">09.</span> Energy
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
               The universe is awash in free energy. We are simply using the wrong geometry to collect it.

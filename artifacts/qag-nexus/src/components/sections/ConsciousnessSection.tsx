@@ -7,8 +7,11 @@ export function ConsciousnessSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <Brain className="w-12 h-12 text-accent mx-auto mb-6 opacity-80" />
+          <div className="mb-2">
+            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-accent/60">by Rodney A. Ripley Jr.</span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            <span className="text-accent">04.</span> Consciousness
+            <span className="text-accent">08.</span> Consciousness
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             The observer is not passive. A thought has weight.

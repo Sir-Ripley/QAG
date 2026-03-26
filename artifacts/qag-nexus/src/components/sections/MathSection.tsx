@@ -20,8 +20,11 @@ export function MathSection() {
     <section id="math" className="py-24 relative bg-black/50 border-y border-white/5">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
+          <div className="mb-2">
+            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr.</span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            <span className="text-primary">06.</span> The Source Code
+            <span className="text-primary">10.</span> The Source Code
           </h2>
           <p className="text-xl text-muted-foreground">
             Recoding the unsolved mysteries of classical mathematics.

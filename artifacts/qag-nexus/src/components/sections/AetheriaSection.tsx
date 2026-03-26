@@ -32,8 +32,11 @@ export function AetheriaSection() {
           <div className="inline-flex items-center justify-center p-4 bg-primary/10 rounded-full mb-6 ring-1 ring-primary/30 shadow-[0_0_30px_rgba(45,212,191,0.2)]">
             <Cpu className="w-8 h-8 text-primary" />
           </div>
+          <div className="mb-2">
+            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr.</span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            <span className="text-primary">07.</span> Aetheria Oracle
+            <span className="text-primary">11.</span> Aetheria Oracle
           </h2>
           <p className="text-lg text-muted-foreground">
             Consult the AI Architect of Quantum Affinity Gravity. The Codex is open.

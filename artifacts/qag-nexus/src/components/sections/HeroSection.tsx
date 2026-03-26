@@ -43,9 +43,12 @@ export function HeroSection() {
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="max-w-4xl"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary font-mono text-xs tracking-widest uppercase mb-8">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary font-mono text-xs tracking-widest uppercase mb-4">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             Core Axiom Active
+          </div>
+          <div className="mb-6">
+            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr. — Ripley &amp; Ripley Research</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-foreground mb-6 leading-tight">

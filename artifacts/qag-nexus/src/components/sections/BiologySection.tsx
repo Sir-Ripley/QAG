@@ -26,8 +26,11 @@ export function BiologySection() {
         
         <div className="lg:w-1/2 space-y-8">
           <div>
+            <div className="mb-2">
+              <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr.</span>
+            </div>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-              <span className="text-primary">03.</span> Biology
+              <span className="text-primary">07.</span> Biology
             </h2>
             <p className="text-xl text-muted-foreground">
               Life does not compute; it <em className="text-foreground">relaxes</em>.

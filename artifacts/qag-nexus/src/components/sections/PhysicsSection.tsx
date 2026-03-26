@@ -20,6 +20,9 @@ export function PhysicsSection() {
     <section id="physics" className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <div className="mb-16">
+          <div className="mb-2">
+            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary/60">by Rodney A. Ripley Jr.</span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
             <span className="text-primary">01.</span> The Resonator
           </h2>

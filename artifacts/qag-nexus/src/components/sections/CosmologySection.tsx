@@ -4,9 +4,12 @@ export function CosmologySection() {
   return (
     <section id="cosmology" className="py-24 relative bg-gradient-to-b from-background via-card/20 to-background">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="mb-4 text-right">
+          <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-accent/60">by Rodney A. Ripley Jr.</span>
+        </div>
         <div className="mb-16 text-right">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            <span className="text-accent">02.</span> Cosmology
+            <span className="text-accent">03.</span> Cosmology
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl ml-auto">
             The grand illusion dispelled. Reinterpreting the dark sector through the lens of Affinity-Vacuum Interactions.

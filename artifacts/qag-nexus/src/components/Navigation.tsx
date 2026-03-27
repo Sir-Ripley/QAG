@@ -1,6 +1,6 @@
-import { Atom, Menu, X } from "lucide-react";
+import { Atom, Menu, X, Moon, Sun } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const navLinks = [
   { name: "Physics", href: "#physics" },
@@ -20,10 +20,29 @@ const navLinks = [
 
 export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const isDarkMode = document.documentElement.classList.contains('dark');
+    setIsDark(isDarkMode);
+  }, []);
+
+  const toggleTheme = () => {
+    const html = document.documentElement;
+    if (html.classList.contains('dark')) {
+      html.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+      setIsDark(false);
+    } else {
+      html.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+      setIsDark(true);
+    }
+  };
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-black/70 backdrop-blur-xl">
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-primary/10 bg-background/90 dark:bg-black/70 dark:border-white/5 backdrop-blur-xl transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group shrink-0">
@@ -56,11 +75,11 @@ export function Navigation() {
             ))}
           </div>
 
-          {/* CTAs */}
+          {/* CTAs & Theme Toggle */}
           <div className="hidden md:flex items-center gap-3 shrink-0 ml-4">
             <a
               href="#capabilities"
-              className="text-[10px] font-mono text-muted-foreground hover:text-primary border border-white/10 hover:border-primary/50 px-3 py-1.5 rounded-lg transition-all tracking-widest uppercase"
+              className="text-[10px] font-mono text-muted-foreground hover:text-primary border border-primary/20 hover:border-primary/50 px-3 py-1.5 rounded-lg transition-all tracking-widest uppercase"
             >
               Capabilities
             </a>
@@ -70,6 +89,13 @@ export function Navigation() {
             >
               Partner / License
             </a>
+            <button
+              onClick={toggleTheme}
+              className="theme-toggle"
+              aria-label="Toggle dark mode"
+            >
+              {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </button>
           </div>
 
           {/* Mobile Menu Toggle */}

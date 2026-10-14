@@ -15,8 +15,18 @@ and gravitational-wave echoes from an affinity-coupled vacuum, without dark matt
 | `apps/qag-all/` | Standalone Vite + React dashboard app (views, physics utils, Gemini service) |
 | `notebooks/` | Research notebooks — rotation curves, wave models, SPARC analyses |
 | `tools/` | Python utilities — galactic theater, harmony plots, universe ignition |
-| `docs/` | Theory codex (`QuantumAffinityGravity.md`) and reference pages |
+| `docs/` | Theory, per subject — see below |
 | `artifacts/` | Build artifacts and sandboxes |
+
+## Theory, per subject (`docs/`)
+
+| Document | Subject | Source |
+|---|---|---|
+| `tripartite-field-theory.md` | The three fields (Affinion/Entanglion/Chronon), unified field equation, master equations, constants | TripartiteFieldQAG.txt + Oct 13 synthesis |
+| `unified-field-theory.md` | Kinematic engine, first-principles BTFR, SPARC 12-galaxy sweep (χ²_global = 0.060895) | Master Technical Dossier, 2026-10-13 |
+| `cosmology-early-universe.md` | Baryogenesis (η = 5.778×10⁻¹⁰), Lithium-7 solution (<0.1% error), AVI expansion | Oct 13 Baryogenesis + Lithium papers |
+| `quantum-virology.md` | Resonant pathogen disruption, 6VXX f_kill = 3.2916 GHz, S-band L-match, athermal pulse | MTD §5 + Field Suite, 2026-10-13 |
+| `QuantumAffinityGravity.md` | The original QAG codex — vision statement | QAG-All (historical) |
 | `legal-docs/` | Outreach templates and partner reports |
 | `attached_assets/` | Figures, papers, and supporting media |
 

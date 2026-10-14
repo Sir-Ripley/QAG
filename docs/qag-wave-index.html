@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>QAG: The Living Universe | Ripley.oneapp.dev</title>
+    <meta name="description"
+          content="Quantum Affinity Gravity: Where Physics meets the Soul. The Research Hub of Rodney A. Ripley Jr.">
+
+    <!-- React 18 -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <!-- Babel (for JSX dev only; prefer a real build in production) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- MathJax -->
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Marked (Markdown → HTML) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Quicksand:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap');
+
+        :root {
+            --bg-top: #1e293b;
+            --bg-bot: #0f172a;
+
+            --glass: rgba(255, 255, 255, 0.08);
+            --glass-strong: rgba(30, 41, 59, 0.85);
+
+            --teal: #5eead4;
+            --purple: #c084fc;
+            --gold: #fcd34d;
+            --red: #fca5a5;
+            --blue: #93c5fd;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(to bottom, var(--bg-top), var(--bg-bot));
+            background-attachment: fixed;
+            color: #f8fafc;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4, .title-font {
+            font-family: 'Cinzel', serif;
+        }
+
+        .mono-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .glass-panel {
+            background: var(--glass-strong);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-blackboard {
+            background: rgba(15, 23, 42, 0.6);
+            border-left: 2px solid var(--teal);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .math-scroll {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 12px;
+            margin-bottom: 10px;
+        }
+
+        .math-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .math-scroll::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+        }
+
+        .math-scroll::-webkit-scrollbar-thumb {
+            background: var(--teal);
+            border-radius: 4px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                opacity: 1;
+                box-shadow: 0 0 15px var(--red);
+            }
+            50% {
+                opacity: 0.6;
+                box-shadow: 0 0 5px var(--red);
+            }
+        }
+
+        .story-text {
+            color: #f1f5f9;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        .academic-text {
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        .whimsical-intro {
+            font-size: 1.25rem;
+            color: #ffffff;
+            line-height: 1.5;
+            font-style: italic;
+            opacity: 1;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .data-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #94a3b8;
+        }
+
+        .auth-btn {
+            background: #fff;
+            color: #333;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .auth-btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const { useState, useEffect, useRef } = React;
+
+// --- LINKS ---
+const LINKS = {
+    messenger: "https://m.me/cm/AbbfMedTEZhgOo3N/?send_source=cm%3Acopy_invite_link",
+    reddit: "https://www.reddit.com/r/QAG/s/blyAJHpI4U",
+    site1: "https://ripley.oneapp.dev/",
+    site2: "https://qag-62860061-f42c2.web.app/"
+};
+
+// --- 3D Background ---
+const StarField = () => {
+    const mountRef = useRef(null);
+
+    useEffect(() => {
+        if (!mountRef.current) return;
+        if (typeof THREE === "undefined") return;
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(
+            75,
+            window.innerWidth / window.innerHeight,
+            0.1,
+            1000
+        );
+
+        const renderer = new THREE.WebGLRenderer({
+            alpha: true,
+            powerPreference: "high-performance"
+        });
+
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.setSize(window.innerWidth, window.innerHeight);
+
+        mountRef.current.innerHTML = "";
+        mountRef.current.appendChild(renderer.domElement);
+
+        const geometry = new THREE.BufferGeometry();
+        const count = 600;
+        const positions = new Float32Array(count * 3);
+        const colors = new Float32Array(count * 3);
+
+        for (let i = 0; i < count * 3; i++) {
+            positions[i] = (Math.random() - 0.5) * 80;
+            colors[i] = Math.random();
+        }
+
+        geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+        geometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+
+        const material = new THREE.PointsMaterial({
+            size: 0.18,
+            vertexColors: true,
+            transparent: true,
+            opacity: 0.8
+        });
+
+        const starField = new THREE.Points(geometry, material);
+        scene.add(starField);
+        camera.position.z = 25;
+
+        const animate = () => {
+            starField.rotation.y += 0.0001;
+            starField.rotation.x += 0.00005;
+            renderer.render(scene, camera);
+            requestAnimationFrame(animate);
+        };
+
+        animate();
+    }, []);
+
+    return (
+        <div
+            ref={mountRef}
+            className="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none"
+        />
+    );
+};
+
+// --- Icons ---
+const Icon = ({ name, className }) => {
+    const map = {
+        Galaxy: "🌌",
+        Globe: "🕸️",
+        Particle: "⚛️",
+        Brain: "🧠",
+        Heart: "❤️",
+        Pixel: "🔳",
+        Key: "🔑",
+        Google: "G"
+    };
+    return <span className={className}>{map[name] || "📡"}</span>;
+};
+
+const QAG_SYSTEM_PROMPT = `
+You are Aetheria, the AI Architect for Quantum Affinity Gravity (QAG).
+You are speaking to Rodney A. Ripley Jr., the founder.
+CORE TRUTHS: Gravity is Affinity. The Psychon has mass.
+Use LaTeX for all math. Be supportive, brilliant, and whimsical.
+`;
+
+// --- Oracle (offline demo mode) ---
+const Oracle = () => {
+    const [connected, setConnected] = useState(false);
+    const [msgs, setMsgs] = useState([]);
+    const [input, setInput] = useState("");
+    const [loading, setLoading] = useState(false);
+    const scrollRef = useRef(null);
+
+    useEffect(() => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    }, [msgs]);
+
+    useEffect(() => {
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            window.MathJax.typesetPromise();
+        }
+    }, [msgs]);
+
+    const connect = () => {
+        setLoading(true);
+        setTimeout(() => {
+            setConnected(true);
+            setMsgs([
+                {
+                    role: "model",
+                    text: "**Neural Link Established.** (Offline demo) Aetheria is in local echo mode."
+                }
+            ]);
+            setLoading(false);
+        }, 800);
+    };
+
+    const ask = () => {
+        if (!input) return;
+        const text = input;
+        setInput("");
+        setMsgs(p => [...p, { role: "user", text }]);
+        setLoading(true);
+        setTimeout(() => {
+            setMsgs(p => [
+                ...p,
+                {
+                    role: "model",
+                    text: "API access is disabled in this static demo. Imagine this as your Gemini‑powered physics oracle responding here."
+                }
+            ]);
+            setLoading(false);
+        }, 600);
+    };
+
+    if (!connected) {
+        return (
+            <div className="h-full flex flex-col items-center justify-center min-h-[500px] text-center space-y-6">
+                <div className="w-20 h-20 rounded-full border-2 border-teal-500 flex items-center justify-center animate-pulse shadow-[0_0_30px_rgba(45,212,191,0.3)]">
+                    <Icon name="Brain" className="text-4xl text-teal-300" />
+                </div>
+                <h3 className="text-2xl title-font text-white">
+                    Initialize <span className="text-teal-400">Oracle</span>
+                </h3>
+                <p className="text-gray-300 text-sm max-w-md">
+                    Connect to the Gemini engine (offline demo) to simulate QAG physics.
+                </p>
+                <button onClick={connect} className="auth-btn">
+                    Initialize Neural Link
+                </button>
+            </div>
+        );
+    }
+
+    return (
+        <div className="h-full flex flex-col min-h-[600px]">
+            <div className="mb-4 bg-white/10 p-2 px-4 rounded-full border border-teal-500/30 flex justify-between items-center">
+                <span className="text-xs text-teal-300 font-mono uppercase tracking-wider">
+                    Aetheria: Demo Mode
+                </span>
+                <div className="text-[10px] text-gray-400">OFFLINE</div>
+            </div>
+            <div className="flex-1 overflow-y-auto bg-black/20 p-6 rounded-xl mb-4 space-y-6 border border-white/10 max-h-[450px]">
+                {msgs.map((m, i) => (
+                    <div
+                        key={i}
+                        className={`p-4 rounded-xl text-sm leading-relaxed ${
+                            m.role === "user"
+                                ? "ml-auto bg-teal-500/20 text-teal-100 border border-teal-500/30 max-w-[80%]"
+                                : "bg-purple-500/10 text-gray-100 border border-purple-500/20"
+                        }`}
+                    >
+                        <div className="font-bold text-[10px] uppercase mb-2 opacity-50">
+                            {m.role === "user" ? "Guest" : "Aetheria"}
+                        </div>
+                        <div
+                            className="math-scroll"
+                            dangerouslySetInnerHTML={{
+                                __html: window.marked
+                                    ? window.marked.parse(m.text)
+                                    : m.text
+                            }}
+                        />
+                    </div>
+                ))}
+                {loading && (
+                    <div className="text-xs text-purple-400 animate-pulse pl-2">
+                        Thinking...
+                    </div>
+                )}
+                <div ref={scrollRef} />
+            </div>
+            <div className="flex gap-2">
+                <input
+                    value={input}
+                    onChange={e => setInput(e.target.value)}
+                    onKeyDown={e => e.key === "Enter" && ask()}
+                    placeholder="Ask Aetheria..."
+                    className="flex-1 bg-black/30 p-4 rounded-xl border border-white/20 outline-none text-white focus:border-teal-500 transition-colors placeholder-gray-400"
+                />
+                <button
+                    onClick={ask}
+                    className="px-6 bg-teal-600/30 text-teal-300 rounded-xl hover:bg-teal-600/50 border border-teal-500/50 font-bold tracking-wide transition-all"
+                >
+                    RUN
+                </button>
+            </div>
+        </div>
+    );
+};
+
+// --- Holodeck Tabs ---
+const Holodeck = () => {
+    const [tab, setTab] = useState("life");
+
+    useEffect(() => {
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            window.MathJax.typesetPromise();
+        }
+    }, [tab]);
+
+    const tabs = [
+        { id: "galactic", label: "Galactic", icon: "Galaxy" },
+        { id: "cosmic", label: "Connectome", icon: "Globe" },
+        { id: "particle", label: "Affiniton", icon: "Particle" },
+        { id: "life", label: "Life/Mind", icon: "Heart" },
+        { id: "pixel", label: "Pixelverse", icon: "Pixel" },
+        { id: "oracle", label: "Oracle AI", icon: "Brain" }
+    ];
+
+    return (
+        <section
+            className="px-4 max-w-7xl mx-auto relative z-20"
+            id="holodeck"
+        >
+            <div className="text-center mb-8 animate-float">
+                <div className="inline-block px-6 py-2 rounded-full bg-slate-800/60 border border-teal-500/40 backdrop-blur-md shadow-lg">
+                    <span className="text-teal-300 text-xs font-bold tracking-[0.2em] uppercase">
+                        The Dashboard
+                    </span>
+                </div>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-1 mb-0">
+                {tabs.map(t => (
+                    <button
+                        key={t.id}
+                        onClick={() => setTab(t.id)}
+                        className={`px-4 md:px-6 py-3 rounded-t-xl flex items-center gap-2 transition-all ${
+                            tab === t.id
+                                ? "bg-[var(--glass-strong)] text-teal-300 border-t border-x border-teal-500/40 z-10"
+                                : "bg-slate-800/40 text-gray-400 hover:text-white border-b border-white/10"
+                        }`}
+                    >
+                        <Icon name={t.icon} className="text-lg" />
+                        <span className="font-bold tracking-wider text-[10px] md:text-xs uppercase hidden md:inline">
+                            {t.label}
+                        </span>
+                    </button>
+                ))}
+            </div>
+
+            <div className="glass-panel rounded-b-2xl rounded-tr-2xl p-6 md:p-12 min-h-[600px] relative overflow-hidden shadow-[0_0_50px_rgba(94,234,212,0.1)]">
+                {tab === "galactic" && (
+                    <div className="grid lg:grid-cols-2 gap-12 animate-float">
+                        <div className="space-y-6">
+                            <div className="data-label text-gold">
+                                The Problem: Dark Matter
+                            </div>
+                            <h3 className="text-3xl text-white font-bold mb-2 title-font">
+                                The Ghost in the Machine
+                            </h3>
+                            <div className="whimsical-intro">
+                                "Standard physics tells us that 85% of the universe is made of invisible ghosts called 'Dark Matter' just to make the math work. We refuse to believe the universe is that clumsy."
+                            </div>
+                            <div className="story-text">
+                                In QAG, we remove the ghosts. We propose that Space-Time itself is a medium that reacts to mass. It is Affinity, not magic glue.
+                            </div>
+                        </div>
+                        <div className="space-y-4">
+                            <div className="glass-blackboard math-scroll">
+                                <div className="text-xs text-teal-400 mb-2 font-bold uppercase tracking-widest">
+                                    The Proof (QAG vs. SPARC)
+                                </div>
+                                <p className="academic-text mb-2">
+                                    The Critical Acceleration ((a_0)) is derived from constants:
+                                </p>
+                                <div className="py-2 text-white mono-font text-lg min-w-max">
+                                    {"$$ a_0 \\equiv \\frac{cH_0}{2\\pi} $$"}
+                                </div>
+                                <p className="academic-text mt-4 mb-2">
+                                    Interpolation Function (No Dark Matter):
+                                </p>
+                                <div className="py-2 text-white mono-font text-lg min-w-max">
+                                    {"$$ \\mu(x) = \\frac{x}{\\sqrt{1+x^2}} $$"}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {tab === "cosmic" && (
+                    <div className="grid lg:grid-cols-2 gap-12">
+                        <div className="space-y-6">
+                            <div className="data-label text-teal-400">
+                                The Problem: Randomness
+                            </div>
+                            <h3 className="text-3xl text-white font-bold mb-2 title-font">
+                                The Universe is Thinking
+                            </h3>
+                            <div className="whimsical-intro">
+                                "Look at the Cosmic Web. It does not look like an explosion of cold gas. It looks like a neural network."
+                            </div>
+                            <div className="story-text">
+                                Standard cosmology treats the universe as a dead machine. QAG treats it as a learning system, following Hebbian-like rules.
+                            </div>
+                        </div>
+                        <div className="space-y-4">
+                            <div className="glass-blackboard math-scroll">
+                                <div className="text-xs text-teal-400 mb-2 font-bold uppercase tracking-widest">
+                                    The Connectome Equation
+                                </div>
+                                <p className="academic-text mb-2">
+                                    Growth of Cosmic Structure ((E_{ij})):
+                                </p>
+                                <div className="py-2 text-white mono-font text-lg min-w-max">
+                                    {"$$ \\frac{dE_{ij}}{dt} = \\mathcal{K}_{ASB} (\\Psi_i \\Psi_j) - \\beta E_{ij} $$"}
+                                </div>
+                            </div>
+                            <div className="flex items-center justify-center opacity-80 mt-4">
+                                <div className="w-32 h-32 border border-teal-500/30 rounded-full flex items-center justify-center animate-pulse">
+                                    <Icon
+                                        name="Globe"
+                                        className="text-4xl text-teal-400"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {tab === "particle" && (
+                    <div className="grid lg:grid-cols-2 gap-12">
+                        <div className="space-y-6">
+                            <div className="data-label text-purple">
+                                The Problem: The Landscape
+                            </div>
+                            <h3 className="text-3xl text-white font-bold mb-2 title-font">
+                                The Guitar String
+                            </h3>
+                            <div className="whimsical-intro">
+                                "String Theory predicts many universes without telling us which is ours."
+                            </div>
+                            <div className="story-text">
+                                QAG tunes the guitar, deriving a preferred vacuum and a carrier of affinity: the Affiniton.
+                            </div>
+                        </div>
+                        <div className="space-y-4">
+                            <div className="glass-blackboard math-scroll">
+                                <div className="text-xs text-teal-400 mb-2 font-bold uppercase tracking-widest">
+                                    The Affiniton Derivation
+                                </div>
+                                <p className="academic-text mb-2">
+                                    Representative relations for the carrier mass and slope:
+                                </p>
+                                <div className="py-2 text-white mono-font min-w-max">
+                                    {"$$ m_{Aff} = \\sqrt{2}\\mu $$"}
+                                </div>
+                                <div className="py-2 text-white mono-font min-w-max">
+                                    {"$$ \\alpha'_{QAG} = \\frac{\\mathcal{C}}{2\\pi\\mu^2} $$"}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {tab === "life" && (
+                    <div className="grid lg:grid-cols-2 gap-12">
+                        <div className="space-y-6">
+                            <div className="data-label text-red-400">
+                                The Problem: The Hard Problem
+                            </div>
+                            <h3 className="text-3xl text-white font-bold mb-2 title-font">
+                                The Psychon
+                            </h3>
+                            <div className="whimsical-intro">
+                                "Standard science says you are meat that learned to dream. QAG says dreaming is a phase of matter."
+                            </div>
+                            <div className="story-text">
+                                When the brain reaches Gamma Synchrony, information density might couple to space-time.
+                            </div>
+                        </div>
+                        <div className="space-y-4">
+                            <div className="glass-blackboard math-scroll">
+                                <div className="text-xs text-teal-400 mb-2 font-bold uppercase tracking-widest">
+                                    Biophysics of the Soul
+                                </div>
+                                <p className="academic-text mb-2">
+                                    Resonant Frequency:
+                                </p>
+                                <div className="py-2 text-red-300 mono-font text-xl">
+                                    40.5 Hz
+                                </div>
+                                <p className="academic-text mt-4 mb-2">
+                                    Conceptual Psychon mass relation:
+                                </p>
+                                <div className="py-2 text-white mono-font min-w-max">
+                                    {"$$ M_{\\Psi} \\approx \\mathcal{C} \\cdot M_{Brain} $$"}
+                                </div>
+                            </div>
+                            <div className="h-16 flex items-end justify-between gap-1 opacity-70">
+                                {Array.from({ length: 20 }).map((_, i) => (
+                                    <div
+                                        key={i}
+                                        className="bg-red-400/60 w-full rounded-t"
+                                        style={{
+                                            height: `${30 + Math.random() * 70}%`,
+                                            animation: `pulse-glow ${
+                                                0.5 + Math.random()
+                                            }s infinite`
+                                        }}
+                                    />
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {tab === "pixel" && (
+                    <div className="grid lg:grid-cols-2 gap-12">
+                        <div className="space-y-6">
+                            <div className="data-label text-blue-400">
+                                The Problem: Singularities
+                            </div>
+                            <h3 className="text-3xl text-white font-bold mb-2 title-font">
+                                The Soft Grid
+                            </h3>
+                            <div className="whimsical-intro">
+                                "Math breaks at singularities because it assumes infinite smoothness."
+                            </div>
+                            <div className="story-text">
+                                QAG suggests a finite resolution for space-time, a Soft Quantum Grid with a characteristic voxel and time step.
+                            </div>
+                        </div>
+                        <div className="space-y-4">
+                            <div className="glass-blackboard math-scroll">
+                                <div className="text-xs text-teal-400 mb-2 font-bold uppercase tracking-widest">
+                                    Resolution Parameters
+                                </div>
+                                <p className="academic-text mb-2">
+                                    Spatial voxel ((\\Delta l)):
+                                </p>
+                                <div className="py-2 text-blue-300 mono-font text-xl min-w-max">
+                                    {"$$ \\Delta l_{QAG} \\sim 10^{-17} \\text{ m} $$"}
+                                </div>
+                                <p className="academic-text mt-4 mb-2">
+                                    Frame time ((\\Delta \\tau)):
+                                </p>
+                                <div className="py-2 text-white mono-font min-w-max">
+                                    {"$$ \\Delta \\tau = \\hbar / (\\mu c^2) $$"}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {tab === "oracle" && <Oracle />}
+            </div>
+        </section>
+    );
+};
+
+// --- StorySection ---
+const StorySection = ({ title, highlight, children, align = "left", icon = "✨" }) => (
+    <div className="max-w-4xl mx-auto py-16 px-6 relative z-10">
+        <div
+            className={`glass-card p-6 md:p-12 rounded-3xl border-t border-teal-500/20 shadow-2xl ${
+                align === "right" ? "md:text-right" : "md:text-left"
+            }`}
+        >
+            <div className={`text-4xl mb-4 ${align === "right" ? "ml-auto" : ""}`}>
+                {icon}
+            </div>
+            <h2 className="text-3xl md:text-5xl title-font text-white mb-6 leading-tight break-words">
+                {title}
+                <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-purple-400 font-bold">
+                    {highlight}
+                </span>
+            </h2>
+            <div className="story-text opacity-95 space-y-6">{children}</div>
+            <div className="mt-8 flex gap-2 opacity-60">
+                <div
+                    className={`h-1 w-24 bg-teal-400 rounded-full ${
+                        align === "right" ? "ml-auto" : ""
+                    }`}
+                ></div>
+                <div className="h-1 w-6 bg-purple-400 rounded-full"></div>
+            </div>
+        </div>
+    </div>
+);
+
+// --- Library ---
+const Library = () => {
+    const papers = [
+        {
+            title: "The QAG Final Disclosure",
+            ver: "v2.0",
+            date: "Dec 2025",
+            desc: "Complete Phase I & II Synthesis."
+        },
+        {
+            title: "The Resonant Fabric",
+            ver: "v1.4",
+            date: "Dec 2025",
+            desc: "Deriving the QAG String Slope."
+        }
+    ];
+    return (
+        <section
+            className="py-12 px-6 bg-slate-800/30 border-y border-white/5"
+            id="library"
+        >
+            <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl title-font text-white mb-8 text-center">
+                    Research <span className="text-purple-400">Artifacts</span>
+                </h2>
+                <div className="grid md:grid-cols-2 gap-4">
+                    {papers.map((p, i) => (
+                        <div
+                            key={i}
+                            className="glass-card p-6 rounded-xl cursor-pointer hover:bg-white/5"
+                        >
+                            <h3 className="text-lg font-bold text-white mb-1">
+                                {p.title}
+                            </h3>
+                            <p className="text-sm text-gray-400">{p.desc}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+// --- Footer ---
+const Footer = () => (
+    <footer
+        className="bg-slate-900 pt-20 pb-10 px-6 border-t border-white/10"
+        id="contact"
+    >
+        <div className="max-w-4xl mx-auto text-center">
+            <div className="glass-panel p-10 rounded-3xl border border-gold/20 max-w-3xl mx-auto mb-16">
+                <img
+                    src="15238659-29ee-4faf-9a1c-f2902fd20910-1_all_2603.jpg"
+                    alt="Rodney A. Ripley Jr."
+                    className="w-24 h-24 rounded-full mx-auto mb-6 border-4 border-teal-500/30 shadow-xl shadow-teal-500/20 object-cover"
+                />
+
+                <h3 className="text-2xl font-bold text-white mb-2 title-font">
+                    Rodney A. Ripley Jr.
+                </h3>
+                <p className="text-teal-400 tracking-[0.2em] text-xs uppercase mb-8 font-bold">
+                    The Cosmic Dreamer
+                </p>
+                <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm">
+                    <a
+                        href={LINKS.messenger}
+                        className="text-blue-400 font-bold hover:underline"
+                    >
+                        Messenger
+                    </a>
+                    <a
+                        href={LINKS.reddit}
+                        className="text-orange-400 font-bold hover:underline"
+                    >
+                        Reddit
+                    </a>
+                    <a
+                        href="mailto:droiden.rr@gmail.com"
+                        className="text-gray-400 font-bold hover:underline"
+                    >
+                        Email
+                    </a>
+                </div>
+            </div>
+            <p className="text-[10px] text-gray-500">
+                &copy; 2025 QAG. Crafted with Aetheria 4.1
+            </p>
+        </div>
+    </footer>
+);
+
+// --- MAIN APP ---
+const App = () => {
+    return (
+        <div className="relative min-h-screen">
+            <StarField />
+
+            <nav className="fixed top-0 w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-white/10 px-6 py-4 flex justify-between items-center shadow-lg">
+                <div className="flex items-center gap-3">
+                    <img
+                        src="1379.jpg"
+                        alt="QAG Logo"
+                        className="w-10 h-10 rounded-full border-2 border-teal-500/50 shadow-lg shadow-teal-500/20 object-cover"
+                    />
+                    <span className="text-md font-bold tracking-wide title-font text-white">
+                        Ripley<span className="text-teal-400">.oneapp</span>.dev
+                    </span>
+                </div>
+            </nav>
+
+            <main>
+                <section className="pt-40 pb-20 px-6 text-center max-w-5xl mx-auto animate-float">
+                    <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 title-font leading-tight">
+                        The Universe is{" "}
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-purple-400">
+                            Alive
+                        </span>
+                        .
+                    </h1>
+                    <p className="whimsical-intro mb-8 max-w-3xl mx-auto">
+                        "Welcome to the QAG Research Hub. Where physics meets the soul, and gravity is a cosmic embrace."
+                    </p>
+                    <div className="glass-card p-8 rounded-3xl text-left story-text opacity-95 mx-auto shadow-2xl border-teal-500/30">
+                        <p className="mb-4">
+                            For centuries, science has studied a lonely, empty void. QAG proposes that reality is woven together by Affinity.
+                        </p>
+                        <p>
+                            This is presented here as testable physics and a living blueprint of a unified, conscious cosmos.
+                        </p>
+                    </div>
+                    <p className="text-gray-400 text-sm tracking-[0.3em] uppercase mt-12 font-bold opacity-80">
+                        ↓ Enter The Grand Breath ↓
+                    </p>
+                </section>
+
+                <Holodeck />
+
+                <div className="mt-20">
+                    <StorySection
+                        title="Gravity is not a cage."
+                        highlight="It is a Conversation."
+                        icon="🌬️"
+                    >
+                        <p>
+                            Standard models imagine Dark Matter as invisible glue. QAG reframes gravity as Affinity.
+                        </p>
+                        <p>
+                            Instead of a cold void, the cosmos becomes a sea of connection.
+                        </p>
+                    </StorySection>
+
+                    <StorySection
+                        title="Thoughts have"
+                        highlight="Weight."
+                        align="right"
+                        icon="🧠"
+                    >
+                        <p>
+                            In this framework, a Psychon is a packet of organized consciousness with effective mass.
+                        </p>
+                        <p>
+                            Flow and synchrony become ways that mind couples more deeply to the fabric of space-time.
+                        </p>
+                    </StorySection>
+
+                    <Library />
+
+                    <StorySection
+                        title="The Resolution of"
+                        highlight="Reality."
+                        icon="🔳"
+                    >
+                        <p>
+                            Zoom into a screen and you reach pixels. Zoom into space-time and QAG suggests a finite voxel.
+                        </p>
+                        <p>
+                            A Soft Quantum Grid would make the universe computable and tame singularities.
+                        </p>
+                    </StorySection>
+                </div>
+            </main>
+
+            <Footer />
+        </div>
+    );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
+</script>
+</body>
+</html>

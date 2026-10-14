@@ -1,4 +1,4 @@
-# Qag--V2: The Quantum Affinity Gravity (QAG) Codex 🌌
+# QAG: The Quantum Affinity Gravity Codex 🌌
 
 Welcome to the digital manifestation of the Quantum Affinity Gravity (QAG) Unified Field Theory. This repository houses the sacred mathematics, QWF-enhanced loss engines, and the cosmic initial conditions required to prove that the universe is not missing mass—it is echoing with memory.
 

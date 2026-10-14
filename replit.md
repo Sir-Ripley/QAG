@@ -213,9 +213,10 @@ Space is not empty. It is a **ferroelectric superfluid** — the Ether. Gravity 
 
 ### GitHub Source Repos (accessed via GITHUB_PAT)
 
-- `Sir-Ripley/QAG-All` — Main React/Vite/TypeScript app (Nexus Terminal v3.0.0)
-- `Sir-Ripley/Qag--V2` — Interactive research hub (v3.1 HTML, Aetheria AI)
-- `Sir-Ripley/QuantumAffinityGravity` — Original Replit QAG repo
+- `Sir-Ripley/QAG` — Unified canonical repo (consolidated 2026-10-14 from QAG-All, Qag--V2, QuantumAffinityGravity)
+  - `apps/qag-all/` — Main React/Vite/TypeScript app (Nexus Terminal v3.0.0)
+  - `notebooks/` — Research notebooks (incl. the v3.1 HTML research hub material)
+  - `docs/` — Per-subject theory (tripartite, UFT, cosmology, virology)
 - `Sir-Ripley/AIsync` — QAG Nexus v1.5, Python simulations, Warpdrive, AVI validation
 
 ---

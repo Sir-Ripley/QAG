@@ -1,45 +1,37 @@
-# QAG — Quantum Affinity Gravity (web presence)
+# Quantum Affinity Gravity (QAG)
 
-The internet presence for **Quantum Affinity Gravity (QAG)**, the unified field
-theory by Dr. Rodney A. Ripley Jr. Default branch: `master`.
+The canonical monorepo for the **Quantum Affinity Gravity** theoretical framework —
+an alternative gravity paradigm deriving galactic rotation curves, cosmic expansion,
+and gravitational-wave echoes from an affinity-coupled vacuum, without dark matter.
 
-## Stack
+> Consolidated October 2026 from `QAG`, `QAG-All`, and `QuantumAffinityGravity`
+> into this single repository. No content was discarded; everything lives below.
 
-- pnpm workspaces monorepo, TypeScript 5.9, Node 24
-- Frontend: React 19 + Vite 7, Tailwind CSS v4 (`artifacts/qag-nexus`)
-- API: Express 5 (`artifacts/api-server`) — includes the Aetheria AI chat endpoint
-  (`POST /api/chat`)
-- Database: PostgreSQL + Drizzle ORM; Zod validation; Orval API codegen from the
-  OpenAPI spec
-- Build: esbuild
+## Repository map
 
-## Layout
+| Path | Contents |
+|---|---|
+| `lib/`, `scripts/` | Core web application (Replit portal) |
+| `apps/qag-all/` | Standalone Vite + React dashboard app (views, physics utils, Gemini service) |
+| `notebooks/` | Research notebooks — rotation curves, wave models, SPARC analyses |
+| `tools/` | Python utilities — galactic theater, harmony plots, universe ignition |
+| `docs/` | Theory codex (`QuantumAffinityGravity.md`) and reference pages |
+| `artifacts/` | Build artifacts and sandboxes |
+| `legal-docs/` | Outreach templates and partner reports |
+| `attached_assets/` | Figures, papers, and supporting media |
 
-- `artifacts/qag-nexus/` — the main React+Vite site (sections: Hero,
-  Physics/Resonator, Base-12 Topology, Cosmology, Wave Functions, QAI Drop
-  Experiment, Validation, Resonant Codex, Biology, Consciousness, Energy, Math,
-  Capabilities, Partnerships, Aetheria chat)
-- `artifacts/api-server/` — the Express API server
-- `artifacts/mockup-sandbox/` — design mockups
-- `lib/` — shared packages (`api-spec`, `api-client-react`, `api-zod`, `db`,
-  OpenAI integrations)
-- `scripts/` — workspace scripts
-- `legal-docs/` — legal documents; `LICENSE.md` (MIT)
+## The framework in brief
 
-## Run
+- **Velocity law:** `v(r) = √(Υ★·v²disk + v²gas + v²∞·(1 − e^(−r/r_aff)))` — flat rotation curves from baryons alone
+- **Echoes:** `Ψ_QAG(t) = Ψ_GR(t) + Σ ℛⁿ·Ψ_GR(t − nΔt_echo)` — falsifiable gravitational-wave echo trains
+- **Locked constants:** `a₀ = 1.2047×10⁻¹⁰ m/s²`, `K_ASB = 0.013829`
 
-You must use **pnpm** — the preinstall script rejects npm/yarn:
+## Learn more
 
-```bash
-pnpm install
-pnpm run typecheck   # workspace-wide typecheck
-pnpm run build       # typecheck + recursive builds
-```
+- Interactive portal: **https://qag-nexus-qag-works.vercel.app**
+- Start with `docs/QuantumAffinityGravity.md`, then run any notebook in `notebooks/`.
 
-Individual packages under `artifacts/` and `lib/` carry their own
-`dev`/`build` scripts.
+---
 
-## Status
-
-Monorepo builds via pnpm; site content is the QAG theory presentation plus the
-Aetheria chat API.
+*This repository is the canonical record of the QAG research program:
+derivations you can check, code you can run, predictions that can fail.*

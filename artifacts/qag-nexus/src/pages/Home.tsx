@@ -46,7 +46,7 @@ export default function Home() {
             {/* Brand */}
             <div>
               <div className="font-display text-lg text-foreground tracking-widest mb-2">
-                RIPLEY & RIPLEY <span className="text-primary">RESEARCH</span>
+                R&R <span className="text-primary">DROIDS</span>
               </div>
               <div className="font-mono text-[10px] text-primary/60 uppercase tracking-widest mb-4">
                 Quantum Affinity Gravity — QAG-V2 Framework

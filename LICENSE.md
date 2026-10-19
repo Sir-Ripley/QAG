@@ -1,6 +1,6 @@
 # Quantum Affinity Gravity (QAG) — Intellectual Property License
 
-**© 2026 Rodney A. Ripley Jr. / Ripley & Ripley Research. All Rights Reserved.**
+**© 2026 Rodney A. Ripley Jr. / R&R Droids. All Rights Reserved.**
 
 ## Terms of Use
 
@@ -22,7 +22,7 @@
 - View and read the QAG Nexus website for personal, non-commercial research purposes
 - Link to this site with proper attribution
 - Cite specific QAG publications with full author and date attribution
-- Contact Ripley & Ripley Research for licensing inquiries regarding commercial or derivative uses
+- Contact R&R Droids for licensing inquiries regarding commercial or derivative uses
 
 ### 3. Academic & Research Attribution
 
@@ -30,7 +30,7 @@ If you reference QAG work in academic papers, theses, or public research:
 
 ```
 Ripley Jr., Rodney A. Quantum Affinity Gravity: A Unified Field Theory. 
-Ripley & Ripley Research, 2026. [URL to source material]
+R&R Droids, 2026. [URL to source material]
 ```
 
 **Failure to attribute is both unethical and legally actionable.**
@@ -46,13 +46,13 @@ Unauthorized use of QAG intellectual property may result in:
 
 ### 5. No Warranty
 
-QAG research is provided "as-is" for informational purposes. Ripley & Ripley Research makes no warranties regarding accuracy, completeness, or fitness for any particular purpose. Use at your own risk.
+QAG research is provided "as-is" for informational purposes. R&R Droids makes no warranties regarding accuracy, completeness, or fitness for any particular purpose. Use at your own risk.
 
 ### 6. Contact
 
 For licensing inquiries, partnerships, or permissions:
 
-**Ripley & Ripley Research**  
+**R&R Droids**  
 The Living Universe™  
 © 2026 — All Rights Reserved
 

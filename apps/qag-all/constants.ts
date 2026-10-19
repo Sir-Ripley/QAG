@@ -24,7 +24,7 @@ export const RETROCAUSAL_ECHO_TIME = 341e-9; // 341 ns
 export const ULTIMATE_AFFINITY_TARGET = 1.0; 
 
 export const RIPLEY_KNOWLEDGE_BASE = `
-OFFICIAL ARCHIVES: RIPLEY & RIPLEY RESEARCH
+OFFICIAL ARCHIVES: R&R DROIDS
 -------------------------------------------
 CORE AXIOM: The Living Universe. Space is a ferroelectric superfluid (the Ether). Gravity is a hydrodynamic pressure gradient driven by "Affinity" (coherence). The observer (consciousness) collapses the wavefunction via the "Psychon".
 

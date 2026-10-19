@@ -47,7 +47,7 @@ const App: React.FC = () => {
       <header className="border-b border-slate-700 pb-6 mb-2">
         <h1 className="text-3xl md:text-4xl font-bold text-slate-100 tracking-tight flex flex-col md:flex-row md:items-center justify-between">
           <span>
-            <span className="text-qag-accent">RIPLEY & RIPLEY</span> RESEARCH
+            <span className="text-qag-accent">R&R</span> DROIDS
           </span>
           <span className="text-xs font-mono text-slate-500 mt-2 md:mt-0 px-2 py-1 bg-slate-800 rounded border border-slate-700">
             NEXUS TERMINAL v3.1.0

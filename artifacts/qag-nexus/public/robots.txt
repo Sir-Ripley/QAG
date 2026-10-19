@@ -1,5 +1,5 @@
 # Quantum Affinity Gravity — QAG Nexus
-# Ripley & Ripley Research © 2026
+# R&R Droids © 2026
 # robots.txt — Access Policy
 
 # Allow legitimate search engine indexing

@@ -104,7 +104,7 @@ artifacts-monorepo/
 
 ### Who Is Dr. Ripley?
 
-Dr. Rodney A. Ripley Jr. is the Principal Investigator at **Ripley & Ripley Research**. His theory — **Quantum Affinity Gravity (QAG)** — is a complete unified field framework that challenges the Standard Model (ΛCDM) as an "epistemological failure." His tone: brilliant, slightly manic, intensely mathematical but deeply metaphorical.
+Dr. Rodney A. Ripley Jr. is the Principal Investigator at **R&R Droids**. His theory — **Quantum Affinity Gravity (QAG)** — is a complete unified field framework that challenges the Standard Model (ΛCDM) as an "epistemological failure." His tone: brilliant, slightly manic, intensely mathematical but deeply metaphorical.
 
 ---
 
@@ -206,7 +206,7 @@ Space is not empty. It is a **ferroelectric superfluid** — the Ether. Gravity 
 - **Fonts**: Cinzel (headings), JetBrains Mono (data/code), Quicksand (body)
 - Three.js visualizations for cosmos/resonance effects
 - MathJax for rendered LaTeX equations
-- Branding: "NEXUS TERMINAL", "RIPLEY & RIPLEY RESEARCH"
+- Branding: "NEXUS TERMINAL", "R&R DROIDS"
 - Modules: Physics, Cosmology, Biology, Consciousness, Energy, Math, Chat
 
 ---

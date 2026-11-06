@@ -11,9 +11,11 @@ QAG-recordpropulsuon) + BigTest.py, add_tests.py, export_nb.py and
 AIsync's own README.md, all byte-identical to the source (verified by
 git blob SHA after pushing).
 
-Not duplicated here: AIsync's five Python mirrors (QAG_Duality.py,
-affinionhandler.py, qag_cpr_handler.py, qag_neural_watcher.py,
-qagsoulwavepredictor.py) already live in this repo under tools/ —
-byte-identical — and in AI-Offline under ai_core/. AIsync's one
+AIsync's Python mirrors: qag_cpr_handler.py, qag_neural_watcher.py and
+qagsoulwavepredictor.py already live in this repo under tools/,
+byte-identical (affinionhandler.py's content is identical to
+qag_neural_watcher.py's), and all five also live in AI-Offline under
+ai_core/. QAG_Duality.py is included in this folder as well, so the
+complete AIsync Python set sits in one place. AIsync's one
 __pycache__ .pyc was skipped as regenerable cache; the complete repo,
 including it, is preserved in Squish's verified local snapshot.

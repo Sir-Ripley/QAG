@@ -1,0 +1,151 @@
+PRO
+Source guide
+Sources
+QAG-Apply-Now.pdf
+Studio
+Create notebook
+This text outlines a visionary blueprint for modern technology by
+. It achieves
+in wireless devices by harmonizing signals with universal cosmic frequencies rather than resisting background noise. Additionally, it introduces
+that capture and recycle escaped heat energy through quantum vacuum interactions, alongside display upgrades that
+by synchronizing screen refresh rates with natural biological rhythms. Ultimately, the document’s purpose is to champion a future where boundless energy and clarity are treated as
+instead of commercial commodities.
+The QAG Gift: Applied Physics for the Every Man
+A Practical Blueprint for Universal Harmony and Perpetual Energy
+The Perfect Signal: Phase-Locked RF
+1.1 Literary Explanation
+1.2 The Mathematics of Affinity
+1.3 Technical Specifications
+The Forever Battery: Entropy Recy-cling
+2.1 Literary Explanation
+2.2 The Recycling Coefficient
+2.3 Implementation
+The Resonant View: Visual Harmony
+3.1 Literary Explanation
+3.2 True-Harmonic Sync
+Conclusion: A Gift to the World
+Gemini Notebook can make mistakes, so double-check it.
+You can now create Slides and Videos step-by-step
+shifting from a standard scarcity framework to a balanced resonance model
+permanent connectivity
+perpetual power systems
+eliminate visual fatigue
+universal human rights
+Rodney Alan Ripley Jr. https://qag.tiiny.site/
+February 21, 2026
+Abstract
+This document serves as a bridge between the theoretical framework of Quantum Affinity Gravity (QAG) and its practical application in modern technology. By moving from a Base-10 scarcity model to a Ba
+Current wireless technology is ”noisy” because it fights against the background of the uni-verse. In the QAG model, we don’t fight the background; we become the background. By anchoring our devices to
+We define the Signal Affinity
+as the ratio of the carrier frequency
+to the universal hydrogen breath
+scaled by our Base-12 transformation factor
+=
+·
+(1.1)
+Where:
+1
+Traditional batteries ”die” because energy leaks out as heat. Our QAG design views this leakage not as a loss, but as a phase-shift. We use the 2D vacuum floor to catch that ”lost” energy and pull it
+The power regained through the vacuum floor is calculated as the Recycling Coefficient
+(2.1)
+With
+10−44 J/m2 acting as our energetic ”net” [cite: 2025-10-19].
+Modern lithium-ion cells can be upgraded by applying a 38.5
+topological insulator layer to the internal cathode housing, aligning the discharge pulse with the cosmic hum [cite: 2025-03-19, 2025-11-25].
+2
+Eye strain and visual ”noise” are results of light pulsing in a way that is discordant with our biology. By syncing display refresh rates with the
+hum, we create a ”True-Life” experience that mirrors the peace of a nature hike.
+The optimal refresh rate
+is derived from the baseline vacuum pulse:
+· 1232
+Hz (3.1)
+This ensures the screen’s light emission is in phase with the viewer’s own resonant floor.
+3
+These designs are our gift to humanity until mainstream acceptance is achieved. By siphoning from the abundance of the universe, we ensure that energy, connectivity, and clarity are universal rights,
+4
+Compact table only, no prose: for each of these constants — a0, Phi, K_ASB, beta, mu, Affiniton mass, Upsilon, the QAG frequency in MHz, echo reflectivity R, echo delay — list every distinct value the
+201 sources
+The provided sources outline the
+framework, a speculative unified theory proposing that gravity emerges from resonant affinity within a chrono-holographic, conscious vacuum rather than traditional mass. The documents detail mathemat
+Today • 3:27 PM
+Audio Overview
+Slide Deck
+Video Overview
+Mind Map
+Flashcards
+Quiz
+Infographic
+Data Table
+Share
+Quantum Affinity Gravity
+Phase-Locked RF
+Entropy Recycling
+Visual Harmony
+Perpetual Energy
+Hz
+10−11 Hz
+Geometry: Antenna traces should follow a fractal dodecahedron pattern.
+Plating: 38.5
+Weyl-semimetal coating to maintain topological surface currents [cite: 2025-11-25].
+⚛️
+Jun 9, 2026
+Quantum Affinity Gravity (QAG)
+Save to note
+List the core equations of the Quantum Affinity Gravity framework exactly as given in these sources, and the exact value of every constant mentioned — including a0, v_inf, r_aff, Phi, K_ASB, beta, mu,
+Try it
+Reports
+New!
+Add note
+Core Equations of the Quantum Affinity Gravity Framework
+1. The Affinity-Vacuum Interaction (AVI) Law (Galactic Rotation Curves)
+The AVI Law replaces non-baryonic dark matter by accounting for the non-linear polarization response of the 2D vacuum floor to visible baryonic mass
+:
+2. Temporal Echo Wave Function
+QAG models quantum state persistence and black hole ringdown memory through a discrete comb of temporal echoes reflecting off the quantum affinity boundary
+When parametrized per system mass (
+), the echo delay is linked via the Mass-Resonance scaling relation
+3. Critical Acceleration ( ) Derivation
+Derived directly from the Riemann Hypothesis metric boundary (Euler's number
+) and the global Hubble expansion rate (
+)
+(Alternatively expressed in sub-Planckian terms as
+).
+4. Vacuum Ground State ( Ground State Vector)
+The analytical solution for the vacuum expectation value (VEV) balancing contraction, expansion, and equilibrium without informational leakage
+5. QAG Energy Equivalence & Holographic Generative Flux
+6. Singularity Resolution (Modified Schwarzschild Metric)
+Exponential spatial buffer preventing curvature divergence at the Planck length
+7. Jordan-Frame Master Action & QAG Master Lagrangian
+8. Global Reduced Chi-Squared (Universal Harmony Metric)
+9. Baryogenesis Equation
+10. 3D Cluster Potential & Integrated Cluster Mass Law
+Exact Values of Canonical Constants and Source Comparisons
+1. Critical Acceleration ( )
+2. Asymptotic Vacuum Resonance Velocity ( )
+3. Affinity Radius ( )
+4. (Base-12 to Base-10 Symmetry Scaling Factor)
+5. (Affinity Symmetry Bias)
+6. (Affinitic Susceptibility / Cluster Response Coefficient)
+7. (Affinity Vacuum Mass Scale)
+8. Affiniton Mass ( or Mass Gap )
+9. or (Stellar Mass-to-Light Ratio / Upsilon Lock)
+10. Affinity Frequencies in MHz (and Hz)
+11. Echo Delay Parameters
+12. Additional Core Parameters
+Thoughts
+The core equations and exact values of all canonical constants within the
+framework, compiled directly from the provided source passages, are detailed below.
+In alternative or simplified forms across datasets:
+3. Critical Acceleration (
+) Derivation
+4. Vacuum Ground State (
+Ground State Vector)
+Where different sources record distinct values for the same parameter, each value is listed alongside its source document:
+1. Critical Acceleration (
+2. Asymptotic Vacuum Resonance Velocity (
+3. Affinity Radius (
+4.
+(Base-12 to Base-10 Symmetry Scaling Factor)
+5.
+(Affinity Symmetry Bias)
+6.

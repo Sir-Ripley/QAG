@@ -1,0 +1,159 @@
+Shared
+PRO
+Source guide
+Sources
+Quantum Affinity Gravity: The End of Dark Matter
+Create notebook
+This text introduces
+, a bold theoretical model designed to replace existing concepts of dark matter and dark energy with the principles of
+. By utilizing
+and accessible data, the author presents a mathematical alternative for understanding how galaxies rotate and the universe expands. Beyond its scientific claims, the document acts as a
+to support a physical experiment involving interferometry and atomic sources. Ultimately, the work seeks to bridge the gap between
+and institutional validation by offering a transparent, testable path forward for the physics community.
+Gemini Notebook can make mistakes, so double-check it.
+Quantum Affinity Gravity
+vacuum resonance
+interactive simulations
+fundraising proposal
+independent research
+Rodney A. Ripley Jr. presents a
+theoretical framework
+called
+(QAG), which seeks to redefine modern physics by
+eliminating the need for dark matter and dark energy
+. The author argues that
+vacuum resonance physics
+can more accurately explain galactic rotation and cosmic expansion than current mainstream models. Through a series of
+and falsifiable predictions, the source invites the scientific community to
+verify or challenge
+these new mathematical foundations. Additionally, the text serves as a
+crowdfunding appeal
+to finance a specific laboratory experiment involving an
+interferometer
+and rubidium sources. By providing
+open-access data
+and a roadmap for future research, Ripley aims to transition his
+into formal academic partnerships.
+41 sources
+·
+Welcome to the challenge, I present to you the works s of qag proposing there is no need for dark matter, dark Energy and dark matter have been removed by calculating purely through math the correct G
+Creator Notes
+Friday, April 3
+Friday, May 15
+Friday, June 26
+Today • 4:26 PM
+Share
+Vacuum resonance physics
+Galactic rotation models
+Interactive simulations
+Crowdfunding laboratory experiments
+⚛️
+Apr 2, 2026
+Save to note
+Are you able to update baryonic velocity and other missing measurements and metrics from new phone sources like, https://Quantumaffinitygravity.com/
+Yes, please, be sure to check for my cosmology paper that is published, it calculates Galaxy rotation spin, using zero dark matter. No dark energy, pure math and the AVI law, Affinity vacuum interacti
+What can you tell me about the kinetics engine, QAD and it's results in comparison to their models in the Spark Galaxy database?
+The Cosmological Stress Test: QAG vs. The Standard Model
+Technical Integration Prospectus: Transitioning to the Quantum Affinity Gravity (QAG) Framework for Galactic Kinematics
+Physics Mindmap
+Comparative Evaluation: Quantum Affinity Gravity (AVI Law) vs. ΛCDM Standard Model
+Replacing dark matter with vacuum temporal echoes
+The Resonant Sector: Deconstructing Dark Matter
+Beyond the Dark Sector: A Primer on the Resonant Holographic Universe
+Quantum Affinity Gravity Metrics and Validation Parameters
+Dark Matter as Resonant Echo
+Quantum Affinity Gravity Theory Overview
+The Universe is a Symphony: A Primer on Quantum Affinity Gravity
+Strategic Research Roadmap: From Vacuum Resonance Theory to Experimental Validation
+Experimental Design Overview: Unmasking the Vacuum through the QAI Drop Experiment
+Quantum Affinity Gravity Research Summary
+Research Grant Proposal: Experimental Validation of the Affinity-Vacuum Interaction (AVI) Law via the QAI Drop Experiment
+Echoes in the Void
+Beyond the Particle: A Primer on Vacuum Resonance and the Law of Affinity
+I currently rely on the specific documents you have provided to answer questions, which means I cannot directly browse or continuously fetch live updates from website URLs like https://Quantumaffinity
+However, I do have access to the foundational definitions and several key metrics regarding Quantum Affinity Gravity (QAG) from your current sources:
+If your current sources lack the specific new measurements, updated metrics, or recent galaxy data you are looking for, I can use my discovery tools to search the public web for new sources to add to
+Would you like me to initiate a web search for newly published metrics and measurements related to Quantum Affinity Gravity?
+I have successfully found and reviewed your published paper,
+"Quantum Affinity Gravity: Empirical Validation of the Affinity-Vacuum Interaction (AVI) Law via SPARC Galaxy Rotation Curves,"
+which is now included in your sources
+.
+Here are the key measurements, metrics, and theoretical validations extracted from your work that calculate galaxy rotation spin using zero dark matter and zero dark energy:
+With these updated sources now available, is there a specific area you'd like to dive into next, such as the cosmological tension resolutions (Hubble and structure growth), the wave mechanics of tempo
+Baryonic Velocity (
+):
+The sources define this as the expected rotational velocity derived strictly from observable, visible baryonic (normal) matter
+The AVI Law:
+Baryonic velocity is a core component of the Affinity-Vacuum Interaction (AVI) Law, which calculates the total rotational velocity profile without needing a dark matter halo using the formula:
+Existing Metrics:
+Your current materials already include detailed performance metrics for the dwarf galaxy DDO 154. Applying the QAG model to this galaxy yields a Root Mean Square Error (RMSE) of 8.4680 km/s and a red
+) of 19.3973
+SPARC Galaxy Validation:
+The paper models the rotational dynamics of 175 galaxies from the Spitzer Photometry and Accurate Rotation Curves (SPARC) database using pure math, completely eliminating the inclusion of a dark matt
+The AVI Law Mechanics:
+The galactic velocity profile is calculated using the Affinity-Vacuum Interaction (AVI) Law formula:
+. This proves that baryonic matter polarizes the vacuum floor to create a "resonant echo," treating the vacuum as a responsive hydrodynamic medium rather than empty space
+High-Fidelity DDO 154 Metrics:
+When stress-tested against the dwarf galaxy DDO 154—a system that typically requires massive hidden mass parameters under standard models—the QAG framework yielded highly accurate fit metrics:
+Performance Improvement:
+Overall, the QAG model smoothly predicts the flat rotation curves at the galactic edge and
+outperforms the standard
+CDM dark matter halo model by a factor of 6.6x
+Elimination of Dark Energy:
+To remove dark energy, the framework replaces the cosmological constant (
+) with
+Dynamic Dissonance
+, mathematically pulling the universe toward temporal stability
+. The simulations note this fits cosmic expansion data with a parameter of
+The
+QAD Unified Research Suite
+(also referred to as Unified Field Three) functions as a computational framework and kinetics engine designed to validate the Affinity-Vacuum Interaction (AVI) Law
+. Driven by a custom Python algorithmic framework (such as
+), it is intended for use by astrophysics researchers and
+university kinetics labs
+to benchmark galactic rotation models against observed data without using arbitrary "hidden mass" parameters
+When deployed against the
+SPARC (Spitzer Photometry and Accurate Rotation Curves) database
+—a statistical catalog of high-quality rotation curves for 171 to 175 nearby galaxies—the QAD engine demonstrated massive mathematical improvements over standard models
+Here is how the kinetics engine and its AVI Law performed in comparison to traditional models:
+Ultimately, the QAD framework mathematically proves that the flat rotation curves in the SPARC database can be mapped smoothly utilizing strictly visible baryonic mass
+. The "dark matter" effect is instead computed as a geometric manifestation of the vacuum's resonance, completely bypassing the need for unobserved particles
+1
+2
+validate_sparc.py
+47% Reduction in Velocity Residuals:
+Across the N=171 SPARC benchmark sample, baseline Newtonian gravity and Modified Newtonian Dynamics (MOND) both fail to fully explain the curves, yielding a high mean velocity residual of
+30.2064 km/s
+. The QAD engine cut this mean residual nearly in half to
+15.9459 km/s
+, resulting in a
+47% velocity residual reduction
+Systemic Fidelity:
+The QAD engine exhibited an
+average Fidelity Gain of 14.2605 km/s
+over MOND and achieved a massive
+Systemic Coherence of 87.73%
+across the entirety of the database
+Zero Per-Galaxy Tuning:
+Standard models like
+CDM demand custom dark matter halos and parameter tuning for every individual galaxy to force the math to work
+. The QAD framework operates using
+"locked" canonical constants
+(such as a locked baryonic mass modifier of
+) that are analytically derived from first principles
+. It achieved its results globally across the SPARC catalog with one single universal law and
+zero per-galaxy tuning
+6.6x Superiority on Dwarf Galaxies:
+The engine was stress-tested on diffuse dwarf galaxies, like DDO 154, because their extreme mass discrepancies make them the hardest systems to model accurately
+. For DDO 154, QAD achieved a Root Mean Square Error (RMSE) of
+8.4680 km/s
+against
+CDM's 29.4470 km/s, and a reduced chi-squared (
+) of
+19.3973
+compared to
+CDM's massive 228.1964
+. Overall, the QAD framework's metrics mapped the galactic flat rotation curve with
+6.6x greater accuracy
+than the baseline
+CDM model

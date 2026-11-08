@@ -1,0 +1,248 @@
+PRO
+Source guide
+Reply ready.
+Sources
+A520 Pipeline Report 2026-11-02.md
+Create notebook
+This document details the successful execution of Rodney's 2026-11-02 pipeline instructions to integrate
+into Chapter 2 of the QAG volume without compromising data integrity. The report outlines the implementation of
+, noting that network restrictions prevented VizieR queries while MAST archive verification correctly returned zero processed High-Level Science Products. Furthermore, it describes the
+that meticulously distinguish between actual measurements, synthetic illustrations, and theoretical model predictions. Ultimately, the update expands the volume to
+, providing a transparently documented and thoroughly verified expansion of the galactic chapter.
+A520 Email-Pipeline Run — Report (2026-11-02)
+Result
+1. Snippets restored and run
+2. Snippet 1 (archive search) — what actually happened
+3. Snippet 2 (Kaiser–Squires) — run
+4. avi_kappa — FOUND (his own function, used verbatim)
+5. Measured-side recomputation (chart data)
+6. Charts and their data bases
+7. Text inserted (Chapter 2, after Figure 2.4)
+8. Verification (pdftotext on the rebuilt PDF)
+9. File inventory
+Gemini Notebook can make mistakes, so double-check it.
+gas-side and mass-side analyses
+archival searches, Kaiser–Squires inversions, and AVI profile calculations
+generation of four new figures and corresponding text additions
+forty-two error-free pages
+Rodney's instruction (2026-11-02): run both the gas-side and mass-side
+steps of his 2026-11-02 11:54 EST self-email (archive fetch + Kaiser–
+Squires inversion + the
+Train Wreck model), include the
+results in the QAG volume's Chapter 2 after running them, honest data
+presented and compared, documented and explained, with high-impact
+charts — while keeping the data honest. Backup of the pre-run build:
+. Local work only; nothing
+uploaded or published.
+Byte-faithful transcripts are unchanged in
+. Runnable versions
+(Gmail-flattened indentation restored mechanically; snippet 2's only
+other change is
+→
+for the headless
+environment, noted in its header):
+Both pass
+in
+.
+The script's first query (VizieR) could not be executed from this VM:
+the egress proxy refuses the connection. Attempts, all with the
+author's unmodified runnable file (logs preserved in
+):
+The script aborts at step 1, so its step 2 never runs inside it. The
+MAST half was therefore executed standalone with the author's exact
+query (same coordinates, same 10′ radius, same HST+HLSP filter;
+), verbatim output:
+Zero HLSP records
+— there is no processed convergence product in
+MAST for this field, exactly the nil result expected. The VizieR side
+stands on this morning's ingest verification (ANALYSIS.md /
+SOURCES.md: VizieR holds no data tables for Mahdavi+2007, Jee+2012,
+Clowe+2012, or Jee+2014), which the volume text cites as the archive
+state. The book's wording attributes the numbers to the archive
+queries, which is what both executions (MAST today; VizieR this
+morning) establish; the network mechanics live here, not in the book.
+Ran as-is (indentation fix + savefig): completed, output
+(his dark-background 3-panel figure:
+γ₁+noise / raw κ / smoothed κ). The inversion function is his,
+imported unchanged for the volume figure.
+For the volume (Figure 2.7), the synthetic field was regenerated with
+a
+fixed seed (520)
+— the author's driver is unseeded — using his
+exact component set and noise level, inverted with his
+, and restyled to the volume's dark theme
+with the banner “SYNTHETIC FIELD — METHOD ILLUSTRATION — NOT A
+MEASUREMENT OF ABELL 520” inside the figure itself. Output range:
+raw κ ∈ [−0.664, 0.692], smoothed max 0.537 (arbitrary units).
+Caption and body text carry the mandated label verbatim: “Kaiser–
+Squires reconstruction of a synthetic three-component shear field
+(method illustration). The central peak appears because a dark-core
+component is an input. This is not a measurement of Abell 520.”
+The staging analysis searched only this machine. Widening the search
+found it immediately:
+Verbatim extract saved as
+and
+run exactly as written (
+,
+(Full 150-point table:
+.) Findings,
+stated in the volume: the gas term dominates at every radius (the
+galaxy term, pinned at r = 0.1 by the
+construction
+until r = 400 kpc, reaches 32% of the gas term only at 800 kpc); the
+absolute normalization is the notebook's heuristic scaling — raw
+output ~2.9×10¹¹ is
+not
+a physical Σ/Σ_crit — so the comparison
+with data is in shape and component composition only.
+Also recorded: the master notebook's own
+is an
+analytic placeholder (
+)
+and its
+likewise (
+) —
+not HST or Chandra data
+; neither is used as data anywhere in this run. The volume text
+says so in one clause.
+The offset-vs-smoothing series was recomputed from the ingest's
+stacked display map (point-source-masked, σ = 6″ base) with the
+ingest's own peak method (>12% of map max, nearest to the published
+position):
+Validation: σ = 10″ and σ = 60″ reproduce the ingest values exactly;
+σ = 30″ differs by one pixel (18.9 vs 16.4 kpc) from the ingest's
+coarse-scale pass (different base smoothing) — the volume quotes the
+recomputed 14–19 kpc range for σ = 30–60″. New honest detail the
+series exposes: at lensing smoothing the gas peak collapses onto the
+Mahdavi
+position but stays 56–75 kpc from the
+Jee
+position —
+the published coincidence is position-dependent within the 59 kpc
+inter-study scatter. The volume text and Figure 2.5 caption say
+exactly this.
+All charts: volume dark theme (#0b1026), kpc axes, generator
+, PDFs in
+A single addition under the paragraph head “Abell 520: the archive
+search, the inversion machinery, and the AVI profile,” comprising:
+(1) the re-run archive search (MAST 918/281/0 HLSP; VizieR nil) and
+the resolution result, with Figures 2.5–2.6; (2) the Kaiser–Squires
+method illustration with the mandated label in body and caption
+(Figure 2.7); (3) the
+framework computation — labeled in
+the text “computed under the QAG framework from assumed component
+parameters — a prediction, not data” — with the formula, constants,
+component parameters, gas-term dominance (32% at 800 kpc), the
+heuristic-normalization caveat, and the topological framing sentence
+(“the affinity field's topological response tracks the dominant
+baryonic field configuration… the echo is anchored where the baryons
+are”), with Figure 2.8; (4) the closing plain statement that the
+κ_qag-vs-κ_obs comparison
+cannot be run
+because no observed map
+exists publicly (the notebook's comparison curve is an analytic
+placeholder, not HST data), and the two routes that would unblock it
+(author release; full HST reprocessing). The full LaTeX is in
+(the block beginning
+); no other part of the
+volume was touched, and nothing in the correctness pass was disturbed.
+Compact table only, no prose: for each of these constants — a0, Phi, K_ASB, beta, mu, Affiniton mass, Upsilon, the QAG frequency in MHz, echo reflectivity R, echo delay — list every distinct value the
+201 sources
+·
+The provided documents outline the
+framework, which reinterprets physics, cosmology, and biology by modeling spacetime as a retrocausal, chrono-holographic superfluid pulled by a future state of ultimate harmony. At the cosmological s
+to account for galactic rotation curves and cluster dynamics without relying on dark matter. At the submicroscopic level, the framework calculates
+and athermal disruptive frequencies to target pathogen structures like viral capsids. Furthermore, the texts describe advanced hardware and software architectures—such as
+—designed to align digital systems with cosmic resonance, manage dynamic error through chi-squared statistical monitoring, and safely harness zero-point vacuum energy.
+Today • 3:27 PM
+Share
+Email pipeline run
+Kaiser Squires inversion
+Archive data search
+AVI profile model
+Resolution offset analysis
+avi_kappa
+build-backup-2026-11-02-pre-a520-pipeline/
+Volume:
+42 pages
+(was 38), 1,978,426 bytes. pdflatex → bibtex →
+pdflatex ×2 all exit 0;
+0 errors, 0 BibTeX warnings, 0 undefined references/citations
+; 7 overfull hboxes (unchanged from the
+correctness-pass build).
+New in Chapter 2 (§2.4, immediately after Figure 2.4): one coherent
+addition, “Abell 520: the archive search, the inversion machinery,
+and the AVI profile,” with four new figures —
+2.5
+(resolution-dependence, measured),
+2.6
+(Bullet-vs-A520 offsets),
+2.7
+(Kaiser–Squires synthetic method illustration),
+2.8
+(
+model vs measured gas profile) — and one new
+bibliography entry (Kaiser & Squires 1993, ApJ 404, 441–450), now
+37 entries.
+~/workspace/a520-ingest/email_pipeline_2026-11-02/
+plt.show()
+plt.savefig()
+python -m py_compile
+~/workspace/a520-ingest/.venv
+email_pipeline_2026-11-02/runs/
+Default endpoint
+— twice:
+attempt 1,
+).
+astroquery's documented Harvard mirror
+(selected via astroquery's own
+configuration, not
+by editing the script): proxy returned
+NAOJ mirror
+: same ProxyError/RemoteDisconnected.
+mast_replication_log.txt
+Querying MAST for HST Abell 520 High-Level Science Products...
+Total observations within 10 arcmin: 918
+Found 0 HLSP records in MAST for this region.
+HST observations (all projects): 281
+HST projects
+runs/snippet2_raw_output.png
+kaiser_squires_inversion
+(blob
+SHA
+), cell 3 — the master
+notebook; contains the constants,
+, and the
+exact Train Wreck calls of the email, including
+(blob SHA
+), cell 2 — a clean copy,
+identical in substance (QAGv2's JSON cell source carries extra
+indentation mangling, a Colab artifact). Google Drive holds further
+copies (
+email_pipeline_2026-11-02/avi_kappa_verbatim_from_notebooks.py
+G_QAG = 4.361492×10⁻⁶
+Σ_crit,QAG = 8.679965×10⁸ M☉/kpc²
+𝒦_ASB = 0.013829
+runs/avi_kappa_trainwreck.csv
+max(r−400, 0.1)
+kappa_obs_train
+0.5·exp(−(r−200)²/100²) + 0.25·exp(−r²/400²)
+gas_obs
+exp(−r²/250²)
+runs/make_pipeline_charts.py
+build/figures/
+fig_a520_resolution.pdf (Figure 2.5)
+— (a) MEASURED: stacked
+Chandra σ = 6″ map + published M07/J12 peak positions overlaid as
+positions; offset-vs-σ panel from §5's recomputation, with the
+14 kpc centroid line and the Bullet's 140 kpc offset for scale.
+fig_offset_comparison.pdf (Figure 2.6)
+— MEASURED comparison:
+Bullet 140 kpc (map-to-map, Figure 2.3 record) vs A520
+position-level offsets (94 / 71 / 17 / 14 kpc), each bar labeled
+with what it compares.
+fig_ks_synthetic.pdf (Figure 2.7)
+— SYNTHETIC method
+illustration (§3), labeled in-figure and in caption.
+fig_avi_profile.pdf (Figure 2.8)
+— MODEL vs DATA: his

@@ -1,0 +1,252 @@
+PRO
+Source guide
+Sources
+Affy AI & QAG Systems - Master Production Blueprint.pdf
+Studio
+Create notebook
+The document outlines a
+designed to bridge mobile devices and high-performance workstations for advanced artificial intelligence and signal processing tasks. It details a robust system combining a
+and a
+, utilizing specialized tools like an
+to optimize signal efficiency. To maintain stability across these distributed components, the platform integrates
+alongside a
+featuring automatic fallback capabilities. Furthermore, the framework employs a
+for flexible data analysis and uses
+to seamlessly package and distribute massive AI models that exceed standard mobile storage limits.
+1. Executive Summary & System Topology
+2. S-Band RF Impedance L-Match & Virology Engine
+2.1 Mathematical Matching Derivation
+2.2 Python RF Simulator (`qag_rf_matcher.py`)
+3. Native JNI Exception Shielding & Bounds Protection
+3.1 C++ JNI Implementation (`litert_jni_shield.cpp`)
+3.2 Kotlin Bridge (`LiteRtBridge.kt`)
+4. Resilient Loopback Bridge (`HiveMindBridge.kt`)
+5. Decoupled Statistical Modeling Engine
+(`adaptive_agent_core.py`)
+6. Play Asset Delivery (PAD) & Large Model Packaging
+6.1 `settings.gradle.kts` & `model_pack/build.gradle.kts`
+6.2 Kotlin Model Resolver (`ModelStorageManager.kt`)
+Gemini Notebook can make mistakes, so double-check it.
+You can now create Slides and Videos step-by-step
+heterogeneous hive-mind architecture
+Google Pixel 9a mobile vessel
+Windows 11 compute core
+S-band RF impedance matching engine
+native JNI exception shielding
+resilient loopback bridge
+decoupled statistical modeling engine
+Play Asset Delivery
+Affy AI & QAG Systems: Master Production
+Blueprint & Engineering Specification
+Author: Rodney Alan Ripley Jr. | Date: September 2026 | Version: 2.5.0 Production-Ready
+Target Architecture: Heterogeneous Hive-Mind Mesh (Google Pixel 9a / Tensor G4 NPU &
+Windows 11 Workstation / DirectX 12 DirectML)
+This master specification compiles the complete, production-grade technical architecture
+across the Affy AI on-device mobile vessel, the Windows 11 high-throughput compute core, the
+Quantum Affinity Gravity (QAG) RF virology and impedance matching pipeline, and the
+decoupled statistical inference framework.
+Layer Google Pixel 9a (Mobile
+Vessel)
+Windows 11 Workstation
+(Compute Core)
+Compute Hardware Google Tensor G4 NPU
+(google-edgetpu)
+DirectX 12 GPU +
+AVX2/AVX-512 Host CPU
+Local Runtime LiteRT-LM INT8 (NNAPI
+hardware lock)
+Direct3D 12 Compute
+Shader + DirectML
+Active Models Gemma 3 (270M Drafter) +
+Gemma 4 (E2B 2.59 GB
+Arbiter)
+DirectML Graph Execution +
+ToroidalEngine.exe
+Bridge Interface ADB Reverse Loopback (tcp:8000 <=> tcp:8000) with
+Exponential Backoff & Full Jitter
+Core Philosophy Decoupled data-driven adaptation: unconstrained regression
+(Scipy), dynamic JSON ToolRegistry, and SQLite-vec RAG.
+To eliminate custom piezoelectric lithography for early testing, the system uses off-the-shelf
+Software Defined Radios (SDRs) paired with an analytical L-section impedance matching
+network.
+10^{10}\text{ rad/s}$
+\frac{15.0}{2.0682 \times 10^{10}} \approx 0.725\text{ nH}$
+1} \approx 1.2247$
+= \frac{1}{\omega_0 X_p} \approx 1.18\text{ pF} \approx \mathbf{1.2\text{ pF}}$
+\frac{X_s}{\omega_0} \approx 1.184\text{ nH}$
+1.0054$, Power Efficiency $= 99.99927\%$)
+Prevents Android process crashes and SIGSEGV signals when dynamically passing tensors to
+the LiteRT runtime on Google Tensor G4.
+Implements a 3-stage exponential backoff schedule ($1.0\text{ s}, 2.0\text{ s}, 4.0\text{ s}$)
+with randomized jitter and automated fallback to local Tensor G4 NPU execution if the Windows
+11 host disconnects.
+Eliminates rigid heuristic rejection thresholds. Evaluates quantum drop interferometry ($\Delta
+\Phi_I = k_{\text{eff}} \Delta a T^2$) using generalized Non-Linear Regression, AIC, and BIC
+model ranking.
+Enforces compliance with the Google Play Store $200\text{ MB}$ base bundle ceiling by
+deploying multi-gigabyte models (Gemma 4 E2B, $2.59\text{ GB}$) via install-time asset packs.
+Compact table only, no prose: for each of these constants — a0, Phi, K_ASB, beta, mu, Affiniton mass, Upsilon, the QAG frequency in MHz, echo reflectivity R, echo delay — list every distinct value the
+201 sources
+·
+The provided sources outline the
+framework, a speculative unified theory proposing that gravity emerges from resonant affinity within a chrono-holographic, conscious vacuum rather than traditional mass. The documents detail mathemat
+Today • 3:27 PM
+Audio Overview
+Slide Deck
+Video Overview
+Mind Map
+Flashcards
+Quiz
+Infographic
+Data Table
+Share
+System Topology
+RF Impedance Matching
+Native JNI Exception
+Resilient Loopback Bridge
+Statistical Modeling Engine
+Target Frequency: $f_0 = 3.2916\text{ GHz} \implies \omega_0 \approx 2.0682 \times
+Source Impedance: $Z_0 = 50.0 + j0.0\ \Omega$ (Coaxial transmission line)
+Unmatched Load Impedance: $Z_L = 20.0 - j15.0\ \Omega$
+Load Reactance Cancellation: $L_{\text{canc}} = \frac{-X_L}{\omega_0} =
+Quality Factor: $Q = \sqrt{\frac{R_{\text{high}}}{R_{\text{low}}} - 1} = \sqrt{\frac{50}{20} -
+Shunt Capacitor ($C_p$): $X_p = \frac{50}{1.2247} \approx 40.825\ \Omega \implies C_p
+Series Inductor ($L_s$): $X_s = Q \cdot 20.0 \approx 24.495\ \Omega \implies L_s =
+Total Series Inductance: $L_{\text{total}} = 0.725 + 1.184 = \mathbf{1.91\text{ nH}}$
+Simulated Return Loss: $S_{11} = \mathbf{-51.39\text{ dB}}$ ($\text{VSWR} \approx
+import numpy as np 
+import skrf as rf 
+import matplotlib.pyplot as plt
+def synthesize_l_match(f0_hz=3.2916e9, z0=50.0, r_load=20.0, x_load=-15.0): 
+    omega0 = 2.0 * np.pi * f0_hz 
+    l_canc = -x_load / omega0 
+    q = np.sqrt((z0 / r_load) - 1.0) 
+    c_p = 1.0 / (ome
+def simulate(): 
+    f0 = 3.2916e9 
+    q, c_p, l_total = synthesize_l_match(f0) 
+    freq = rf.Frequency(start=2.0, stop=5.0, npoints=1001, unit='ghz') 
+    media = rf.DefinedGammaZ0(freq, z0=50.0)
+if __name__ == "__main__": 
+    simulate()
+#include <jni.h> 
+#include <vector> 
+#include <stdexcept> 
+#include <sstream> 
+#include <cstring> 
+#include <android/log.h>
+#define LOG_TAG "LiteRT_JniShield" 
+#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
+extern "C" JNIEXPORT jboolean JNICALL 
+Java_com_ripripley_affy_engine_litert_LiteRtBridge_nativeExecuteTensorSafe( 
+    JNIEnv* env, jobject, jlong engineHandle, jobject inputBuf, 
+    jintArray dims,
+void* inAddr = env->GetDirectBufferAddress(inputBuf); 
+        jlong inCap = env->GetDirectBufferCapacity(inputBuf); 
+        if (inCap < static_cast<jlong>(requiredBytes)) { 
+            std:
+void* outAddr = env->GetDirectBufferAddress(outputBuf); 
+        jlong outCap = env->GetDirectBufferCapacity(outputBuf); 
+        if (outCap < outputCapacity) { 
+            throw std::out_of_
+std::memcpy(outAddr, inAddr, outputCapacity < requiredBytes ? outputCapacity : 
+requiredBytes); 
+        return JNI_TRUE; 
+    } catch (const std::exception& e) { 
+        LOGE("LiteRT JNI Exc
+package com.ripripley.affy.engine.litert
+import java.nio.ByteBuffer 
+import java.nio.ByteOrder
+class LiteRtBridge(private val nativeHandle: Long) { 
+    init { require(nativeHandle != 0L) { "Native handle must not be null." } }
+fun executeSafe(input: ByteBuffer, dims: IntArray, bytesPerElem: Int, output: 
+ByteBuffer, outCap: Int): Boolean { 
+        require(input.isDirect && output.isDirect) { "Buffers must be direct." }
+private external fun nativeExecuteTensorSafe( 
+        handle: Long, inBuf: ByteBuffer, dims: IntArray, bytesPerElem: Int, outBuf: 
+ByteBuffer, outCap: Int 
+    ): Boolean
+companion object { 
+        init { System.loadLibrary("litert_jni_shield") } 
+        fun allocDirect(size: Int): ByteBuffer = 
+ByteBuffer.allocateDirect(size).order(ByteOrder.nativeOrder())
+package com.ripripley.affy.bridge
+import kotlinx.coroutines.Dispatchers 
+import kotlinx.coroutines.delay 
+import kotlinx.coroutines.withContext 
+import org.json.JSONObject 
+import java.io.OutputStreamWriter 
+import java.net.HttpURLCon
+enum class ExecutionTarget { WINDOWS_PC, ON_DEVICE_NPU }
+class HiveMindBridge( 
+    private val loopbackUrl: String = "http://127.0.0.1:8000", 
+    private val npuFallback: suspend (String, JSONObject) -> JSONObject 
+) { 
+    suspend fun executeTool(name: S
+import numpy as np 
+from scipy.optimize import curve_fit
+class AdaptiveDropInterferometryEngine: 
+    def __init__(self, k_eff=1.61e7): 
+        self.k_eff = k_eff
+@staticmethod 
+    def quadratic(t, alpha, phi0): return alpha * (t**2) + phi0 
+    @staticmethod 
+    def power_law(t, a, beta, phi0): return a * np.power(t, beta) + phi0 
+    @staticmethod
+def analyze_dataset(self, t, phi, err=None): 
+        sigma = err if err is not None else np.full_like(phi, 0.005) 
+        models = [ 
+            ("Uniform Acceleration", self.quadratic, [1.0, 0
+// settings.gradle.kts 
+include(":app") 
+include(":model_pack")
+// model_pack/build.gradle.kts 
+plugins { id("com.android.asset-pack") } 
+assetPack { 
+    packName.set("model_pack") 
+    dynamicDelivery { deliveryType.set("install-time") } 
+}
+package com.ripripley.affy.engine
+import android.content.Context 
+import com.google.android.play.core.assetpacks.AssetPackManagerFactory 
+import java.io.File
+object ModelStorageManager { 
+    fun getModelPath(context: Context, filename: String = "gemma-4-E2B-it.litertlm"): 
+String? { 
+        val packLocation = 
+AssetPackManagerFactory.getInstance(context)
+⚛️
+Jun 9, 2026
+Quantum Affinity Gravity (QAG)
+Save to note
+List the core equations of the Quantum Affinity Gravity framework exactly as given in these sources, and the exact value of every constant mentioned — including a0, v_inf, r_aff, Phi, K_ASB, beta, mu,
+Try it
+Reports
+New!
+Add note
+Core Equations of the Quantum Affinity Gravity Framework
+1. The Affinity-Vacuum Interaction (AVI) Law (Galactic Rotation Curves)
+The AVI Law replaces non-baryonic dark matter by accounting for the non-linear polarization response of the 2D vacuum floor to visible baryonic mass
+:
+2. Temporal Echo Wave Function
+QAG models quantum state persistence and black hole ringdown memory through a discrete comb of temporal echoes reflecting off the quantum affinity boundary
+When parametrized per system mass (
+), the echo delay is linked via the Mass-Resonance scaling relation
+3. Critical Acceleration ( ) Derivation
+Derived directly from the Riemann Hypothesis metric boundary (Euler's number
+) and the global Hubble expansion rate (
+)
+(Alternatively expressed in sub-Planckian terms as
+).
+4. Vacuum Ground State ( Ground State Vector)
+The analytical solution for the vacuum expectation value (VEV) balancing contraction, expansion, and equilibrium without informational leakage
+5. QAG Energy Equivalence & Holographic Generative Flux
+6. Singularity Resolution (Modified Schwarzschild Metric)
+Exponential spatial buffer preventing curvature divergence at the Planck length
+7. Jordan-Frame Master Action & QAG Master Lagrangian
+8. Global Reduced Chi-Squared (Universal Harmony Metric)
+9. Baryogenesis Equation
+10. 3D Cluster Potential & Integrated Cluster Mass Law
+Exact Values of Canonical Constants and Source Comparisons
+1. Critical Acceleration ( )
+2. Asymptotic Vacuum Resonance Velocity ( )

@@ -1,0 +1,174 @@
+PRO
+Source guide
+Sources
+August26QAGTesting.pdf
+Studio
+Create notebook
+The provided text presents a comprehensive computational validation of the QAG framework across three distinct physical scales, demonstrating
+. At the galactic level, the system successfully models
+outperforming standard MOND without requiring individual parameter adjustments. On a cosmic scale, the model resolves major
+by accurately simulating the universe's expansion trajectory. Finally, the quantum vacuum analysis confirms strict
+to prevent entropy leakage while predicting distinct gravitational anomalies for future cold-atom experiments.
+Suite 1: SPARC Galactic Kinematics & 2D Sensitivity Sweep
+1. Comparative Multi-Galaxy Kinematics Benchmark
+2. 2D Sensitivity Grid Sweep
+Suite 3: Cosmic Expansion ODE & Dynamical Dark Energy Trajectory
+1. High-Precision ODE Integration
+Suite 6: SU(3)_{\text{QAG}} Vacuum Symmetry & Psychon Field Dynamics
+1. Vacuum State Vector & Determinant Invariance
+2. Perturbation Dissipation & Equivalence Principle Predictions
+Summary of Results
+Gemini Notebook can make mistakes, so double-check it.
+You can now create Slides and Videos step-by-step
+flawless numerical integration with zero divergence
+twelve SPARC galaxies
+Hubble and structure growth tensions
+unit determinant invariance
+We have executed live numerical simulations across all three target focus areas (Suite 1, Suite 3, and Suite 6). All integrations, batch fits, and field equations completed with zero numerical
+divergence. Below is the comprehensive physical analysis and numerical summary for each area.
+We tested the Affinity-Vacuum Interaction (AVI) Law: v_{\text{QAG}}(r) = \sqrt{v_{\text{baryon}}^2 + \max(0, v_{\text{obs}}^2 - v_{\text{baryon}}^2) \cdot \Phi_{\text{affinity}}^\alpha} with canonical
+Type / Class
+Points DOF QAG Red. \chi^2
+MOND Red. \chi^2
+Baryonic Red. \chi^2
+QAG RMSE (km/s)
+M33 Late Spiral 10 8 0.0672 9.7350 100.9057 0.8765 NGC 2403 Intermediat
+e Spiral
+10 8 0.0797 3.9462 117.1393 0.9129
+NGC 3198 High
+Surface Brightness
+11 9 0.0798 19.1580 119.6261 1.1149
+NGC 6503 Compact
+Spiral
+12 10 0.0690 19.2580 97.3685 0.7916
+NGC 3741 Gas-Rich
+Dwarf
+10 8 0.0632 12.4484 118.9703 0.4931
+UGC 4483 Blue
+Compact Dwarf
+7 5 0.0392 16.3770 63.9661 0.2596
+DDO 154 Diffuse Gas
+12 10 0.0711 18.9748 133.1415 0.4917
+DDO 168 Irregular
+8 6 0.0385 25.9080 58.1988 0.4156
+UGC 2259 Low
+10 8 0.0383 23.6463 55.2876 0.5673
+NGC 1560 Low
+8 6 0.0410 49.1642 57.3229 0.4786
+NGC 2903 Massive
+High-Veloci ty Spiral
+12 10 0.0798 0.1669 123.7542 1.4908
+UGC 128 Extended
+LSB Giant
+11 9 0.0747 63.6747 116.6948 1.0680
+GLOBAL SUMMARY
+Full 12-Galaxy
+121 97 \mathbf{0. 064425}
+21.237284 101.24654 4
+\mathbf{0. 7476}
+Galaxy Name
+Sample
+We integrated the modified Friedmann expansion system: \ddot{a} = a \cdot \left(A_{\text{base}} \cdot e^{-t/T_{\text{decay}}}\right) - \left(\frac{\Omega_m}{2}\right) \cdot \frac{1}{a^2} using SciPy R
+absolute error of only 0.000626).
+before settling.
+the rapid early impulse followed by smooth asymptotic vacuum relaxation.
+1. Galactic Scale (Suite 1): Verified across 12 SPARC galaxies with \chi^2_{\text{global}} =
+0.0644 without dark matter halos.
+2. Cosmological Scale (Suite 3): Solved the Friedmann ODE boundary condition
+(a=1.9994 \approx 2.00) and modeled the resolutions to H_0 and S_8 cosmological tensions.
+3. Quantum Vacuum Scale (Suite 6): Confirmed unit determinant stability (\det = 1.0000)
+for the SU(3) ground state and derived the BEC gravitational anomaly signature (\Delta g = 5.88 \times 10^{-6}\text{ m/s}^2).
+Compact table only, no prose: for each of these constants — a0, Phi, K_ASB, beta, mu, Affiniton mass, Upsilon, the QAG frequency in MHz, echo reflectivity R, echo delay — list every distinct value the
+201 sources
+·
+The provided sources outline the
+framework, a speculative unified theory proposing that gravity emerges from resonant affinity within a chrono-holographic, conscious vacuum rather than traditional mass. The documents detail mathemat
+Today • 3:27 PM
+Audio Overview
+Slide Deck
+Video Overview
+Mind Map
+Flashcards
+Quiz
+Infographic
+Data Table
+Share
+Galactic kinematics benchmark
+Cosmic expansion ODE
+Vacuum symmetry dynamics
+Cosmological tension mitigation
+Equivalence principle predictions
+Key Takeaways:
+The QAG AVI Law maintains a global reduced chi-square \chi^2_{\text{global}} = 0.0644 and an average root-mean-square velocity residual of 0.748\text{ km/s} across the entire mass spectrum (33\text{ k
+Standard MOND (a_0 = 1.2047 \times 10^{-10}\text{ m/s}^2) exhibits significant divergence on extended LSB disks and diffuse dwarf systems (e.g. NGC 1560: \chi^2_{\text{red}} = 49.16, UGC 128: \chi^2_{
+Evaluated a 31 \times 31 grid over \Phi_{\text{affinity}} \in [1.05, 1.35] and \alpha \in [0.10, 0.25].
+The loss surface demonstrates a broad, flat stability basin with no sharp local minima or cliff discontinuities, indicating robust tolerance to observational kinematic uncertainties (v_{\text{err}}).
+Integration Status: Success = True (completed across the full t \in [0, 10\text{ s}]
+interval).
+Scale Factor Trajectory:
+a(0) = 1.0000 \to a(10\text{ s}) = 1.9994 (matches the target a(T)=2.0000 with an
+Reaches a smooth peak expansion a_{\text{max}} = 2.0593 at t = 8.20\text{ s}
+Deceleration Parameter Shift: q(0) = -17.1900 \to q(\text{final}) = +17.2197, capturing
+Cosmological Tension Mitigation:
+Hubble Parameter (H_0): Yields late-universe H_0 = 76.55\text{ km/s/Mpc},
+shifting the standard 4.85\sigma tension to -2.99\sigma.
+Structure Growth (S_8): Incorporating the Affinity Symmetry Bias (K_{\text{ASB}}
+= 0.013829) yields S_{8,\text{QAG}} = 0.7837, aligning with the Dark Energy Survey Year 6 (DES Y6) weak lensing measurement (0.789 \pm 0.015).
+Ground State Vector (\Psi_{\text{min}}): \Psi_{\text{min}} = \begin{pmatrix} e^{-2/3} \\
+e^{1/3} \\ -1 \end{pmatrix} = \begin{pmatrix} 0.513417 \\ 1.395612 \\ -1.000000 \end{pmatrix}, \quad \Vert{}\Psi_{\text{min}}\Vert{} = 1.792019
+Axis 1 (Eros / Informational Negentropy \iota): e^{-2/3} = 0.513417
+Axis 2 (Flux / Entangulon Connectivity \epsilon): e^{1/3} = 1.395612
+Axis 3 (Equilibrium / Chronon Rhythm \tau): -1.000000
+Unit Determinant Invariance: \det(SU(3)_{\text{QAG}}) = e^{-2/3} \cdot (e^{1/3})^2 =
+1.000000 This strictly preserves zero entropy leakage at ground state equilibrium (QAFAugReport).
+Rotational Perturbation Sweep: Applied rotational phase perturbation \delta \Psi(\theta)
+= \mathbf{R}_z(\theta) \Psi_{\text{min}} over \theta \in [0, 2\pi]. The dissonance function remains bounded (\text{Max Dissonance} = 8.9530) with a clean null point at \theta = 0 (0.0000\times 10^0).
+Psychon Resonance: At 40.5\text{ Hz} (Gamma synchrony), the theoretical mass
+fluctuation evaluates to \Delta m = 840\ \mu\text{g}.
+Weak Equivalence Principle (WEP) Anomaly in BECs: \Delta g_{\text{QAG}} = 5.88
+\times 10^{-6}\text{ m/s}^2 driven by the Universal Coherence Index C = 6.00 \times 10^{-7}, providing a distinct >8\sigma experimental signature for cold-atom drop tests.
+⚛️
+Jun 9, 2026
+Quantum Affinity Gravity (QAG)
+Save to note
+List the core equations of the Quantum Affinity Gravity framework exactly as given in these sources, and the exact value of every constant mentioned — including a0, v_inf, r_aff, Phi, K_ASB, beta, mu,
+Try it
+Reports
+New!
+Add note
+Core Equations of the Quantum Affinity Gravity Framework
+1. The Affinity-Vacuum Interaction (AVI) Law (Galactic Rotation Curves)
+The AVI Law replaces non-baryonic dark matter by accounting for the non-linear polarization response of the 2D vacuum floor to visible baryonic mass
+:
+2. Temporal Echo Wave Function
+QAG models quantum state persistence and black hole ringdown memory through a discrete comb of temporal echoes reflecting off the quantum affinity boundary
+When parametrized per system mass (
+), the echo delay is linked via the Mass-Resonance scaling relation
+3. Critical Acceleration ( ) Derivation
+Derived directly from the Riemann Hypothesis metric boundary (Euler's number
+) and the global Hubble expansion rate (
+)
+(Alternatively expressed in sub-Planckian terms as
+).
+4. Vacuum Ground State ( Ground State Vector)
+The analytical solution for the vacuum expectation value (VEV) balancing contraction, expansion, and equilibrium without informational leakage
+5. QAG Energy Equivalence & Holographic Generative Flux
+6. Singularity Resolution (Modified Schwarzschild Metric)
+Exponential spatial buffer preventing curvature divergence at the Planck length
+7. Jordan-Frame Master Action & QAG Master Lagrangian
+8. Global Reduced Chi-Squared (Universal Harmony Metric)
+9. Baryogenesis Equation
+10. 3D Cluster Potential & Integrated Cluster Mass Law
+Exact Values of Canonical Constants and Source Comparisons
+1. Critical Acceleration ( )
+2. Asymptotic Vacuum Resonance Velocity ( )
+3. Affinity Radius ( )
+4. (Base-12 to Base-10 Symmetry Scaling Factor)
+5. (Affinity Symmetry Bias)
+6. (Affinitic Susceptibility / Cluster Response Coefficient)
+7. (Affinity Vacuum Mass Scale)
+8. Affiniton Mass ( or Mass Gap )
+9. or (Stellar Mass-to-Light Ratio / Upsilon Lock)
+10. Affinity Frequencies in MHz (and Hz)
+11. Echo Delay Parameters
+12. Additional Core Parameters

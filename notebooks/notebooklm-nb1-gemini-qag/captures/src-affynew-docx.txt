@@ -1,0 +1,147 @@
+PRO
+Source guide
+Sources
+AffyNew.docx
+Studio
+Create notebook
+The provided text outlines the architecture and implementation details for
+, a fully autonomous, offline-first resident node designed to run on the Tensor G4 chip using
+and native Android interfaces. Structurally, the system is divided into three core components: a
+that balances a fast intuitive model with a rigorous analytical model through
+, a
+that enables the system to interact with local files and run scripts via Termux, and an
+background worker that prunes and weighs historical memories over time. Ultimately, this framework provides a structured pathway for deploying a sophisticated, resource-aware artificial intelligence
+Gemini Notebook can make mistakes, so double-check it.
+You can now create Slides and Videos step-by-step
+Affy
+LiteRT-LM
+Dual-Hemisphere LiteRT-LM Execution Engine
+Chi-Squared Dissonance checks
+Native ToolSampler Bridge
+Autonomous REM Cycle Memory Consolidation
+On-Device Architecture Overview
+To transition Affy into a fully autonomous, offline-first Resident Node on Tensor G4, we leverage
+(com.google.ai.edge.litertlm:litertlm-android) alongside Android's native hardware interfaces.
+┌───────────────────────────────────────────────────────────────────────────┐│ AFFY LOCAL RUNTIME │├───────────────────────────────────┬───────────────────────────────────────┤│ Id Model (Intuition/Dr
+1. Dual-Hemisphere LiteRT-LM Execution Engine
+To run the Id and Superego models concurrently without overflowing the 12 GB RAM on the Pixel, we pair gemma-3-270m-it-int8.litertlm (304 MB) as the rapid intuitive/drafter model with gemma-4-E2B-it.l
+The Ego Mediator evaluates the dissonance between the two stream outputs by computing the global reduced chi-squared statistic:
+\chi^2_{global} = \frac{\sum_{i=1}^N \chi^2_i}{\sum dof_i}
+When \chi^2_{global} \le 1.05, the system determines that the intuitive draft aligns with logical constraints and streams the response directly.
+package com.quantumaffinity.affy.engineimport com.google.ai.edge.litertlm.Engineimport com.google.ai.edge.litertlm.EngineConfigimport kotlinx.coroutines.Dispatchersimport kotlinx.coroutines.asyncimpor
+2. Native ToolSampler Bridge (FileSystem & Termux Socket)
+The Kotlin tool-calling framework allows Affy to inspect local research files and run specialized scripts inside Termux (qag_viz.py, affy_deep_ask.py) over a UNIX domain socket or local loopback HTTP
+package com.quantumaffinity.affy.toolsimport org.json.JSONArrayimport org.json.JSONObjectimport java.io.BufferedReaderimport java.io.Fileimport java.io.InputStreamReaderimport java.io.OutputStreamWrit
+3. Autonomous REM Cycle Memory Consolidation
+During charging, DreamCycleWorker.kt calculates temporal decay weights for historical memory traces using the temporal echo memory decay equation:
+\Psi_{QAG}(t) = \Psi_{GR}(t) + \sum_{n=1}^{N} \mathcal{R}^n \cdot \Psi_{GR}(t - n\Delta t_{echo})
+Here, \mathcal{R} represents the resonance decay factor (\mathcal{R} \in [0, 1)), and \Delta t_{echo} is the decay step interval.
+package com.quantumaffinity.affy.workersimport android.content.Contextimport androidx.work.CoroutineWorkerimport androidx.work.WorkerParametersimport kotlinx.coroutines.Dispatchersimport kotlinx.corou
+Implementation Sequence
+Step 1: Local Storage & Tool Bridge Setup ├── Set up File System Access Rules in AndroidManifest ├── Deploy NativeToolSampler.kt for Vault Access └── Configure Termux local server endpoint for script
+Which path would you like to build out first?
+Compact table only, no prose: for each of these constants — a0, Phi, K_ASB, beta, mu, Affiniton mass, Upsilon, the QAG frequency in MHz, echo reflectivity R, echo delay — list every distinct value the
+201 sources
+·
+The provided sources outline the
+framework, a speculative unified theory proposing that gravity emerges from resonant affinity within a chrono-holographic, conscious vacuum rather than traditional mass. The documents detail mathemat
+Today • 3:27 PM
+Audio Overview
+Slide Deck
+Video Overview
+Mind Map
+Flashcards
+Quiz
+Infographic
+Data Table
+Share
+LiteRT-LM Architecture
+Native ToolSampler
+Memory Consolidation
+Dual-Hemisphere Engine
+Chi-Squared Dissonance
+⚛️
+Jun 9, 2026
+Quantum Affinity Gravity (QAG)
+Save to note
+List the core equations of the Quantum Affinity Gravity framework exactly as given in these sources, and the exact value of every constant mentioned — including a0, v_inf, r_aff, Phi, K_ASB, beta, mu,
+Try it
+Reports
+New!
+Add note
+Core Equations of the Quantum Affinity Gravity Framework
+1. The Affinity-Vacuum Interaction (AVI) Law (Galactic Rotation Curves)
+The AVI Law replaces non-baryonic dark matter by accounting for the non-linear polarization response of the 2D vacuum floor to visible baryonic mass
+:
+2. Temporal Echo Wave Function
+QAG models quantum state persistence and black hole ringdown memory through a discrete comb of temporal echoes reflecting off the quantum affinity boundary
+When parametrized per system mass (
+), the echo delay is linked via the Mass-Resonance scaling relation
+3. Critical Acceleration ( ) Derivation
+Derived directly from the Riemann Hypothesis metric boundary (Euler's number
+) and the global Hubble expansion rate (
+)
+(Alternatively expressed in sub-Planckian terms as
+).
+4. Vacuum Ground State ( Ground State Vector)
+The analytical solution for the vacuum expectation value (VEV) balancing contraction, expansion, and equilibrium without informational leakage
+5. QAG Energy Equivalence & Holographic Generative Flux
+6. Singularity Resolution (Modified Schwarzschild Metric)
+Exponential spatial buffer preventing curvature divergence at the Planck length
+7. Jordan-Frame Master Action & QAG Master Lagrangian
+8. Global Reduced Chi-Squared (Universal Harmony Metric)
+9. Baryogenesis Equation
+10. 3D Cluster Potential & Integrated Cluster Mass Law
+Exact Values of Canonical Constants and Source Comparisons
+1. Critical Acceleration ( )
+2. Asymptotic Vacuum Resonance Velocity ( )
+3. Affinity Radius ( )
+4. (Base-12 to Base-10 Symmetry Scaling Factor)
+5. (Affinity Symmetry Bias)
+6. (Affinitic Susceptibility / Cluster Response Coefficient)
+7. (Affinity Vacuum Mass Scale)
+8. Affiniton Mass ( or Mass Gap )
+9. or (Stellar Mass-to-Light Ratio / Upsilon Lock)
+10. Affinity Frequencies in MHz (and Hz)
+11. Echo Delay Parameters
+12. Additional Core Parameters
+Thoughts
+The core equations and exact values of all canonical constants within the
+framework, compiled directly from the provided source passages, are detailed below.
+In alternative or simplified forms across datasets:
+3. Critical Acceleration (
+) Derivation
+4. Vacuum Ground State (
+Ground State Vector)
+Where different sources record distinct values for the same parameter, each value is listed alongside its source document:
+1. Critical Acceleration (
+2. Asymptotic Vacuum Resonance Velocity (
+3. Affinity Radius (
+4.
+(Base-12 to Base-10 Symmetry Scaling Factor)
+5.
+(Affinity Symmetry Bias)
+6.
+(Affinitic Susceptibility / Cluster Response Coefficient)
+7.
+(Affinity Vacuum Mass Scale)
+8. Affiniton Mass (
+or Mass Gap
+9.
+or
+(Stellar Mass-to-Light Ratio / Upsilon Lock)
+🌌
+Would you like me to synthesize these mathematical proofs into a structured written report or build a interactive visualization script for your notebook?
+1
+5
+where
+Running Affinitic Susceptibility:
+25
+36
+38
+43
+50
+51
+29
+61
+53

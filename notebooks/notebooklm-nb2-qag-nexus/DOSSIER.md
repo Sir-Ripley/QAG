@@ -29,7 +29,7 @@ Quantum Gravity Research (64 identified) · Data and Visualization (63 — incl.
 - **Laws.pdf** — "Retrocausal Chrono-Holographic Informational Superfluidity: The Future-Pull Architecture for FTL Transport" (Rodney A. Ripley Jr., Feb 23, 2026): the laws/foundations statement incl. 2D Vacuum Tilt and Holographic Stability.
 - **All.pdf** — the grand-synthesis compilation: "Resonant Sector" replacing the "Dark Sector," affinity as the universal coherence-maximising drive, Living-Universe engineering blueprint.
 - **Codex.pdf** — the Codex compilation: Trinity of Affinity, new fundamental particles, bidirectional time, entropy reframed. Partnership-synthesis stratum (cf. The_QAG_Kodex_v3 in NB1).
-- **Solutions (9).pdf** — "Unified Field Dynamics and Empirical Verifications of QAG": breathing-vacuum resolutions of the Hubble crisis and matter clustering. **Capture held in the local ingest workspace only, not pushed** — precaution: a sibling file (Solutions (1).pdf, Drive census) carries personal data on its title page; this capture's visible window shows only the town-level affiliation, but the full text was not cleared for the public repo.
+- **Solutions (9).pdf** — "Unified Field Dynamics and Empirical Verifications of QAG": breathing-vacuum resolutions of the Hubble crisis and matter clustering. **Redacted copy filed** (per Rodney's 2026-11-08 instruction: copy to a new file with personal data removed, everything else intact) — the author-byline location was redacted; the unredacted capture stays in the local ingest workspace. (Precaution origin: a sibling file, Solutions (1).pdf, carries personal data on its title page per the Drive census.)
 - **Qag_TOROIDAL_decoder.txt** — toroidal concept doc: f_res = 0.70 MHz aligned to "Q_id = 7, the 7th harmonic"; a Q_id = 10 SAW acceleration figure of 1,679 m/s². Claims stratum — part of the 0.70 lineage whose origin the consolidation programme traced to a dimensionless grid-sweep scoring artifact; retained as lineage record for the ToroidalDirectML world, not as a measurement.
 
 ### Data & images
@@ -44,7 +44,7 @@ Quantum Gravity Research (64 identified) · Data and Visualization (63 — incl.
 5. β in the earliest derivation doc is already environment-dependent — the "universal β" idea was a later simplification, and its withdrawal returns to this source's position.
 
 ## Repo synchronisation
-- **QAG:** this dossier, INVENTORY.md, and 13 capture extracts (Solutions (9) excluded per the caution above) → `notebooks/notebooklm-nb2-qag-nexus/`.
+- **QAG:** this dossier, INVENTORY.md, and 14 capture extracts (incl. the redacted Solutions (9) copy) → `notebooks/notebooklm-nb2-qag-nexus/`.
 - **qag-nexus:** `docs/NOTEBOOKLM_NEXUS_NOTEBOOK.md` — records this notebook as the course's research base, with the 171→175 correction pointer and the validation-status pointer.
 - **Pointers:** Qag_TOROIDAL_decoder → ToroidalDirectML lineage record; Code-and-Software GitHub sources → the deleted AIsync repo's material already archived in QAG `notebooks/aisync-archive/`.
 

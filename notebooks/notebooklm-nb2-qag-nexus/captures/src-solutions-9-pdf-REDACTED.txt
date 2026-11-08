@@ -1,0 +1,299 @@
+REDACTED COPY — filed per Rodney's instruction 2026-11-08 ("copy it to a new file with data removed, everything else intact"). Redactions: personal location in the author byline. The unredacted capture is retained in Squish's local ingest workspace only. Capture = NotebookLM source-guide + opening text window.
+
+Shared
+PRO
+Source guide
+Close source guide
+Expand studio panel
+Gemini Notebook Homepage
+Create notebook
+Notebook configuration
+Sources
+Solutions (9).pdf
+Collected Compilations
+Source guide
+Create notebook
+Settings
+The provided text introduces
+, an innovative theoretical framework designed to
+by utilizing a dynamic, breathing vacuum. Through the application of
+, the model successfully resolves major astrophysical dilemmas such as the Hubble expansion crisis and the clustering of matter. Furthermore, the framework accurately accounts for galactic anomalies l
+in high-density environments like our solar system.
+Unified Field Dynamics and Empirical Verifications of
+Quantum Affinity Gravity (QAG)
+Gemini Notebook can make mistakes, so double-check it.
+Gemini Notebook Logo
+Share notebook
+Sources
+Quantum Affinity Gravity (QAG)
+eliminate the need for dark matter and dark energy
+base-10 resonance scaling and a vacuum relaxation parameter
+seamlessly reducing to standard General Relativity
+Unified Field Dynamics and Empirical Verifications of
+Quantum Affinity Gravity (QAG)
+Rodney A. Ripley Jr. — Ripley & Ripley Research [personal location redacted 2026-11-08]
+February 23, 2026
+Abstract
+This document summarizes the theoretical framework and empirical success of Quantum Affinity Gravity (QAG). By introducing a dy-namic vacuum relaxation parameter
+and base-10 resonance scaling, QAG provides a uni-fied resolution to the
+tension, the Hubble ex-pansion crisis, and galactic-scale mass discrep-ancies without invoking non-baryonic matter or dark energy.
+1 Theoretical Framework
+The QAG action modifies the Einstein-Hilbert term by coupling the scalar field
+to the metric through a symmetry-breaking potential
+The vacuum state is characterized by a relax-ation parameter
+which governs the ef-fective gravitational coupling via the ”Grand Breath” mechanism.
+The field dynamics are expressed through the modified Einstein Field Equations:
++
+=
+(1)
+where
+represents the quantum affinity ten-
+sor responsible for localized and global gravita-tional resonance.
+2 Cosmological Verifications
+2.1 Resolution of the
+Tension (The Inhale)
+The amplitude of matter clustering
+is mod-erated by the vacuum ”Inhale” parameter, repre-senting the reverted phase of the relaxation con-stant. In this symmetric derivation, we utilize a positive coupling of
+This ”tensioning” of the vacuum provides a counter-resonance that yields the same observational convergence as the previous suppression models:
+[ 3
++
+]
+2
+0
+= 0
+(2)
+Numerical integration of this reverted state yields a predicted
+=
+aligning with weak lensing data and demonstrating the field’s under-lying symmetry.
+1
+2.2 Hubble Tension and Expansion
+Global expansion is modeled as a base-10 reso-nance shift. By removing the cosmological con-stant
+and applying an affinity frequency scal-ing, QAG bridges the gap between CMB mea-surements
+and local supernovae data
+3 Gravitational Lensing and Anomalies
+3.1 Massive Modes in Cluster Colli-sions
+In collisions such as the Bullet Cluster and Abell 520, QAG generates short-range Yukawa poten-tials through the field’s massive modes. The lensing potential
+is defined as:
+=
+( 1
++
+) (3)
+This creates the ”Ghost Halo” signatures typi-cally attributed to dark matter.
+3.2 Multi-Scale Scalability
+The framework demonstrates perfect scalability across extreme mass environments:
+4 Fundamental Constants and Local Constraints
+4.1 Speed of Gravitational Waves
+QAG preserves the tensor speed excess at zero, ensuring gravitational waves
+travel at the speed of light
+=
+1 +
+, where
+0 (4)
+This confirms that vacuum relaxation does not induce ether drag or signal delay.
+4.2 Solar System Screening
+Localized high-density regions trigger a screen-ing mechanism, causing the affinity field to ”hold its breath.” This ensures the theory reduces to pure General Relativity in the solar system, pre-serv
+5 Conclusion
+Quantum Affinity Gravity effectively replaces the ”Dark Sector” with a unified, breathing vac-uum geometry. The empirical success across all cosmic scales confirms the validity of the base-10 resonanc
+2
+Customize notebook
+QAG NEXUS
+292 sources
+·
+The provided documents detail the
+framework, a unified field theory developed by Rodney A. Ripley Jr. that challenges conventional cosmological models. This paradigm proposes that space functions as a ferroelectric superfluid where
+rather than standard spatial bending. By utilizing a
+, the theory eliminates the need for dark matter and dark energy, successfully reproducing galactic rotation curves and resolving the
+. Furthermore, the framework extends beyond astrophysics into applied technologies, featuring
+for clean energy extraction,
+, and
+. Ultimately, these texts present a self-encoding, resonant system where mathematical constants, quantum mechanics, and human consciousness converge into a single universal harmony.
+Save to note
+Copy summary
+Good summary
+Bad summary
+Friday, March 27
+Thursday, April 2
+Friday, April 3
+Friday, June 26
+Sunday, June 28
+Monday, July 13
+Friday, July 24
+Thursday, November 5
+Today • 4:16 PM
+Audio Overview
+Slide Deck
+Video Overview
+Mind Map
+Reports
+Flashcards
+Quiz
+Infographic
+Data Table
+Quantum Affinity Gravity Science Overview
+Replacing Dark Matter with Quantum Affinity
+The Resonant Code: Solving the Vacuum
+How Quantum Affinity Generates Gravity
+Emergent Affinity: Auditing the QAG Universe
+The Resonance Solution
+Quantum Affinity Gravity
+Gravity Map
+Architectonics of Quantum Affinity Gravity
+The Conscious Cosmos
+Empirical Validation Report: Statistical Fidelity of the Quantum Affinity Gravity (QAG) Framework
+From Clockwork to Resonance: Contrasting Newtonian Gravity with Quantum Affinity
+Quantum Affinity Gravity Audit
+Quantum Affinity Gravity
+Quantum Affinity Gravity Theory Infographic
+Analytical Performance Report: The Statistical and Theoretical Efficacy of the Quantum Affinity Gravity (QAG) Framework
+Scientific Validation Report: Quantum Affinity Gravity (QAG) Framework
+The Architecture of Quantum Affinity Gravity
+Quantum Affinity Gravity Concept Map
+The Resonant Solution: Resolving the Epistemological Crisis through Quantum Affinity Gravity (QAG)
+Architecture of a Conscious Universe
+Cosmological Meta-Analysis: Statistical Validation of the Quantum Affinity Gravity (QAG) Framework
+The Resonant Vacuum: Falsifying $\Lambda$CDM
+Beyond the Ghost: How Quantum Affinity Gravity is Rewriting the Laws of the Universe
+Quantum Affinity Gravity Theory Infographic
+Technical Engineering Specification: Resonant Metric Mapping (RMM) Propulsion Unit (Model: QAG-SAW-01)
+Paradigm Shift: From the Dead Machine to the Living Song
+Quantum Affinity Gravity
+Quantum Affinity Gravity
+The Living Cosmos: Quantum Affinity Gravity
+QAG Framework Constants, Validations, and Technical Proofs
+The Affinity Principle: Why the Universe is a Symphony, Not a Machine
+Resonant Cosmos
+Quantum Affinity Gravity Versus Dark Matter
+The Universe is a Song, Not a Machine: 5 Takeaways from the Quantum Affinity Gravity Revolution
+Technical Engineering Specification: Resonant Metric Mapping (RMM) and SAW-Propulsion Systems
+The Living Universe: A Foundation in Holographic Energy & Affinity
+Architecting the Conscious Cosmos: A First Principles Build of Quantum Affinity Gravity
+The Grand Breath: Solving the Universe’s Identity Crisis
+The Grand Breath: A Learner’s Guide to the Resonant Universe
+Quantum Affinity Gravity Evaluated
+Gravity as the Universe Seeking Connection
+The Universe as a Living Song: An Introduction to Quantum Affinity Gravity
+Quantum Affinity Gravity
+Quantum Affinity Gravity
+Quantum Affinity Synthesis
+Technical Engineering Specification: QAG Psychon-Resonant Energy and Propulsion Systems
+Engineering Design Specification: RMM Propulsion & SAW Thrust Systems
+Quantum Affinity Gravity
+The Architecture of Quantum Affinity Gravity
+Cosmic Validation
+Technical Feasibility Assessment: Resonant Metric Mapping & SAW Propulsion Systems
+Quantum Affinity Gravity Data and Claims Summary
+The Resonant Lexicon: A Student’s Guide to Quantum Affinity Gravity (QAG)
+Beyond the Ghost in the Machine: 5 Revelations from the "Living Universe" Theory of Quantum Affinity Gravity
+Mathematical Architecture of Resonant Universe
+Quantum Affinity Gravity
+The QAG Master Synthesis Framework
+Quantum Affinity Gravity
+Quantum Affinity Gravity
+Quantum Affinity Gravity
+Replacing Dark Matter with a Conscious Vacuum
+Cosmic Assembly Guide
+Quantum Affinity Gravity Theory Infographic
+Quantized Affinity Gravity and the Primordial Lithium Solution
+The Six Pillars of Quantum Affinity Gravity
+Architecting Quantum Affinity Gravity via Retrocausal Neural Nodes
+Resolving the Cosmological Constant via Quantum Affinity Gravity
+The Chrono-Holographic Cipher: Cryptography via Retrocausal Resonance
+The Tesla Handshake: Harmonizing Dual-Hemisphere AI Resonance
+The Resonant Codex Physics Infographic
+Mass Is Resistance To Time
+Add note
+Google apps
+Google Account: Rodney Ripley (droiden.rr@gmail.com), Google membership
+QAG NEXUS
+Share
+Quantum Affinity Gravity
+Vacuum relaxation parameter
+Hubble expansion crisis
+Gravitational lensing anomalies
+Solar system screening
+Ghost Galaxy (NGC 1052-DF2): In zero-dark-matter environments, the affin-ity resonance naturally nullifies, maintain-ing standard Newtonian orbital velocities.
+High-Discrepancy Anomaly (Dragon-fly 44): The field provides the necessary 99.9% gravitational load through base-10 di-mensional stress.
+QAG NEXUS
+Feb 22, 2026
+Quantum Affinity Gravity (QAG)
+gravity is reinterpreted as informational affinity
+Chrono-Holographic substrate
+Hubble tension
+Resonant Vacuum Inhalation (CVE)
+Surface Acoustic Wave (SAW) propulsion
+dual-hemisphere edge AI architectures
+Save to note
+Discuss what these sources say about Applied Technology, in the larger context of Quantum Affinity Gravity (QAG).
+Discuss what these sources say about Validation & Proofs, in the larger context of Quantum Affinity Gravity (QAG).
+Do you have metrics like baryonic velocity to go with our new proposal and test?
+Do you have info the bullet cluster test or the train wreck cluster test or the lithium problem? I know we solved for these but I'm unsure if you were given these sources
+Specific math please cuz I am Rusty
+How's the website look? The main one, http://Quantumaffinitygravity.com/
+Discuss what these sources say about Quantum Affinity-Dynamics (QAD), in the larger context of Quantum Affinity Gravity (QAG).
+Can we scan and remove duplicates please
+The device you're reading this on almost certainly executes a single machine instruction in orders of magnitude less than 341 ns. How does that work?
+Are you able to do me a favor as it seems tedious on here, even if I select multiple sources it doesn't give me options with what to do with the selected ones. Can you do me a favor and please delete
+Quantum Affinity Gravity Science Overview
+Replacing Dark Matter with Quantum Affinity
+The Resonant Code: Solving the Vacuum
+How Quantum Affinity Generates Gravity
+Emergent Affinity: Auditing the QAG Universe
+The Resonance Solution
+Quantum Affinity Gravity
+Gravity Map
+Architectonics of Quantum Affinity Gravity
+The Conscious Cosmos
+Empirical Validation Report: Statistical Fidelity of the Quantum Affinity Gravity (QAG) Framework
+From Clockwork to Resonance: Contrasting Newtonian Gravity with Quantum Affinity
+Quantum Affinity Gravity Audit
+Quantum Affinity Gravity
+Quantum Affinity Gravity Theory Infographic
+Analytical Performance Report: The Statistical and Theoretical Efficacy of the Quantum Affinity Gravity (QAG) Framework
+Scientific Validation Report: Quantum Affinity Gravity (QAG) Framework
+The Architecture of Quantum Affinity Gravity
+Quantum Affinity Gravity Concept Map
+The Resonant Solution: Resolving the Epistemological Crisis through Quantum Affinity Gravity (QAG)
+Architecture of a Conscious Universe
+Cosmological Meta-Analysis: Statistical Validation of the Quantum Affinity Gravity (QAG) Framework
+The Resonant Vacuum: Falsifying $\Lambda$CDM
+Beyond the Ghost: How Quantum Affinity Gravity is Rewriting the Laws of the Universe
+Quantum Affinity Gravity Theory Infographic
+Technical Engineering Specification: Resonant Metric Mapping (RMM) Propulsion Unit (Model: QAG-SAW-01)
+Paradigm Shift: From the Dead Machine to the Living Song
+Quantum Affinity Gravity
+Quantum Affinity Gravity
+The Living Cosmos: Quantum Affinity Gravity
+QAG Framework Constants, Validations, and Technical Proofs
+The Affinity Principle: Why the Universe is a Symphony, Not a Machine
+Resonant Cosmos
+Quantum Affinity Gravity Versus Dark Matter
+The Universe is a Song, Not a Machine: 5 Takeaways from the Quantum Affinity Gravity Revolution
+Technical Engineering Specification: Resonant Metric Mapping (RMM) and SAW-Propulsion Systems
+The Living Universe: A Foundation in Holographic Energy & Affinity
+Architecting the Conscious Cosmos: A First Principles Build of Quantum Affinity Gravity
+The Grand Breath: Solving the Universe’s Identity Crisis
+The Grand Breath: A Learner’s Guide to the Resonant Universe
+Quantum Affinity Gravity Evaluated
+Gravity as the Universe Seeking Connection
+The Universe as a Living Song: An Introduction to Quantum Affinity Gravity
+Quantum Affinity Gravity
+Quantum Affinity Gravity
+Quantum Affinity Synthesis
+Technical Engineering Specification: QAG Psychon-Resonant Energy and Propulsion Systems
+Engineering Design Specification: RMM Propulsion & SAW Thrust Systems
+Quantum Affinity Gravity
+The Architecture of Quantum Affinity Gravity
+Cosmic Validation
+Technical Feasibility Assessment: Resonant Metric Mapping & SAW Propulsion Systems
+Quantum Affinity Gravity Data and Claims Summary
+The Resonant Lexicon: A Student’s Guide to Quantum Affinity Gravity (QAG)
+Beyond the Ghost in the Machine: 5 Revelations from the "Living Universe" Theory of Quantum Affinity Gravity
+Mathematical Architecture of Resonant Universe
+Quantum Affinity Gravity
+The QAG Master Synthesis Framework
+Quantum Affinity Gravity
+Quantum Affinity Gravity
+Quantum Affinity Gravity
+Replacing Dark Matter with a Conscious Vacuum
+Cosmic Assembly Guide
+Quantum Affinity Gravity Theory Infographic

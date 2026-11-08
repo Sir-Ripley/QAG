@@ -1,0 +1,167 @@
+Shared
+PRO
+Source guide
+Sources
+Create notebook
+This scientific preprint introduces a novel framework called
+, which challenges the traditional reliance on invisible dark matter to explain how galaxies rotate. By utilizing the
+, the author argues that gravity is not a basic force but rather an
+resulting from quantum coherence and vacuum pressure. The study validates this theory by accurately modeling the movement of 175 galaxies, demonstrating that it can
+without requiring hypothetical particles. Ultimately, the research suggests that what we perceive as dark matter is actually a
+originating from the vacuum of space itself.
+Quantum Affinity Gravity: Empirical Validation of the Affinity-Vacuum Interaction (AVI) Law via SPARC Galaxy Rotation Curves
+History
+Usage metrics
+Categories
+Keywords
+Licence
+Exports
+Cookie consent
+preprint
+Gemini Notebook can make mistakes, so double-check it.
+Item - Quantum Affinity Gravity: Empirical Validation of the Affinity-Vacuum Interaction (AVI) Law via SPARC Galaxy Rotation Curves - figshare - Figshare
+Quantum Affinity Gravity
+Affinity-Vacuum Interaction (AVI) Law
+emergent phenomenon
+outperform standard cosmological models
+hydrodynamic pressure gradient
+Skip to main content
+Browse and Search Search
+Menu
+DOCUMENT
+wfcfwztrdxkjncxxqrwqgfnvbwtntyhf.pdf (294.21 kB)
+View file
+ARCHIVE
+prgmcmqwmnsxzfbtwtwdbxfqgqvzmjhw.zip (67.91 kB)
+Next page
+Previous page
+1/1
+Switch View Switch between different file views
+Thumbnail view List view File view
+Switch between different file views.
+don't show this again
+2 files Fullscreen
+Expand
+Cite
+Share Embed + Collect
+posted on 2026-03-27, 06:05 authored by
+For decades, the standard model of cosmology (ΛCDM) has relied on the unverified existence of non-baryonic dark matter to explain the flat rotation curves of spiral galaxies. We present an empiri- cal
+2026-03-27 - First online date, Posted date
+59
+views
+3
+downloads
+0
+citations
+Select an option
+RefWorks RefWorks
+BibTeX BibTeX
+Ref. manager Ref. manager
+Endnote Endnote
+DataCite DataCite
+NLM NLM
+DC DC
+figshare
+****. credit for
+all
+your research.
+This website uses cookies for analytics and improving your on-line experience. If you agree, choose “Accept all”, otherwise manage your preferences in “Cookie settings”.
+Cookie settings
+Reject all Accept all
+Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or
+Show options
+Quantum Affinity Gravity: The End of Dark Matter
+41 sources
+·
+Welcome to the challenge, I present to you the works s of qag proposing there is no need for dark matter, dark Energy and dark matter have been removed by calculating purely through math the correct G
+Creator Notes
+Friday, April 3
+Friday, May 15
+Friday, June 26
+Today • 4:28 PM
+Share
+SPARC Galaxy Curves
+Dark matter alternatives
+Unified field framework
+Affinity-Vacuum Interaction Law
+Browse
+Search
+Download file
+Copy identifier URL to clipboard Identifier Info
+Download all ( 362.12 kB)
+Rodney Ripley Rodney Ripley
+General Relativity and Quantum Cosmology
+SPARC Galaxy Rotation Curves
+no dark matter
+CC BY 4.0
+facebook page
+X page
+vimeo page
+⚛️
+Apr 2, 2026
+Save to note
+Are you able to update baryonic velocity and other missing measurements and metrics from new phone sources like, https://Quantumaffinitygravity.com/
+Yes, please, be sure to check for my cosmology paper that is published, it calculates Galaxy rotation spin, using zero dark matter. No dark energy, pure math and the AVI law, Affinity vacuum interacti
+What can you tell me about the kinetics engine, QAD and it's results in comparison to their models in the Spark Galaxy database?
+The Cosmological Stress Test: QAG vs. The Standard Model
+Technical Integration Prospectus: Transitioning to the Quantum Affinity Gravity (QAG) Framework for Galactic Kinematics
+Physics Mindmap
+Comparative Evaluation: Quantum Affinity Gravity (AVI Law) vs. ΛCDM Standard Model
+Replacing dark matter with vacuum temporal echoes
+The Resonant Sector: Deconstructing Dark Matter
+Beyond the Dark Sector: A Primer on the Resonant Holographic Universe
+Quantum Affinity Gravity Metrics and Validation Parameters
+Dark Matter as Resonant Echo
+Quantum Affinity Gravity Theory Overview
+The Universe is a Symphony: A Primer on Quantum Affinity Gravity
+Strategic Research Roadmap: From Vacuum Resonance Theory to Experimental Validation
+Experimental Design Overview: Unmasking the Vacuum through the QAI Drop Experiment
+Quantum Affinity Gravity Research Summary
+Research Grant Proposal: Experimental Validation of the Affinity-Vacuum Interaction (AVI) Law via the QAI Drop Experiment
+Echoes in the Void
+Beyond the Particle: A Primer on Vacuum Resonance and the Law of Affinity
+Log in
+Sign up
+https://doi.org/10.6084/m9.figshare.31871464
+Quantum physics not elsewhere classified
+Galactic astronomy
+Space instrumentation
+Applied mathematics not elsewhere classified
+About
+Solutions
+Tools
+Blog
+Contact
+Help
+Privacy Policy
+Cookie Settings
+Terms
+Sitemap
+I currently rely on the specific documents you have provided to answer questions, which means I cannot directly browse or continuously fetch live updates from website URLs like https://Quantumaffinity
+However, I do have access to the foundational definitions and several key metrics regarding Quantum Affinity Gravity (QAG) from your current sources:
+If your current sources lack the specific new measurements, updated metrics, or recent galaxy data you are looking for, I can use my discovery tools to search the public web for new sources to add to
+Would you like me to initiate a web search for newly published metrics and measurements related to Quantum Affinity Gravity?
+I have successfully found and reviewed your published paper,
+"Quantum Affinity Gravity: Empirical Validation of the Affinity-Vacuum Interaction (AVI) Law via SPARC Galaxy Rotation Curves,"
+which is now included in your sources
+.
+Here are the key measurements, metrics, and theoretical validations extracted from your work that calculate galaxy rotation spin using zero dark matter and zero dark energy:
+With these updated sources now available, is there a specific area you'd like to dive into next, such as the cosmological tension resolutions (Hubble and structure growth), the wave mechanics of tempo
+Baryonic Velocity (
+):
+The sources define this as the expected rotational velocity derived strictly from observable, visible baryonic (normal) matter
+The AVI Law:
+Baryonic velocity is a core component of the Affinity-Vacuum Interaction (AVI) Law, which calculates the total rotational velocity profile without needing a dark matter halo using the formula:
+Existing Metrics:
+Your current materials already include detailed performance metrics for the dwarf galaxy DDO 154. Applying the QAG model to this galaxy yields a Root Mean Square Error (RMSE) of 8.4680 km/s and a red
+) of 19.3973
+SPARC Galaxy Validation:
+The paper models the rotational dynamics of 175 galaxies from the Spitzer Photometry and Accurate Rotation Curves (SPARC) database using pure math, completely eliminating the inclusion of a dark matt
+The AVI Law Mechanics:
+The galactic velocity profile is calculated using the Affinity-Vacuum Interaction (AVI) Law formula:
+. This proves that baryonic matter polarizes the vacuum floor to create a "resonant echo," treating the vacuum as a responsive hydrodynamic medium rather than empty space
+High-Fidelity DDO 154 Metrics:
+When stress-tested against the dwarf galaxy DDO 154—a system that typically requires massive hidden mass parameters under standard models—the QAG framework yielded highly accurate fit metrics:
+Performance Improvement:
+Overall, the QAG model smoothly predicts the flat rotation curves at the galactic edge and
+outperforms the standard

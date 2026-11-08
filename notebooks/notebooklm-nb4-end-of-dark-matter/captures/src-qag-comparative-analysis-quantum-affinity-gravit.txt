@@ -1,0 +1,169 @@
+Shared
+PRO
+Source guide
+Sources
+Create notebook
+The provided text introduces
+, a novel physics framework created by Rodney A. Ripley Jr. that
+. Instead of relying on these undetected phenomena, the model
+through verifiable mathematical simulations and testable hypotheses. Furthermore, the webpage serves as an interactive hub designed to
+aimed at funding real-world laboratory experiments.
+$10 Billion Spent. Zero Dark Matter Found.
+Gravitational Wave Echoes
+Galaxy Rotation Without Dark Matter
+Dynamic Dissonance vs. Λ
+How Support Turns Into Science
+See the Evidence
+Gravitational Echoes
+Galaxy Rotation (AVI)
+Cosmic Expansion
+QVR-1 Thruster
+Community Insights
+Explore
+Community
+Support Research
+Gemini Notebook can make mistakes, so double-check it.
+QAG Comparative Analysis — Quantum Affinity Gravity | Rodney A. Ripley Jr.
+Quantum Affinity Gravity (QAG)
+challenges traditional cosmology by completely doing away with the concepts of dark matter and dark energy
+utilizes vacuum resonance physics to explain galactic rotation curves and cosmic expansion
+engage the scientific community through open challenges, simulation tools, and crowdfunding campaigns
+Simulations
+Log in
+Open Challenge to the Physics Community
+The LHC, XENON1T, PandaX, Tevatron — decades of searching, not a single WIMP or axion.
+The QAG framework eliminates the need for Dark Matter entirely
+using vacuum resonance physics, with three falsifiable predictions you can verify right now.
+Authored by Rodney A. Ripley Jr.
+·
+QAI Drop Experiment Fund
+Goal: $500 to cover the Rb-87 source deposit and Mach-Zehnder interferometer access at a university lab.
+$0.00 raised $500 goal · 0%
+0
+supporters
+Be the first to contribute — even $3 helps.
+[01
+τ ≈ 45.51 ms for 65 M☉ merger Run Simulation](https://cosmo-analysis.replit.app/simulations/echoes)
+[02
+AVI Law fits SPARC data — no halo Run Simulation](https://cosmo-analysis.replit.app/simulations/rotation)
+[03
+w_a = +0.22 fits DESI / Pantheon+ Run Simulation](https://cosmo-analysis.replit.app/simulations/expansion)
+OUTREACH ROADMAP
+Every dollar goes directly to bringing QAG's predictions in front of physicists who can verify or falsify them. No overhead. No institution taking a cut.
+$100
+Community Foundation
+Substack newsletter + preprint submission to arXiv / viXra for public visibility
+1
+$250
+Challenge Documentation
+Formal challenge protocol, community insights archive, and figure production
+2
+$500
+QAI Drop Experiment
+Rb-87 source deposit + Mach-Zehnder interferometer access at university lab
+3
+$1,000+
+LIGO Partnership + FQXi
+Formal LIGO data-access application and FQXi mini-grant submission
+4
+Run the math yourself — no login required
+[
+Witness the vacuum ringdown. QAG predicts measurable echoes replacing the dead vacuum of GR. Run Simulation](https://cosmo-analysis.replit.app/simulations/echoes)
+Eliminate Dark Matter. Baryonic matter polarizes the vacuum to create the exact SPARC velocity curves. Run Simulation](https://cosmo-analysis.replit.app/simulations/rotation)
+Eliminate Dark Energy. Replace the cosmological constant with Dynamic Dissonance pulling the universe forward. Run Simulation](https://cosmo-analysis.replit.app/simulations/expansion)
+Applied physics. Simulate the 0.70 MHz acoustic resonance thruster generating macroscopic kinetic force. Run Simulation](https://cosmo-analysis.replit.app/simulations/thruster)
+Researchers and scientists share their thoughts on QAG theory, simulations, and experimental directions.
+D
+Dr. Elena Zhao
+Mar 26
+The vacuum resonance model elegantly explains rotation curves without dark matter. This could be transformative for galactic dynamics.
+P
+Prof. James Chen
+Mar 30
+The experimental blueprint for the Mach-Zehnder interferometer is fascinating. Looking forward to seeing real-world data from this setup.
+Dr. Amara Okonkwo
+Apr 1
+QAG's approach to the Affinity-Vacuum Interaction is compelling. The mathematical framework is rigorous and the simulations are beautifully presented.
+to share your insights on QAG research.
+QAG. Analysis
+A framework verification engine for Quantum Affinity Gravity — eliminating Dark Matter and Dark Energy through vacuum resonance physics.
+Rodney A. Ripley Jr.
+This is independent, self-funded research. Support keeps it open and free.
+© 2026 Quantum Affinity Gravity — Rodney A. Ripley Jr. All rights reserved.
+Built on Replit
+Made with Replit
+Quantum Affinity Gravity: The End of Dark Matter
+41 sources
+Welcome to the challenge, I present to you the works s of qag proposing there is no need for dark matter, dark Energy and dark matter have been removed by calculating purely through math the correct G
+Creator Notes
+Friday, April 3
+Friday, May 15
+Friday, June 26
+Today • 4:27 PM
+Share
+Quantum Affinity Gravity
+Vacuum resonance physics
+Galaxy rotation curves
+Gravitational wave echoes
+Dynamic Dissonance model
+Overview
+Challenge
+Theory
+Verify It
+Downloads
+Take the Challenge
+Read the Paper
+The Definitive Experiment
+Download & Verify
+Contribute
+Support on Ko-fi
+Open Challenge
+Also explore: QAG Nexus — the companion platform
+Log in with your Replit account
+Theory Paper
+Experimental Blueprint
+⚡ The Physics Challenge
+Research Newsletter
+Main Website ↗
+QAG Nexus ↗
+⚛️
+Apr 2, 2026
+Save to note
+Are you able to update baryonic velocity and other missing measurements and metrics from new phone sources like, https://Quantumaffinitygravity.com/
+Yes, please, be sure to check for my cosmology paper that is published, it calculates Galaxy rotation spin, using zero dark matter. No dark energy, pure math and the AVI law, Affinity vacuum interacti
+What can you tell me about the kinetics engine, QAD and it's results in comparison to their models in the Spark Galaxy database?
+The Cosmological Stress Test: QAG vs. The Standard Model
+Technical Integration Prospectus: Transitioning to the Quantum Affinity Gravity (QAG) Framework for Galactic Kinematics
+Physics Mindmap
+Comparative Evaluation: Quantum Affinity Gravity (AVI Law) vs. ΛCDM Standard Model
+Replacing dark matter with vacuum temporal echoes
+The Resonant Sector: Deconstructing Dark Matter
+Beyond the Dark Sector: A Primer on the Resonant Holographic Universe
+Quantum Affinity Gravity Metrics and Validation Parameters
+Dark Matter as Resonant Echo
+Quantum Affinity Gravity Theory Overview
+The Universe is a Symphony: A Primer on Quantum Affinity Gravity
+Strategic Research Roadmap: From Vacuum Resonance Theory to Experimental Validation
+Experimental Design Overview: Unmasking the Vacuum through the QAI Drop Experiment
+Quantum Affinity Gravity Research Summary
+Research Grant Proposal: Experimental Validation of the Affinity-Vacuum Interaction (AVI) Law via the QAI Drop Experiment
+Echoes in the Void
+Beyond the Particle: A Primer on Vacuum Resonance and the Law of Affinity
+I currently rely on the specific documents you have provided to answer questions, which means I cannot directly browse or continuously fetch live updates from website URLs like https://Quantumaffinity
+However, I do have access to the foundational definitions and several key metrics regarding Quantum Affinity Gravity (QAG) from your current sources:
+If your current sources lack the specific new measurements, updated metrics, or recent galaxy data you are looking for, I can use my discovery tools to search the public web for new sources to add to
+Would you like me to initiate a web search for newly published metrics and measurements related to Quantum Affinity Gravity?
+I have successfully found and reviewed your published paper,
+"Quantum Affinity Gravity: Empirical Validation of the Affinity-Vacuum Interaction (AVI) Law via SPARC Galaxy Rotation Curves,"
+which is now included in your sources
+.
+Here are the key measurements, metrics, and theoretical validations extracted from your work that calculate galaxy rotation spin using zero dark matter and zero dark energy:
+With these updated sources now available, is there a specific area you'd like to dive into next, such as the cosmological tension resolutions (Hubble and structure growth), the wave mechanics of tempo
+Baryonic Velocity (
+):
+The sources define this as the expected rotational velocity derived strictly from observable, visible baryonic (normal) matter
+The AVI Law:
+Baryonic velocity is a core component of the Affinity-Vacuum Interaction (AVI) Law, which calculates the total rotational velocity profile without needing a dark matter halo using the formula:
+Existing Metrics:
+Your current materials already include detailed performance metrics for the dwarf galaxy DDO 154. Applying the QAG model to this galaxy yields a Root Mean Square Error (RMSE) of 8.4680 km/s and a red
+) of 19.3973

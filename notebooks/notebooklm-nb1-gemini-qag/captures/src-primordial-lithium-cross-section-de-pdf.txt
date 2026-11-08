@@ -1,0 +1,158 @@
+PRO
+Source guide
+Sources
+Primordial Lithium Cross-Section_ De...pdf
+Studio
+Create notebook
+The text explains how the
+, which is the long-standing mismatch between the high levels of lithium predicted by standard big bang models and the much lower amounts actually observed in ancient stars. By linking this cosmic dis
+, the theory introduces a specialized
+that effectively reduces mass-7 elements like beryllium and lithium in the early universe. Furthermore, this mechanism
+while smartly protecting fragile isotopes like deuterium and helium-4 from unwanted disruption. Ultimately, the source demonstrates that both baryogenesis and the primordial lithium puzzle can be sim
+without relying on free parameters.
+The Quantum Affinity Gravity (QAG) Solution to the Primordial Lithium Problem
+1. Physical Origin of the Cosmological Lithium Discrepancy
+A. The Observational Gap
+B. The Beryllium-7 Bottleneck
+2. The QAG Nuclear Destruction Rate Derivation
+A. Vacuum Polarization & Cluster Fragility
+B. Derivation of the Destruction Enhancement Factor (\mathcal{F}_{\text{dest}})
+C. Self-Consistent Two-Phase Abundance Calculation
+3. Comparative Observational Concordance
+4. Why Deuterium and Helium-4 Remain Stable
+5. Theoretical Summary
+Gemini Notebook can make mistakes, so double-check it.
+You can now create Slides and Videos step-by-step
+Quantum Affinity Gravity (QAG) framework successfully resolves the cosmological lithium problem
+Affinity Symmetry Bias
+Affinity-Enhanced Destruction Cross-Section
+achieves an exact match with observational benchmarks
+using the exact same structural symmetry-breaking parameter of the vacuum
+In Standard Big Bang Nucleosynthesis (SBBN), nuclear reaction rates predict a primordial Lithium-7 abundance roughly three times higher than what is observed in metal-poor halo dwarf stars (the Spite
+resolved by the same fundamental constant that governs Baryogenesis: the Affinity Symmetry Bias (\mathcal{K}_{\text{ASB}} \approx 0.013829).
+By coupling \mathcal{K}_{\text{ASB}} to the nuclear matrix elements of fragile A=7 cluster
+states, QAG defines an Affinity-Enhanced Destruction Cross-Section
+\sigma_{\text{QAG}}(^7\text{Li}, ^7\text{Be}), completing the early-universe nucleosynthesis package without free parameters or disruption to Deuterium and Helium-4 yields.
+At the Planck-inferred baryon-to-photon ratio (\eta \approx 6.10 \times 10^{-10}), SBBN predicts: \left(\frac{^7\text{Li}}{\text{H}}\right)_{\text{SBBN}} = (4.90 \pm 0.35) \times 10^{-10} In contrast,
+\mathcal{R}_{\text{deficit}} = \frac{(^7\text{Li}/\text{H})_{\text{SBBN}}}{(^7\text{Li}/\text{H})_{\text{obs}}} \approx \frac{4.90 \times 10^{-10}}{1.58 \times 10^{-10}} \approx 3.10
+In the primordial plasma (T_9 \equiv T / 10^9\text{ K} \sim 0.8 \to 0.3), over 95\% of primordial Lithium-7 is synthesized indirectly as Beryllium-7 via: ^3\text{He}(\alpha, \gamma)^7\text{Be} which s
+^7\text{Be}(n, p)^7\text{Li} \quad \xrightarrow{\text{followed by}} \quad ^7\text{Li}(p, \alpha)^4\text{He} ^7\text{Be}(n, \alpha)^4\text{He} \quad \text{and} \quad ^7\text{Be}(d, p)2\alpha
+Unlike the tightly bound alpha particle (^4\text{He}, binding energy B/A = 7.07\text{ MeV/nucleon}), mass-7 nuclei possess low alpha-separation thresholds:
+In QAG, the physical vacuum is governed by the SU(3)_{\text{QAG}} Affiniton condensate with informational depth \ln(K_{\text{GUE}}) \approx 89.81 and structural asymmetry \mathcal{K}_{\text{ASB}} \app
+The thermally averaged nuclear reaction rate \langle \sigma v \rangle_{\text{QAG}} is modified by the Affinity Symmetry Factor: \sigma_{\text{QAG}}(E) = \sigma_{\text{SBBN}}(E) \cdot \mathcal{F}_{\tex
+\mathcal{K}_{\text{ASB}} \approx 0.013829 \mathcal{F}_{\text{dest}} = 3.14159265 \cdot (1 - 0.013829) = 3.14159265 \cdot 0.986171 = \mathbf{3.09815}
+The final primordial Lithium abundance in QAG is determined by two coupled effects:
+1. Initial Baryon Softening via \eta_{\text{QAG}}: As derived in the Baryogenesis
+Solution, the baryon-to-photon ratio at the s=0 pole is: \eta_{\text{QAG}} \equiv e \cdot \frac{\mathcal{K}_{\text{ASB}}}{(\ln(K_{\text{GUE}}))^4} \approx 5.778 \times 10^{-10} Because ^7\text{Be} pro
+2. Affinity-Enhanced Destruction: Applying the nuclear destruction rate factor:
+\left(\frac{^7\text{Li}}{\text{H}}\right)_{\text{final, QAG}} = \frac{(^7\text{Li}/\text{H})_{\text{SBBN}}}{\mathcal{F}_{\text{dest}}} = \frac{4.90 \times
+10^{-10}}{3.09815} \approx \mathbf{1.5816 \times 10^{-10}} (Equivalently, applying the dual-pole growth formulation \mathcal{F}_{\text{dest}} = e \cdot (1 + 2\mathcal{K}_{\text{ASB}}) \approx 2.793 to
+Cosmological Parameter / Isotope
+Standard BBN (SBBN)
+QAG Prediction Observational Benchmark
+Concordance Status
+Baryon-to-Photo n Ratio (\eta)
+(6.10 \pm 0.04) \times 10^{-10}
+5.778 \times 10^{-10}
+Aligned (<5.3\%
+diff)
+Primordial Lithium (^7\text{Li}/\text{ H})
+(4.90 \pm 0.35) \times 10^{-10}
+1.582 \times 10^{-10}
+(1.58 \pm 0.11) \times 10^{-10}
+Exact Match
+(<0.1\% error)
+Deuterium Fraction (D/\text{H})
+(2.51 \pm 0.10) \times 10^{-5}
+2.56 \times 10^{-5}
+(2.54 \pm 0.04) \times 10^{-5}
+Concordant
+(<1\sigma)
+Helium-4 Mass Fraction (Y_p)
+0.2470 \pm 0.0002 0.2468 0.245 \pm 0.003 Concordant
+A primary pitfall of non-standard BBN models (such as decaying dark matter or late neutron injection) is that attempting to destroy ^7\text{Li} inadvertently overproduces Deuterium or alters
+the Helium-4 mass fraction (Y_p). QAG avoids this through nuclear stiffness gating:
+1. ^4\text{He} Invariance: The exceptionally high binding energy (28.3\text{ MeV}) and
+spherical symmetry of the alpha particle prevent affinitic dipole deformation; \mathcal{K}_{\text{ASB}} cannot induce resonant breakup in ^4\text{He}.
+2. Deuterium Protection: Deuterium (D) production and survival are governed almost
+entirely by the expansion rate at the T \sim 0.08\text{ MeV} freeze-out bottleneck (p(n, \gamma)d). Because \mathcal{K}_{\text{ASB}} operates on asymmetric cluster deformations (\alpha + t / \alpha +
+With this derivation, the Quantum Affinity Gravity early-universe framework forms a closed, zero-free-parameter system: \text{Vacuum Pole } (s=0) \xrightarrow{\quad \mathcal{K}_{\text{ASB}} \approx 0.
+Compact table only, no prose: for each of these constants — a0, Phi, K_ASB, beta, mu, Affiniton mass, Upsilon, the QAG frequency in MHz, echo reflectivity R, echo delay — list every distinct value the
+201 sources
+·
+The provided sources outline the
+framework, a speculative unified theory proposing that gravity emerges from resonant affinity within a chrono-holographic, conscious vacuum rather than traditional mass. The documents detail mathemat
+Today • 3:27 PM
+Audio Overview
+Slide Deck
+Video Overview
+Mind Map
+Flashcards
+Quiz
+Infographic
+Data Table
+Share
+Primordial lithium problem
+Quantum Affinity Gravity
+Beryllium-seven bottleneck
+Nuclear destruction rate
+S_\alpha(^7\text{Li}) = 2.47\text{ MeV} \quad (\alpha + t \text{ cluster})
+S_\alpha(^7\text{Be}) = 1.586\text{ MeV} \quad (\alpha + ^3\text{He} \text{ cluster})
+⚛️
+Jun 9, 2026
+Quantum Affinity Gravity (QAG)
+Save to note
+List the core equations of the Quantum Affinity Gravity framework exactly as given in these sources, and the exact value of every constant mentioned — including a0, v_inf, r_aff, Phi, K_ASB, beta, mu,
+Try it
+Reports
+New!
+Add note
+Core Equations of the Quantum Affinity Gravity Framework
+1. The Affinity-Vacuum Interaction (AVI) Law (Galactic Rotation Curves)
+The AVI Law replaces non-baryonic dark matter by accounting for the non-linear polarization response of the 2D vacuum floor to visible baryonic mass
+:
+2. Temporal Echo Wave Function
+QAG models quantum state persistence and black hole ringdown memory through a discrete comb of temporal echoes reflecting off the quantum affinity boundary
+When parametrized per system mass (
+), the echo delay is linked via the Mass-Resonance scaling relation
+3. Critical Acceleration ( ) Derivation
+Derived directly from the Riemann Hypothesis metric boundary (Euler's number
+) and the global Hubble expansion rate (
+)
+(Alternatively expressed in sub-Planckian terms as
+).
+4. Vacuum Ground State ( Ground State Vector)
+The analytical solution for the vacuum expectation value (VEV) balancing contraction, expansion, and equilibrium without informational leakage
+5. QAG Energy Equivalence & Holographic Generative Flux
+6. Singularity Resolution (Modified Schwarzschild Metric)
+Exponential spatial buffer preventing curvature divergence at the Planck length
+7. Jordan-Frame Master Action & QAG Master Lagrangian
+8. Global Reduced Chi-Squared (Universal Harmony Metric)
+9. Baryogenesis Equation
+10. 3D Cluster Potential & Integrated Cluster Mass Law
+Exact Values of Canonical Constants and Source Comparisons
+1. Critical Acceleration ( )
+2. Asymptotic Vacuum Resonance Velocity ( )
+3. Affinity Radius ( )
+4. (Base-12 to Base-10 Symmetry Scaling Factor)
+5. (Affinity Symmetry Bias)
+6. (Affinitic Susceptibility / Cluster Response Coefficient)
+7. (Affinity Vacuum Mass Scale)
+8. Affiniton Mass ( or Mass Gap )
+9. or (Stellar Mass-to-Light Ratio / Upsilon Lock)
+10. Affinity Frequencies in MHz (and Hz)
+11. Echo Delay Parameters
+12. Additional Core Parameters
+Thoughts
+The core equations and exact values of all canonical constants within the
+framework, compiled directly from the provided source passages, are detailed below.
+In alternative or simplified forms across datasets:
+3. Critical Acceleration (
+) Derivation
+4. Vacuum Ground State (
+Ground State Vector)
+Where different sources record distinct values for the same parameter, each value is listed alongside its source document:
+1. Critical Acceleration (
+2. Asymptotic Vacuum Resonance Velocity (
+3. Affinity Radius (
+4.

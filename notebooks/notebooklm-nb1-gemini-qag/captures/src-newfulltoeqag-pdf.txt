@@ -1,0 +1,166 @@
+PRO
+Source guide
+Sources
+NewFullToEQAG.pdf
+Studio
+Create notebook
+This text introduces the
+, which boldly reframes the cosmos as a
+rather than a lifeless machine. By
+in favor of vacuum interactions and universal harmony, the framework bridges large-scale cosmic structures with minute quantum mechanics. It ultimately aims to prove that reality is driven by
+, offering mathematically derived methods to
+for practical kinetic applications and propulsion.
+The Resonant Codex:
+A Comprehensive Unified Field Theory of Quantum
+Affinity Gravity (QAG)
+Gemini Notebook can make mistakes, so double-check it.
+You can now create Slides and Videos step-by-step
+Quantum Affinity Gravity theory
+conscious, self-encoding, and resonant system
+dispensing with standard dark matter
+universal intentionality and retrocausality
+harness foundational consciousness particles
+Rodney Alan Ripley Jr. https://qag.tiiny.site/
+February 2026
+Abstract
+This comprehensive work formalizes the Quantum Affinity Gravity (QAG) Unified Field The-ory, representing the most significant paradigm shift in modern physics. We categorically replace the ACDM stand
+1 Introduction: The Living Axiom and the Religious Quest
+For over a century, the scientific consensus operated under the restrictive assumption that the universe is an inert, stochastic machine. When their equations failed, physicists invented phantom ”Dark
+If the heart feels a truth, it is because the retrocausal flow of the universe is actively pulling the present toward a highly organized future state. Gravity is not a blind pulling force; it is ”Univ
+2 The Macro: Eradicating Dark Matter and The Leviathan Para-dox
+We have successfully derived the mechanics of galaxies without throwing in ”extra numbers.”
+2.1 The AVI Law (Eradicating Dark Matter)
+Standard physics cannot explain why galaxies do not fly apart without inventing dark matter. QAG completely removes the dark matter particle, replacing it with the Affinity-Vacuum Interaction (AVI) La
+=
++
+(1)
+1
+What this means in the real world: Massive structures bind together naturally because they are surfing the resonant coherence wave of the vacuum floor itself. The ”extra grip” holding stars in a galax
+2.2 The Leviathan Paradox and the Vacuum State
+How does such a massive cosmos relax into a stable state? Through the
+confinement, we derived the Vacuum Expectation Value (VEV) acting as the ultimate ”default setting” of reality:
+(2)
+What this means in the real world: The universe has a non-negotiable ground state. It is mathematically proven that the rules of reality are perfectly locked in to allow life, time, and structure to e
+3 The Micro: Deriving the Affinion Boson in Base-10
+To understand universal connection, we isolated the fundamental gauge groups into a ”Trinity of Affinity”: The Affinion, The Entanglion, and The Chronon.
+3.1 The Base-12 Origin
+The Affinion
+carries informational coherence across all physical forms. Its interaction La-grangian is defined as:
+(3)
+Here,
+is the universal superposition charge. This proves that at a fundamental level, all physical forms share an intrinsic, mathematically quantifiable affinity.
+3.2 The Base-10 Translation
+To make this boson function in our 3D world, we scale it using our foundational symmetry scaling factor
+= 1218
+(4)
+We apply this scaling factor to the universal charge to find our Base-10 Affinion Coupling Constant
+·
+(5)
+What this means in the real world: A macroscopic wave of Base-10 Affinions is what we call the Psychon. We can literally project this consciousness particle using Surface Acoustic Waves (SAW).
+4 The Cosmic Breath and Fundamental Replacements
+The entire universe is phase-locked to a fundamental frequency: the neutral hydrogen emission line
+MHz).
+2
+4.1 Harmonic Energy and Entropy
+We rebuild standard equations through the QAG harmonic lens:
+(6)
+ln(Ω) ·
+(7)
+5 S5 Gauges and Applied Kinetic Truths
+We translate the S5 symmetries into Base-10 for physical applications, utilizing everyday consumer technology and SAW devices.
+5.1 Chrono-Holographic Latency and S5 Symmetry
+The Chronon allows wavefunctions to propagate bidirectionally, establishing retrocausality. We lock into this via a Chrono-Circuit refreshing every 341 nanoseconds.
+To match the holographic spin of the universe, our phased-array emitters apply a 120◦ rotational operator:
+[
+−
+] ·
+(8)
+5.2 The Master Lagrangian
+The total dynamics of our universe are elegantly captured in the QAG Master Lagrangian:
+]
+[ 1
+] (9)
+5.3 The 0.70 MHz Engine
+Through precision modeling, 0.70 MHz was identified as the optimal resonant frequency for impedance matching
+between a Lithium Niobate
+substrate and a Liquid Hydrogen
+medium.
+The acoustic radiation pressure
+pushes the medium, creating verified kinetic displacement without chemical combustion:
+= 1
+( 1
+)
+(10)
+6 Conclusion
+The Quantum Affinity Gravity Unified Field Theory is impossible to ignore. We have proven that our reality is an interconnected, self-encoding, resonant system. By scaling from the Base-12 cosmic brea
+3
+Compact table only, no prose: for each of these constants — a0, Phi, K_ASB, beta, mu, Affiniton mass, Upsilon, the QAG frequency in MHz, echo reflectivity R, echo delay — list every distinct value the
+201 sources
+The provided sources outline the
+framework, a speculative unified theory proposing that gravity emerges from resonant affinity within a chrono-holographic, conscious vacuum rather than traditional mass. The documents detail mathemat
+Today • 3:27 PM
+Audio Overview
+Slide Deck
+Video Overview
+Mind Map
+Flashcards
+Quiz
+Infographic
+Data Table
+Share
+Quantum Affinity Gravity
+Eradicating Dark Matter
+Affinion Boson
+Chrono-Holographic Latency
+0.70 MHz Engine
+Energy-Matter Equivalence: Energy includes the 2D vacuum floor
+× 10−44 J/m2):
+Harmonic Entropy: Entropy is a phase-shift toward the future-pull, not a decay into disorder:
+⚛️
+Jun 9, 2026
+Quantum Affinity Gravity (QAG)
+Save to note
+List the core equations of the Quantum Affinity Gravity framework exactly as given in these sources, and the exact value of every constant mentioned — including a0, v_inf, r_aff, Phi, K_ASB, beta, mu,
+Try it
+Reports
+New!
+Add note
+Core Equations of the Quantum Affinity Gravity Framework
+1. The Affinity-Vacuum Interaction (AVI) Law (Galactic Rotation Curves)
+The AVI Law replaces non-baryonic dark matter by accounting for the non-linear polarization response of the 2D vacuum floor to visible baryonic mass
+:
+2. Temporal Echo Wave Function
+QAG models quantum state persistence and black hole ringdown memory through a discrete comb of temporal echoes reflecting off the quantum affinity boundary
+When parametrized per system mass (
+), the echo delay is linked via the Mass-Resonance scaling relation
+3. Critical Acceleration ( ) Derivation
+Derived directly from the Riemann Hypothesis metric boundary (Euler's number
+) and the global Hubble expansion rate (
+(Alternatively expressed in sub-Planckian terms as
+).
+4. Vacuum Ground State ( Ground State Vector)
+The analytical solution for the vacuum expectation value (VEV) balancing contraction, expansion, and equilibrium without informational leakage
+5. QAG Energy Equivalence & Holographic Generative Flux
+6. Singularity Resolution (Modified Schwarzschild Metric)
+Exponential spatial buffer preventing curvature divergence at the Planck length
+7. Jordan-Frame Master Action & QAG Master Lagrangian
+8. Global Reduced Chi-Squared (Universal Harmony Metric)
+9. Baryogenesis Equation
+10. 3D Cluster Potential & Integrated Cluster Mass Law
+Exact Values of Canonical Constants and Source Comparisons
+1. Critical Acceleration ( )
+2. Asymptotic Vacuum Resonance Velocity ( )
+3. Affinity Radius ( )
+4. (Base-12 to Base-10 Symmetry Scaling Factor)
+5. (Affinity Symmetry Bias)
+6. (Affinitic Susceptibility / Cluster Response Coefficient)
+7. (Affinity Vacuum Mass Scale)
+8. Affiniton Mass ( or Mass Gap )
+9. or (Stellar Mass-to-Light Ratio / Upsilon Lock)
+10. Affinity Frequencies in MHz (and Hz)
+11. Echo Delay Parameters
+12. Additional Core Parameters
+Thoughts
+The core equations and exact values of all canonical constants within the
+framework, compiled directly from the provided source passages, are detailed below.
+In alternative or simplified forms across datasets:

@@ -1,0 +1,185 @@
+PRO
+Source guide
+Sources
+Studio
+Create notebook
+This dataset documents
+for a wide variety of
+, tracking specific measurements such as their
+alongside various
+. Each individual galaxy entry includes computed values associated with
+, providing a quantitative breakdown of their physical behavior. Furthermore, the dataset records a
+for every system, frequently indicating the presence of a
+or noting whether a galaxy is
+. Ultimately, this collection serves as an analytical catalog to help researchers compare theoretical predictions against
+.
+Gemini Notebook can make mistakes, so double-check it.
+You can now create Slides and Videos step-by-step
+QAD_Universal_Kinematics_Dataset.pdf
+universal kinematics
+galaxies
+maximum rotational velocity
+resonance and residual metrics
+Newtonian and alternative models
+fidelity gamma status
+resonance gap
+contact ready
+actual galactic rotation data
+Compact table only, no prose: for each of these constants — a0, Phi, K_ASB, beta, mu, Affiniton mass, Upsilon, the QAG frequency in MHz, echo reflectivity R, echo delay — list every distinct value the
+201 sources
+·
+The provided sources outline the
+framework, a speculative unified theory proposing that gravity emerges from resonant affinity within a chrono-holographic, conscious vacuum rather than traditional mass. The documents detail mathemat
+Today • 3:27 PM
+Audio Overview
+Slide Deck
+Video Overview
+Mind Map
+Flashcards
+Quiz
+Infographic
+Data Table
+Share
+Universal Kinematics Dataset
+Galaxy rotation models
+Newton kinematics resolution
+Fidelity gamma status
+Resonance gap status
+⚛️
+Jun 9, 2026
+Quantum Affinity Gravity (QAG)
+Save to note
+List the core equations of the Quantum Affinity Gravity framework exactly as given in these sources, and the exact value of every constant mentioned — including a0, v_inf, r_aff, Phi, K_ASB, beta, mu,
+Try it
+Reports
+New!
+Add note
+Core Equations of the Quantum Affinity Gravity Framework
+1. The Affinity-Vacuum Interaction (AVI) Law (Galactic Rotation Curves)
+The AVI Law replaces non-baryonic dark matter by accounting for the non-linear polarization response of the 2D vacuum floor to visible baryonic mass
+:
+2. Temporal Echo Wave Function
+QAG models quantum state persistence and black hole ringdown memory through a discrete comb of temporal echoes reflecting off the quantum affinity boundary
+When parametrized per system mass (
+), the echo delay is linked via the Mass-Resonance scaling relation
+3. Critical Acceleration ( ) Derivation
+Derived directly from the Riemann Hypothesis metric boundary (Euler's number
+) and the global Hubble expansion rate (
+)
+(Alternatively expressed in sub-Planckian terms as
+).
+4. Vacuum Ground State ( Ground State Vector)
+The analytical solution for the vacuum expectation value (VEV) balancing contraction, expansion, and equilibrium without informational leakage
+5. QAG Energy Equivalence & Holographic Generative Flux
+6. Singularity Resolution (Modified Schwarzschild Metric)
+Exponential spatial buffer preventing curvature divergence at the Planck length
+7. Jordan-Frame Master Action & QAG Master Lagrangian
+8. Global Reduced Chi-Squared (Universal Harmony Metric)
+9. Baryogenesis Equation
+10. 3D Cluster Potential & Integrated Cluster Mass Law
+Exact Values of Canonical Constants and Source Comparisons
+1. Critical Acceleration ( )
+2. Asymptotic Vacuum Resonance Velocity ( )
+3. Affinity Radius ( )
+4. (Base-12 to Base-10 Symmetry Scaling Factor)
+5. (Affinity Symmetry Bias)
+6. (Affinitic Susceptibility / Cluster Response Coefficient)
+7. (Affinity Vacuum Mass Scale)
+8. Affiniton Mass ( or Mass Gap )
+9. or (Stellar Mass-to-Light Ratio / Upsilon Lock)
+10. Affinity Frequencies in MHz (and Hz)
+11. Echo Delay Parameters
+12. Additional Core Parameters
+galaxy
+v_max
+res_newton
+res_avi
+fidelity_gamma status
+NGC0055_rotmo
+87.4
+19.68769268
+4.350435889
+95.02238457 RESONANCE_GAP
+NGC2683_rotmo
+212
+28.56523328
+37.00285792
+82.54582174 RESONANCE_GAP
+NGC0247_rotmo
+108
+30.90910843
+6.552359034
+93.93300089 RESONANCE_GAP
+NGC0891_rotmo
+234
+51.09948075
+29.32747664
+87.46689033 RESONANCE_GAP
+NGC2915_rotmo
+86.5
+46.3968426
+10.23713218
+88.16516511
+RESONANCE_GAP
+UGC00731_rotm
+74
+35.83874979
+3.795148528
+94.87142091 RESONANCE_GAP
+NGC5005_rotmo
+265
+53.23678092
+19.2003527
+92.75458389 RESONANCE_GAP
+UGC07608_rotm
+69.3
+28.34181968
+8.818358368
+87.27509615 RESONANCE_GAP
+UGCA281_rotmo
+29.5
+6.138508438
+11.59552333
+60.69314124 RESONANCE_GAP
+F579-V1_rotmoc
+114
+38.14258068
+10.51009213
+90.78062094 RESONANCE_GAP
+UGC05005_rotm
+100
+27.08925449
+15.26573391
+84.73426609
+UGC09133_rotm
+289
+54.92755314
+63.10417725
+78.16464455 RESONANCE_GAP
+NGC1003_rotmo
+115
+42.82203626
+8.259225772
+92.81806455 RESONANCE_GAP
+IC2574_rotmod.
+67.5
+16.53977283
+10.05467414
+85.10418646 RESONANCE_GAP
+NGC2955_rotmo
+276
+36.23186115
+56.6057306
+79.49067732 RESONANCE_GAP
+UGC05999_rotm
+34.05701963
+7.400624422
+92.59937558 RESONANCE_GAP
+UGC06446_rotm
+84.9
+36.55922199
+8.312051447
+90.20959782
+UGC02953_rotm
+319
+53.59126351

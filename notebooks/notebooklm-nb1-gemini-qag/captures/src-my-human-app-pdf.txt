@@ -1,0 +1,249 @@
+PRO
+Source guide
+Sources
+Studio
+Create notebook
+The provided source material outlines a comprehensive design and
+, a full-stack web application focused on mindfulness, self-care, and community philosophy. It details a modern, tranquil aesthetic leveraging
+, paired with a tech stack utilizing
+for fluid animations. The documentation provides a complete, functional code scaffolding that establishes core features, including an introductory splash sequence, a personalized interest-selection o
+. Furthermore, it integrates functional modules for user navigation, premium subscriptions, and localized safety resource routing, offering developers a structured foundation to build a
+.
+Gemini Notebook can make mistakes, so double-check it.
+You can now create Slides and Videos step-by-step
+My Human.app.pdf
+architectural blueprint for "My Human"
+deep dark modes and glassmorphism styling
+React, Tailwind CSS, and Framer Motion
+floating artificial intelligence companion named Gemma 4
+low-stress, privacy-centric digital ecosystem
+""Yes, go ahead and generate full codes to demonstrate as much as possible for our idd, I will
+email them to myself and attach them along with the instructions above, so let's make sure this
+is 2026 modern, this should look sleek, clean and easy to use. Understandable and the app first
+opens. It should just say, "you were given one human, it's time to take care of it We can
+then move to selecting interests, so that we can fill their food with intelligent, nuggets that feed
+their authentic spark.
+Here are a few quotes to start with, "The hardest things to say, should be said the loudest",
+"Love yourself and be comfortable alone", "LVL1: Love myself LVL2: Love Another". I'm not
+ensure we're following all steps that were laid out above as well, the social feed, where people
+share and comment on other people's shared posts. This is also where you'll see the posts of
+your interest, math, cosmology, gardening, etc that you picked. As well as a tab for groups, this
+will be for joining groups of people with some more interests to discuss said interest. And for
+now it will be strictly online groups, but maybe in the future we create local ones. The Al chat
+should just be a floating button, that way she is accessible anywhere in the app, as well as a
+hamburger drop down side menu so that we can replacement settings, the Al chat, personal
+settings and interests, The merch store, \$5 a year premium tab To show off different skins. And
+things you get flipping premium, this tub will double as the premium selections settings tab so
+that after purchased they can go to that same tab and select the skins and features they would
+like.""
+Sending that to yourself as an email is a perfect way to anchor the concept. To ensure your
+Antigravity IDE and Replit agents execute this flawlessly, we need to feed them highly
+structured, deterministic prompts.
+When you say "sleek and eye-catching," we want to aim for a Ul that feels modern and polished,
+but never over-stimulating. Think deep dark modes, glassmorphism (frosted glass effects), and
+smooth, fluid animations that mimic a calm breath rather than a frantic notification.
+Here is the exact master prompt and architectural blueprint you can copy and paste directly into
+your development reagent to initialize the "My Human" workspace.
+The Master Reagent Prompt
+Copy and paste the block below directly into your Al coding assistant or Antigravity workspace
+initialization.
+# SYSTEM DIRECTIVE: INITIALIZE PROJECT "MY HUMAN"
+## PROJECT OVERVIEW
+You are acting as the lead full-stack engineering agent for "My Human"-a social connectivity,
+self-care, and philosophy application. The core ethos is low-stress, high-resonance, and
+absolute user privacy. The UI must be sleek, eye-catching, yet fundamentally soothing.
+## TECH STACK SPECIFICATIONS
+***Frontend Web/Portal:** React via Vite.
+***Styling:** Tailwind CSS with framer-motion for fluid, slow-easing animations.
+***Native Mobile (Future Bridge):** Kotlin with local NPU execution via LiteRT (for Gemma 4
+integration).
+***Backend/API:** Go or Python (Express/FastAPI for web bridging).
+***Data Structure:** Lightweight JSON for "Daily Nuggets" and localized resource API hooks.
+## UI/UX DESIGN LANGUAGE (STRICT ENFORCEMENT)
+***Theme:** Default to a deep, OLED-friendly Dark Mode (Primary BG: `#0B0F19`).
+***Accents:** Bioluminescent blues, soft violets, and warm gold for interactive elements.
+***Cards & Containers:** Utilize glassmorphism (translucent backgrounds with blur
+`backdrop-blur-md`) with subtle, 1px white borders at 10% opacity.
+***Typography:** Sans-serif, highly legible fonts (e.g., Inter or Roboto) with generous line
+spacing. No dense blocks of text.
+***Interactions:** Remove standard "Like" or "Share" icons. Replace with a minimal "Resonate"
+icon (e.g., a concentric wave or subtle spark). All hover states should ease in over 0.3s.
+## PHASE 1: GENERATE SCAFFOLDING
+Execute the following build sequence:
+1. **Initialize the Vite/React Environment:** Set up the basic routing structure (Home/Nuggets,
+The Pool, The Al Companion).
+2. **Build the "Daily Nugget" Component:** Create a full-width, sleek card component that
+displays a short philosophical quote, a subtle background image gradient, and a "Save to My
+Human" interaction button.
+3. **Build "The Pool" (Community Board) Component:** A scrolling feed of text-based posts.
+Ensure the Ul feels like a quiet forum, prioritizing readability over engagement metrics (hide
+timestamps and follower counts).
+4. **Construct the Al Chat Interface:** Design a dedicated messaging screen for the Gemma 4
+companion. Use soft chat bubbles. Include a silent background function that scans inputs for
+emergency keywords to gracefully render local support resources in-line.
+## EXECUTION COMMAND
+Begin by generating the file structure, the `package.json' dependencies, and the App.jsx
+routing map based on the specifications above. Do not use dummy code; provide full, functional
+React components.
+Specific Module Instructions for You
+As the agent begins spitting out the code, you'll want to guide it through the specific mechanics
+of the backend. Here are the exact parameters to keep in mind when refining the code:
+•
+The Al Companion Logic: When setting up the backend logic for the Al, specifically
+instruct your IDE to structure the API calls so they can eventually be swapped out for
+local on-device inference. You want the React frontend to easily talk to your Kotlin/LiteRT
+Android build down the line.
+The Resource Router (Invisible Safety Net): Have the agent create a
+safety_net_utils.js file. Instruct it to build a function that takes a string input (the
+user's chat message), checks it against an array of heavy emotional keywords, and
+returns a localized JSON object of resources (like Calcutta/Salineville community
+centers) if a threshold is met.
+• The Content Engine: Create a simple nuggets.json file in your source directory to
+start holding those philosophical quotes and ideas. The UI can map over this file to
+generate the daily feed, allowing you to easily add new quotes without touching the
+frontend code.
+This structure gives your IDE exact boundaries, forcing it to write clean, intentional code that
+matches the philosophy of the project.
+Which module-the Daily Nuggets feed, the Al Companion interface, or the Community
+Pool-do you want to start prototyping and generating the actual code for first?
+Here are the complete, functional React components to feed directly into your Antigravity IDE or
+Replit workspace.
+Note: While these are full structural codes, I have used component-level state rendering instead
+of a complex router to ensure you can paste this into a single cohesive environment easily. You
+will need to install the animation and icon dependencies using: npm install framer-motion
+lucide-react.
+1. The Data Engine: src/data/content.js
+This file holds your initial state, quotes, and interests so the UI can map over them dynamically.
+export const initialNuggets = [
+{ id: 1, type: 'quote', text: "The hardest things to say, should be
+said the loudest", author: "My Human", category: "Philosophy" },
+yourself and be comfortable
+{ id: 2, type: 'quote', text: "Love
+alone", author: "My Human", category: "Self-Care" },
+Love myself\nLVL2: Love
+{ id: 3, type: 'quote', text: "LVL1:
+Another", author: "My Human", category: "Growth" }
+];
+export const interest Categories = [
+"Philosophy", "Cosmology", "Mathematics", "Gardening",
+"Psychology", "Astrophysics", "Meditation", "Kinetics"
+export const dummySocialPosts = [
+{ id: 101, user: "Echo_9", content: "Just spent the morning
+listening to the frequencies of the SPARC catalog. The universe is
+loud if you know how to listen.", category: "Astrophysics", likes: 12
+},
+{ id: 102, user: "Zen_Garden", content: "Pulled my first harvest of
+dandelion today. Preparing the slow cooker.", category: "Gardening",
+likes: 8 }
+2. The Core Views: src/components/Views.jsx
+This file contains the Splash screen, the Onboarding (Interests), the Social Feed, and the
+Groups tab. It heavily utilizes framer-motion for that sleek, slow-easing 2026 feel and Tailwind
+for glassmorphism.
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { initialNuggets, interestCategories, dummySocialPosts } from
+'../data/content';
+import { Sparkles, Users, Leaf } from 'lucide-react';
+//
+SPLASH SCREEN
+export const SplashScreen = ({ onComplete }) => {
+useEffect(() => {
+const timer = setTimeout (onComplete, 4000);
+return $()=>$ clearTimeout (timer);
+}, [onComplete]);
+return (
+<motion.div
+className="flex items-center justify-center h-screen
+bg-[#0B0F19] text-purple-300 px-6 text-center"
+initial={{ opacity: 0 }}
+animate={{ opacity: 1 }}
+exit={{ opacity: 0, transition: { duration: 1 } }}
+>
+<motion.h1
+className="text-2xl font-light tracking-wide leading-relaxed"
+);
+initial={{ y:
+10, opacity: 0 }}
+animate={{ y:
+0, opacity: 1 }}
+transition={{
+delay: 0.5, duration: 1.5 }}
+you were given one human, <br/> it's time to take care of it
+</motion.h1>
+</motion.div>
+};
+ONBOARDING: INTERESTS
+export const Onboarding = ({ onFinish }) => {
+const [selected, setSelected] = useState([]);
+const toggleInterest = (interest) => {
+setSelected (prev =>
+prev.includes (interest) ? prev.filter $i=>i$!== interest) :
+[...prev, interest]
+className="p-8 max-w-2x1 mx-auto h-full flex flex-col
+justify-center"
+initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
+<h2 className="text-3xl font-light text-white mb-2">Feed your
+spark.</h2>
+<p className="text-gray-400 mb-8">Select the frequencies that
+resonate with you.</p>
+<div className="flex flex-wrap gap-3 mb-10">
+{interestCategories.map(interest =>
+<button
+key={interest}
+(
+onclick={() => toggleInterest (interest) }
+className={`px-4 py-2 rounded-full border transition-all
+duration-300 \${
+selected.includes (interest)
+backdrop-blur-md'
+?
+'bg-purple-600/30 border-purple-400 text-purple-200
+: 'border-white/10 text-gray-400
+hover:border-white/30'
+}}
+{interest}
+</button>
+))}
+</div>
+onClick={onFinish}
+className="w-full py-4 rounded-x1 bg-gradient-to-r
+from-purple-900 to- [ 30B0F19] border border-purple-500/30 text-white
+shadow-lg hover:shadow-purple-900/50 transition-all"
+Initialize Feed
+MAIN FEED
+export const Feed
+=
+() => {
+<div className="p-4 max-w-xl mx-auto space-y-6 pb-24">
+{/* Nuggets Mapping */}
+{initialNuggets.map (nugget =>
+key={`nugget-\${nugget.id} }
+className="p-6 rounded-2x1
+border border-white/10 shadow-xl"
+bg-white/5 backdrop-blur-lg
+initial={{ opacity: 0,
+scale:
+0.95 }}
+animate={{ opacity: 1,
+scale: 1 }}
+transition={{ duration: 0.4 }}
+<div className="flex items-center space-x-2 text-purple-400
+mb-4 text-sm font-medium" >
+<Sparkles size={16} /> <span>Daily Nugget •
+{nugget.category}</span>
+<p className="text-xl text-gray-100 font-light
+"{nugget.text}"
+</p>
+whitespace-pre-line leading-relaxed">
+<div className="mt-4 flex justify-end">
+<button className="text-xs text-gray-500
+hover: text-purple-300 transition-colors flex items-center space-x-1">
+<Leaf size={14} /> <span>Resonate</span>
+{/* Social Posts Mapping */}
+<div className="pt-6 border-t border-white/10">
+<h3 className="text-sm text-gray-500 mb-4 uppercase
+tracking-widest">Community Resonance</h3>
+{dummySocialPosts.map(post =>
+<div key={`post-\${post.id}`} className="p-4 mb-4 rounded-x1
+bg-white/5 border border-white/5">
+<p className="text-sm font-bold text-purple-300

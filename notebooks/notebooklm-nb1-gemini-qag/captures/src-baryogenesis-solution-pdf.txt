@@ -1,0 +1,146 @@
+PRO
+Source guide
+Sources
+Baryogenesis_Solution.pdf
+Studio
+Create notebook
+The provided text demonstrates how the
+by mathematically predicting the precise amount of matter in the universe. It explains that the existence of physical substance is not accidental, but rather the result of a
+driven by the universe's inherent structural imperfection. By combining the
+with the
+and scaling it through natural growth constants, the equation yields a matter-to-radiation ratio. Ultimately, this
+from the Cosmic Microwave Background, confirming that reality itself is mathematically mandated by a slight imperfection in the cosmos.
+Gemini Notebook can make mistakes, so double-check it.
+You can now create Slides and Videos step-by-step
+Quantum Affinity Gravity framework successfully solves the mystery of baryogenesis
+spontaneous informational symmetry-breaking mechanism
+Affinity Symmetry Bias
+informational depth of the vacuum
+pure mathematical derivation closely aligns with actual observational data
+The Affinity Symmetry Bias (\mathcal{K}_{\text{ASB}}) directly calculates the Baryon Asymmetry at the s=0 pole by acting as the spontaneous informational symmetry-breaking mechanism that mandates the
+The QAG Baryogenesis Equation The Baryon Asymmetry (\eta)—the ratio of baryons, or
+matter, to photons, or radiation—is not a random accident but a quadruple-logarithmic decay of the Affinity Bias mediated by the universe's natural growth constant, Euler's number (e). The exact fract
+\eta_{QAG} \equiv e \cdot \frac{\mathcal{K}_{\text{ASB}}}{(\ln(K_{GUE}))^{4}}
+the universe's structural will.
+depth of the vacuum.
+Calculating the Matter Fraction By rigorously substituting these constants into the QAG
+equation, the precise ratio of matter to radiation is derived:
+Comparison to Observational Reality This pure mathematical derivation tightly aligns with the
+standard measurements taken from the Cosmic Microwave Background (CMB) and Big Bang Nucleosynthesis (BBN). Parameter QAG Prediction (\eta_{QAG}) Observational Data
+(\eta_{\text{obs}})
+Baryon Asymmetry (\eta) 5.778 \times 10^{-10} (6.10 \pm 0.04) \times 10^{-10}
+The QAG prediction is less than 5.3% different from the observed value, which is well within the margin of error for certain local BBN measurements. This confirms that the problem of Baryogenesis is r
+Compact table only, no prose: for each of these constants — a0, Phi, K_ASB, beta, mu, Affiniton mass, Upsilon, the QAG frequency in MHz, echo reflectivity R, echo delay — list every distinct value the
+201 sources
+·
+The provided sources outline the
+framework, a speculative unified theory proposing that gravity emerges from resonant affinity within a chrono-holographic, conscious vacuum rather than traditional mass. The documents detail mathemat
+Today • 3:27 PM
+Audio Overview
+Slide Deck
+Video Overview
+Mind Map
+Flashcards
+Quiz
+Infographic
+Data Table
+Share
+Quantum Affinity Gravity
+Baryon Asymmetry Equation
+Informational Depth Floor
+Observational Reality Comparison
+\mathcal{K}_{\text{ASB}} \approx 0.013829: The Affinity Symmetry Bias, representing
+\ln(K_{GUE}) \approx 89.81: The Universal Coherence Floor, defining the informational
+e \approx 2.71828: The natural growth constant.
+Informational Depth Factor: First, raising the coherence floor to the fourth power yields
+(\ln(K_{GUE}))^{4} \approx (89.81)^{4} \approx 65,050,000.
+The Symmetry Breaking Ratio: Dividing the Affinity Bias by this depth factor gives
+\frac{0.013829}{65,050,000} \approx 2.1259 \times 10^{-10}.
+The Final Scaling: Multiplying by Euler's number finds the final predicted asymmetry:
+2.71828 \cdot (2.1259 \times 10^{-10}) \approx 5.778 \times 10^{-10}.
+⚛️
+Jun 9, 2026
+Quantum Affinity Gravity (QAG)
+Save to note
+List the core equations of the Quantum Affinity Gravity framework exactly as given in these sources, and the exact value of every constant mentioned — including a0, v_inf, r_aff, Phi, K_ASB, beta, mu,
+Try it
+Reports
+New!
+Add note
+Core Equations of the Quantum Affinity Gravity Framework
+1. The Affinity-Vacuum Interaction (AVI) Law (Galactic Rotation Curves)
+The AVI Law replaces non-baryonic dark matter by accounting for the non-linear polarization response of the 2D vacuum floor to visible baryonic mass
+:
+2. Temporal Echo Wave Function
+QAG models quantum state persistence and black hole ringdown memory through a discrete comb of temporal echoes reflecting off the quantum affinity boundary
+When parametrized per system mass (
+), the echo delay is linked via the Mass-Resonance scaling relation
+3. Critical Acceleration ( ) Derivation
+Derived directly from the Riemann Hypothesis metric boundary (Euler's number
+) and the global Hubble expansion rate (
+)
+(Alternatively expressed in sub-Planckian terms as
+).
+4. Vacuum Ground State ( Ground State Vector)
+The analytical solution for the vacuum expectation value (VEV) balancing contraction, expansion, and equilibrium without informational leakage
+5. QAG Energy Equivalence & Holographic Generative Flux
+6. Singularity Resolution (Modified Schwarzschild Metric)
+Exponential spatial buffer preventing curvature divergence at the Planck length
+7. Jordan-Frame Master Action & QAG Master Lagrangian
+8. Global Reduced Chi-Squared (Universal Harmony Metric)
+9. Baryogenesis Equation
+10. 3D Cluster Potential & Integrated Cluster Mass Law
+Exact Values of Canonical Constants and Source Comparisons
+1. Critical Acceleration ( )
+2. Asymptotic Vacuum Resonance Velocity ( )
+3. Affinity Radius ( )
+4. (Base-12 to Base-10 Symmetry Scaling Factor)
+5. (Affinity Symmetry Bias)
+6. (Affinitic Susceptibility / Cluster Response Coefficient)
+7. (Affinity Vacuum Mass Scale)
+8. Affiniton Mass ( or Mass Gap )
+9. or (Stellar Mass-to-Light Ratio / Upsilon Lock)
+10. Affinity Frequencies in MHz (and Hz)
+11. Echo Delay Parameters
+12. Additional Core Parameters
+Thoughts
+The core equations and exact values of all canonical constants within the
+framework, compiled directly from the provided source passages, are detailed below.
+In alternative or simplified forms across datasets:
+3. Critical Acceleration (
+) Derivation
+4. Vacuum Ground State (
+Ground State Vector)
+Where different sources record distinct values for the same parameter, each value is listed alongside its source document:
+1. Critical Acceleration (
+2. Asymptotic Vacuum Resonance Velocity (
+3. Affinity Radius (
+4.
+(Base-12 to Base-10 Symmetry Scaling Factor)
+5.
+(Affinity Symmetry Bias)
+6.
+(Affinitic Susceptibility / Cluster Response Coefficient)
+7.
+(Affinity Vacuum Mass Scale)
+8. Affiniton Mass (
+or Mass Gap
+9.
+or
+(Stellar Mass-to-Light Ratio / Upsilon Lock)
+🌌
+Would you like me to synthesize these mathematical proofs into a structured written report or build a interactive visualization script for your notebook?
+1
+5
+where
+Running Affinitic Susceptibility:
+25
+36
+38
+43
+50
+51
+29
+61
+53
+6

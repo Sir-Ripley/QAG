@@ -1,0 +1,211 @@
+PRO
+Source guide
+Sources
+Create notebook
+The provided source details the architecture and operational blueprint for the
+, an advanced algorithmic framework that treats financial markets as
+. By modeling market behavior through alternating phases of
+—categorized as the
+of market compression and dispersion—the system utilizes observable metrics like cross-asset correlation and information density to predict future price regimes. To safeguard capital against unpredic
+featuring fractional Kelly sizing and a hard 15% maximum drawdown limit. Ultimately, QACTS bridges theoretical quantum mechanics with automated crypto execution through a
+, providing a rigorous framework for real-time analysis and empirical falsification.
+QACTS: Quantum Affinity Crypto-Trading System
+1. Executive Summary & Core Philosophy (The Grand Breath)
+2. Canonical QAG Constants (Locked)
+3. Mathematical Specification & State Variable Mapping
+3.1 Observable State Variables
+3.2 QAG Transformation & Quantum Score
+3.3 Logistic Regime Transition Function
+4. Architectural System Diagram
+5. Risk Management & Position Sizing Engine
+6. REST API Specification
+6.1 POST /v1/qacts/analyze
+6.2 POST /v1/qacts/trade
+6.3 GET /v1/qacts/telemetry
+6.4 GET /v1/qacts/portfolio
+7. The Trading Application & UI Architecture
+8. Empirical Falsification Methodology
+9. Development Sequence & Deployment Roadmap
+Gemini Notebook can make mistakes, so double-check it.
+QACTS_Master_Blueprint (Google Doc)
+Quantum Affinity Crypto-Trading System (QACTS)
+macroscopic, psychological information waves
+quantum coherence and decoherence
+"Grand Breath"
+strict risk management engine
+comprehensive REST API and user interface
+Tab 1
+Version:
+0.1.0 |
+Framework:
+Quantum Affinity Gravity (QAG) V2
+Author:
+Rodney A. Ripley Jr. (Wizard of Science)
+Affiliation:
+Lead Researcher, Ripley & Ripley Research / R&R Droids
+Location:
+Salineville, Ohio
+Status:
+Operational Production Blueprint & Reference Architecture
+The financial market is fundamentally a macroscopic, psychological information wave. Rather than treating asset pricing as an uncoordinated Brownian motion (random walk), the
+models market dynamics as oscillating phases of quantum coherence and decoherence—termed the
+:
+QACTS provides a falsifiable, quantitative bridge between theoretical quantum wave mechanics (P_mu proxy field) and real-time algorithmic crypto execution.
+All QACTS mathematical transformations adhere strictly to the universal constants established in the Quantum Affinity Gravity framework:
+We operationalize the qualitative information field proxy (P_mu) using five observable market metrics combined into a composite state index I_t:
+I_t = w_1 C_t + w_2 S_t + w_3 D_t + w_4 A_t + w_5 V_t
+Where canonical weights default to: w_1 = 0.25, w_2 = 0.20, w_3 = 0.25, w_4 = 0.15, w_5 = 0.15
+The composite observable index I_t is transformed by the locked Affinity Symmetry Bias (K_ASB) and Base-12 metric scaling factor (Phi):
+Q_t = I_t * Phi * (1 + K_ASB)
+Normalized quantum state score: normalized_Q_t = min(1.0, Q_t / 1.25)
+Regime probability is evaluated via a logistic sigmoid centered at transition threshold Q_threshold = 0.65 with steepness parameter k = 8.0:
+P(Expansion_{t+Delta}) = 1 / (1 + exp(-k * (normalized_Q_t - Q_threshold))) P(Contraction_{t+Delta}) = 1 - P(Expansion_{t+Delta})
+┌────────────────────────────────────────────────────────────────────────┐
+│ GLOBAL DATA LAYER │
+│ Price / Order Books / Volume / Funding Rates / Social Feeds │
+└───────────────────────────────────┬────────────────────────────────────┘
+│
+▼
+│ P_μ INFORMATION FIELD │
+│ Token Spam Sweeper │ Shannon Entropy │ Attention Velocity │
+│ K_ASB ENGINE │
+│ Composite Index I_t │ Symmetry Scaling Bias (K_ASB = 0.013829) │
+└───────────────────┬────────────────────────────────┬───────────────────┘
+│ │
+▼ ▼
+┌────────────────────────┐ ┌────────────────────────┐
+│ INHALE REGIME │ │ EXHALE REGIME │
+│ Correlation Expansion │ │ Volatility Dispersion │
+│ Clustering/Coherence │ │ Decoherence / Decay │
+└────────────┬───────────┘ └────────────┬───────────┘
+└───────────────┬────────────────┘
+│ AI REGIME MODEL │
+│ Logistic Probability │ Confidence Calibrator │
+│ RISK ENGINE │
+│ Fractional Kelly Sizing │ Max Drawdown Guard (15%) │ Fees │
+│ PAPER TRADING / LIVE EXECUTION │
+│ Virtual Order Matching │ Ledger │ PnL Tracker │
+└────────────────────────────────────────────────────────────────────────┘
+The QACTS platform provides a zero-dependency HTTP server running by default on
+.
+Evaluates multi-asset price matrices and sentiment text feeds.
+Sample Request:
+{
+"prices": {
+"BTC": [64200, 64250, 64310, 64390, 64450],
+"ETH": [3450, 3455, 3462, 3470, 3478],
+"SOL": [142.1, 142.4, 142.9, 143.5, 144.1]
+},
+"feed": [
+"Bitcoin breaking compression resistance, massive open interest build up",
+"Ethereum synchronizing with macro flows, spot bid dominant"
+],
+"attention_velocity": 0.82
+}
+Sample Response:
+"timestamp": "2026-10-08T13:00:00Z",
+"assets_evaluated": ["BTC", "ETH", "SOL"],
+"token_count": 16,
+"entropy": 3.7842,
+"regime": "INHALE",
+"qacts_score": 0.8124,
+"confidence": 0.7648,
+"correlation_pressure": 0.9982,
+"information_density": 0.8421,
+"sentiment_synchronization": 1.0,
+"volatility_compression": 0.9785,
+"risk_state": "COMPRESSION_ACCUMULATION",
+"action_signal": "LONG_STRADDLE_OR_ACCUMULATE",
+"prediction": {
+"correlation_expansion_probability": 0.8824,
+"correlation_contraction_probability": 0.1176
+Submits risk-managed paper trade orders.
+"asset": "BTC",
+"side": "BUY",
+"price": 64450.0,
+"current_prices": {"BTC": 64450.0}
+"status": "EXECUTED",
+"trade": {
+"timestamp": 1791464175.12,
+"units": 0.17798,
+"fee": 6.883,
+"balance": 88521.11,
+"portfolio_equity": 100000.00
+Returns system status, canonical constants, audit logs, and capital reserves.
+Returns open positions, trade history ledger, and current cash balances.
+The complete QACTS client interface is architected into four distinct modules:
+R&R Droids
+24 sources
+·
+The provided documentation outlines the
+framework and its integration with
+, establishing an advanced computational and theoretical architecture developed by Rodney Alan Ripley Jr. This system introduces a
+that operates across mobile vessels using Google Pixel 9a Tensor G4 processors and Windows 11 high-throughput compute cores, utilizing LiteRT and specialized C++ JNI safety shielding. At its core, th
+built upon a ferroelectric superfluid vacuum, utilizing Base-12 harmonic symmetry to achieve high-efficiency energy extraction and propulsion without relying on dark matter. Complemented by the
+React and Tailwind application framework, the initiative spans diverse domains from autonomous
+enterprise tooling and defense innovations to accessible, privacy-first mobile assistants designed to support neurodivergent workplace needs.
+Share
+Quantum crypto trading
+Market regime transitions
+Observable state variables
+Risk management engine
+Empirical falsification methodology
+The Inhale (High Affinity / Compression):
+Information density spikes, market participants synchronize across multiple asset venues, and cross-asset correlation tightens toward unity. Volatility compresses into an ultra-dense potential state.
+The Exhale (Dynamic Dissonance / Dispersion):
+The market relaxes. Information scatters into high-entropy noise, cross-asset correlation breaks down, directional synchrony decouples, and capital disperses into chaotic volatility distribution.
+Cross-Asset Correlation (C_t in [0, 1]):
+Computed as the mean off-diagonal coefficient of the rolling Pearson correlation matrix across target assets (e.g., BTC, ETH, SOL), normalized from [-1, 1] to [0, 1]: C_t = (mean_correlation + 1) / 2
+Directional Synchronization (S_t in [0, 1]):
+Measures instantaneous directional consensus across M tracked assets: S_t = |(1/M) * sum(sign(r_{i, t}))|
+Informational Density (D_t in [0, 1]):
+Derived via Shannon entropy filtering of incoming social and news text streams (processed through the Spam Sweeper engine): H(X) = -sum(p_i * log2(p_i)) D_t = max(0, 1 - H(X) / log2(N))
+Attention Velocity (A_t in [0, 1]):
+Normalized rate-of-change of token volume and social mentions: A_t = sigmoid(Delta_Tokens_t / sigma_Tokens)
+Volatility Compression State (V_t in [0, 1]):
+Inverse root-mean-square return volatility relative to baseline variance: V_t = max(0, 1 - (sigma_returns / 0.05))
+If normalized_Q_t >= 0.65: INHALE (COMPRESSION_ACCUMULATION -> LONG_STRADDLE_OR_ACCUMULATE)
+If normalized_Q_t < 0.65: EXHALE (DISPERSION_DISTRIBUTION -> REDUCE_EXPOSURE_OR_SHORT)
+Fractional Kelly Capital Allocation:
+To prevent catastrophic tail-risk drawdowns, position sizing is dynamically computed from model confidence: f* = max(0.01, min(0.10, Confidence * 0.15))
+Account-Level Max Drawdown Guard:
+Hard stop enforced at 15% maximum portfolio drawdown from initial balance ($100,000 baseline). Any order attempt exceeding this threshold is rejected with MAX_DRAWDOWN_BREACH.
+Transaction Fee & Slippage Modeling:
+Deducts 6 basis points (0.0006) per transaction to reflect realistic top-tier exchange taker fees.
+Blended Cost-Basis Accounting:
+Multi-tranche accumulation orders dynamically compute volume-weighted blended entry prices.
+http://127.0.0.1:8090
+QACTS Pulse:
+Real-time terminal and graphical visualization of the market's coherence/decoherence state with progress bar representations of the Inhale/Exhale cycle.
+Regime Matrix:
+Cross-asset heatmaps showing individual asset synchrony, volatility compression, and correlation pressure.
+Signals & Risk Monitor:
+Confidence-calibrated opportunities with Kelly-bounded sizing recommendations.
+Backtest & Walk-Forward Falsifier:
+Historical verification screen proving whether QACTS signals outperform conventional benchmarks.
+Phase 1 — Mathematical Specification:
+Formulate exact equations, state variables, and constants.
+(Completed in v0.1.0)
+Phase 2 — Core Engine & Spam Sweeper:
+Implement text entropy cleaning, Pearson matrices, and Kelly risk engine.
+Phase 3 — REST API & Platform Server:
+Zero-dependency HTTP server with telemetry and trade execution.
+Phase 4 — Falsification Engine:
+Ingest 1-year 15m historical Binance/Coinbase OHLCV and crypto social archives to run KS and Granger causality tests.
+Phase 5 — Antigravity IDE & Terminal Bridge:
+Windows 11 background daemon and Android Termux local runner on Pixel 9a.
+Phase 6 — Web3 & Execution Layer:
+Integration with Base EVM smart contracts (SweepFeeSplitter.sol) and decentralized order matching.
+📂
+Aug 15, 2026
+Quantum Affinity Gravity (QAG)
+Affy AI
+Heterogeneous Hive-Mind Mesh
+Tripartite Field Theory
+"My Human"
+Service-as-a-Software
+Save to note
+How does the Quantum Affinity Gravity framework redefine cosmology and replace dark matter?
+What are the core technical architectures behind the Affy AI dual-hemisphere edge application?
+How do the zero-point resonance thrusters and SAW propulsion blueprints extract energy?
+1

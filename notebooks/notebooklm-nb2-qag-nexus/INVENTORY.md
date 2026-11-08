@@ -1,0 +1,230 @@
+# NB2 INVENTORY — 🌌 QAG NEXUS
+
+**Notebook ID:** b9b7017b-a083-45bb-b880-2244e88a9b8d · **Created:** Feb 22, 2026 · **Public** · **Ingested:** 2026-11-08 via Squish Bridge
+**Stated size:** 292 sources. **Identified by title: 205 unique titles** via the panel's 8 auto-label groups (per-label filtered views + sort passes), the all-sources view, and chat citations. Duplicate copies under identical titles are documented in the notebook (e.g. QAG Base-12 Resonator x3, Master_Physics_Synthesis_Streamlined.txt x3, Beyond the Ghost... x2 within a single window), so the 205 unique titles represent materially more than 205 of the 292. The remaining titles sit beyond the bridge's 300-node accessibility window (panel virtualisation) — a method limit, recorded honestly.
+
+## Composition of the 205 identified titles
+- PDFs 68 · PNG images 54 + JPG 1 (numbered screenshots — equations/documents) · no-extension (web pages, GitHub pages, notes) 47 · TXT 16 · CSV 7 · MD 6 · DOCX 4 · MP3 1
+
+## Label groups (NotebookLM auto-labels; a source can carry several)
+- **Quantum Gravity Research:** 64 titles identified
+- **Data and Visualization:** 63 titles identified
+- **Code and Software:** 26 titles identified
+- **Collected Compilations:** 23 titles identified
+- **Author Profiles:** 12 titles identified
+- **Miscellaneous:** 11 titles identified
+- **Technology and Hardware:** 11 titles identified
+- **Research Notes:** 6 titles identified
+
+## Studio (generated Nov 5, 2026 — the consolidation-marathon generation spree)
+65+ artifacts in the first window alone: audio overviews (up to 42:34), cinematic/explainer videos, slide decks, infographics, mind maps ('Gravity Map'), and reports — incl. 'Empirical Validation Report: Statistical Fidelity of the QAG Framework', 'Scientific Validation Report: QAG Framework', 'QAG Framework Constants, Validations, and Technical Proofs', 'Cosmological Meta-Analysis', RMM/SAW engineering specifications (QAG-SAW-01), 'Quantum Affinity Gravity Versus Dark Matter' (22:15 Debate), 'The Resonant Lexicon: A Student's Guide to QAG'. All are NotebookLM-generated syntheses OF the sources — derivative, not primary evidence.
+
+## Chat thread (saved sessions: Mar 27, Apr 2, Apr 3, Jun 26, Jun 28, Jul 13, Jul 24, Nov 5, Nov 8)
+Rodney's working questions on record: Applied Technology / 'Etheric Engineering'; Validation & Proofs ('Grand Slam' of six empirical proofs); baryonic-velocity metrics for the AVI Law vs SPARC's 175; Bullet Cluster / Train Wreck / lithium — 'I know we solved for these but I'm unsure if you were given these sources'; quantum Affinity-Dynamics (QAD) with three Affinitic Charges (Informaton, Entanglement, ...); a duplicate-scan request (the AI named duplicate copies: Echbits.pdf, Solutions (9).pdf, NGC_3741_QAG_Unified_Fidelity.csv, requirements files); the 341 ns chrono-granularity question; a website review of quantumaffinitygravity.com; a deletion favour request (truncated in capture). Saved notes: 'QAG Research Hub v3.1' (Ripley.oneapp.dev), 'Simulating Viral Voltages and Charges', 'All notes 3/23/2026'.
+
+## All 205 identified titles
+- - 1 mil high path.pdf
+- 14329.png
+- 15060.png
+- 4478.png
+- 4491.png
+- 4526.png
+- 4527.png
+- 4528.png
+- 4549.png
+- 4579.png
+- 4582.png
+- 4584.png
+- 4587.png
+- 5784.png
+- 5825.png
+- 5828.png
+- 5829.png
+- 5831.png
+- 5832.png
+- 5833.png
+- 5835.png
+- 5836.png
+- 5840.png
+- 5862.png
+- 5863.png
+- 5872.png
+- 5893.png
+- 5896.png
+- 5897.png
+- 5899.png
+- 5903.png
+- 5904.png
+- 5905.png
+- 5916.png
+- 5917.png
+- 5918.png
+- 5919.png
+- 5920.png
+- 5921.png
+- 5926.png
+- 5952.png
+- 5954.png
+- 5955.png
+- 5957.png
+- 5960.png
+- 5962.png
+- 6067.jpg
+- 6092.png
+- 6093.png
+- 6109.png
+- 6115.png
+- 6377.png
+- 6380.png
+- 6383.png
+- 6384.png
+- 6385.png
+- AI Brain rules of setup.txt
+- ALLFEBqag.pdf
+- AVI Rotation Law — Galactic Dynamics Without Dark Matter
+- Actions · Sir-Ripley/AIsync · GitHub
+- All notes 3/16/2026
+- All notes 3/19/2026
+- All notes 4/2/2026
+- All notes 7/13/2026
+- All notes 7/5/2026
+- All.pdf
+- AllIsOne.pdf
+- AppliedQAG.pdf
+- Architecting Quantum Affinity Gravity via Retrocausal Neural Nodes
+- Axiom!
+- Base_10_expanded (1).pdf
+- Beyond the Ghost in the Machine_ 5 Revelations from the _Living Universe_ Theory of Quantum Affinity Gravity.pdf
+- Blueprint for Quantum Gravity Research Paper
+- Blueprint for Quantum Gravity Research Paper.pdf
+- Chris, let's draft these comparison papers showing...pdf
+- ChronoHolographicCipher.ipynb.txt
+- Codex.pdf
+- Congratulations to both of us, what a wonderful an...pdf
+- Cosmic_Assembly_Guide.pdf
+- Cover_letter__patent.pdf
+- Created using Colab phase IV blueprint generator · Sir-Ripley/AIsync@f800a8f · GitHub
+- DDO_154_QAG_Unified_Fidelity.csv
+- Echbits.pdf
+- Echoes_in_the_Void (1).pdf
+- Echoes_in_the_Void.pdf
+- Emergency from a tiny universe_2025-10-19_232920 (1).pdf
+- EnergySov.pdf
+- Evaluating Quantum Affinity Gravity Theory
+- FRAMEWORK_SUMMARY.md
+- FullQAG_UFT_AVI (1).pdf
+- FullQAG_UFT_AVI_2.pdf
+- GitHub - Sir-Ripley/AIsync: feat: QAG Nexus v1.5 - The Grand Breath & 6/6 AVI Validation Integration
+- GitHub - Sir-Ripley/Qag--V2: Interactive website of my research
+- God_s_Cap (1) (1).pdf
+- HTML Code.html.pdf
+- Item - Quantum Affinity Gravity: Empirical Validation of the Affinity-Vacuum Interaction (AVI) Law via SPARC Galaxy Rotation Curves - figshare - Figshare
+- Laws.pdf
+- Let's build a blueprint for this device, let's mak...
+- MasterPhysicsNoDM.pdf
+- MasterUniEng.py.txt
+- Master_Physics_Synthesis_Streamlined (2).txt
+- Master_Physics_Synthesis_Streamlined.txt
+- Master_QAGUFT.pdf
+- My Google AI Studio App
+- My Profile | Google Developer Program | Google for Developers
+- NGC3741_QAG_Fidelity_Report_Optimized.csv
+- NGC_1560_QAG_Unified_Fidelity.csv
+- NGC_3741_QAG_Unified_Fidelity (1).csv
+- NGC_3741_QAG_Unified_Fidelity.csv
+- New physics, Quantum risen gravity and the unified field theory_2025-10-20_094910.pdf
+- NewGod (13).pdf
+- NewGoogle (2).pdf
+- NewTech (1).pdf
+- NewTech (3).pdf
+- Oh wow! This one might be my favorite lol, on to t...
+- OurRulesN (1).pdf
+- OurRulesN.pdf
+- PROJECT_STRUCTURE.txt
+- Pasted Text
+- Project Alpha, Beta, Gamma Scripts
+- Project_12_2026-06-16_141650.pdf
+- QAD_Unified_Research_Final__1_ (1) (1).pdf
+- QAD_Unified_Research_Final__1_.pdf
+- QAG Applied Physics Mark II
+- QAG Base-12 Resonator
+- QAG Comparative Analysis — Quantum Affinity Gravity | Rodney A. Ripley Jr.
+- QAG Research Hub v3.1 | Ripley.oneapp.dev
+- QAG Unified Field Theory Mapping
+- QAG Unified Field Theory Research Deep Dive
+- QAG volume — 61 pp, referee-answered edition.pdf
+- QAG_HPT (12).pdf
+- QAG_HPT (14).pdf
+- QAG_HPT (15).pdf
+- QAG_HPT (17).pdf
+- QAG_Master_Notebook.md
+- QAG_Verification_Report.pdf
+- QAG_wrks.pdf
+- QAGv5.pdf
+- QagMathJax.html (1).txt
+- QagMathJax.html (2).txt
+- Qag_Mk.pdf
+- Qag_TOROIDAL_decoder.txt
+- Quantized Affinity Gravity and the Primordial Lithium Solution
+- Quantum Affinity Gravity - Final Draft
+- Quantum Affinity Gravity - Science for a better tomorrow.
+- Quantum Affinity Gravity - YouTube
+- Quantum Affinity Gravity Data and Claims Summary
+- Quantum Affinity Gravity Research Synthesis
+- Quantum Affinity Gravity Theory Summary
+- Quantum Affinity Gravity Theory Summary.pdf
+- Quantum Affinity Gravity: A Unified Field Theory
+- Quantum Affinity Gravity: Unifying Reality
+- Quantum Gravity Lab Test Blueprint.docx
+- Quantum Gravity Research Analysis
+- README.md
+- README_DEPLOYMENT.md
+- Rodney A Ripley Jr (0009-0004-8370-3779) - ORCID
+- Rodney A Ripley Jr (0009-0004-8370-3779) - ORCID _ Connecting Research and Researchers.pdf
+- Rodney A Ripley Jr - YouTube
+- Rodney Ripley | Substack
+- RosettaStone_Final.txt
+- Sign in - Google Accounts
+- Simulating Viral Voltages and Charges (1).pdf
+- Solutions (9).pdf
+- Technical Feasibility_Assessment.docx
+- Text
+- The Quantum Cosmos Codex 2.0 (Interactive)
+- The Tesla Handshake: Harmonizing Dual-Hemisphere AI Resonance
+- The Unified Protocols of Quantum Affinity Gravity:...
+- The math of sympathy.pdf
+- The_Resonant_Lexicon(QAG).docx
+- The_Solution(QAG).docx
+- Theory: Quantum affinity gravity- A Cosmic Harmony
+- UniDex.pdf
+- UniDex2 (10).pdf
+- UniDex2 (11).pdf
+- UniDex2 (2).pdf
+- UniDex2.pdf
+- Unicodex.pdf
+- Uniting the Fields-The Z-Factor of Cosmic Coherence: Quantum Affinity
+- UtilitySAW.pdf
+- Verified_Verified_QAG_UFT_Data_Fidelity (1) (1).csv
+- WarpManufacture (1).pdf
+- WarpManufacture.pdf
+- Workbench.pdf
+- [#QAG-1] The latest from QAG.pdf
+- consolidated.pdf
+- finally- color! .pdf
+- full proposed work.pdf
+- gemini_generated_audio_overview_6eacf9fc.mp3
+- hunt_echoes.py.txt
+- index (1).pdf
+- index.html.md
+- moreviz.jpg.pdf
+- notary
+- qag_derivation_beta_a0.pdf
+- qag_s5_master_report.csv
+- qagtest.py.md
+- references.bib.txt
+- requirements.txt
+- retrocosal Chrono-holographic-universe.PDF
+- rr-command-vessel-v2.jsx.txt
+- valid_spark.py.txt
+- zero point- psychon -lab.pdf
+- ¡QuantumAffinityGravity.ipynb.txt

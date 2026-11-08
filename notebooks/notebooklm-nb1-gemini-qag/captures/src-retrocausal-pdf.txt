@@ -1,0 +1,134 @@
+PRO
+Source guide
+Sources
+Studio
+Create notebook
+This text functions as a
+designed to verify user identity before granting access to a cloud storage document. The primary purpose of the interface is
+, prompting individuals to input their personal credentials or establish a new profile. Additionally, the page provides
+regarding privacy policies and troubleshooting help, while also offering safety advice for public devices through private browsing modes.
+Sign in
+Gemini Notebook can make mistakes, so double-check it.
+You can now create Slides and Videos step-by-step
+retrocausal.pdf
+standard digital gatekeeper
+secure authentication
+essential navigation links
+to continue to Google Drive
+Email or phone
+Forgot email?
+Not your computer? Use a private browsing window to sign in.
+Compact table only, no prose: for each of these constants — a0, Phi, K_ASB, beta, mu, Affiniton mass, Upsilon, the QAG frequency in MHz, echo reflectivity R, echo delay — list every distinct value the
+201 sources
+·
+The provided sources outline the
+framework, a speculative unified theory proposing that gravity emerges from resonant affinity within a chrono-holographic, conscious vacuum rather than traditional mass. The documents detail mathemat
+Today • 3:27 PM
+Audio Overview
+Slide Deck
+Video Overview
+Mind Map
+Flashcards
+Quiz
+Infographic
+Data Table
+Share
+Google Drive
+Create account
+Guest mode
+Privacy terms
+Learn more about using Guest mode
+⚛️
+Jun 9, 2026
+Quantum Affinity Gravity (QAG)
+Save to note
+List the core equations of the Quantum Affinity Gravity framework exactly as given in these sources, and the exact value of every constant mentioned — including a0, v_inf, r_aff, Phi, K_ASB, beta, mu,
+Try it
+Reports
+New!
+Add note
+Help
+Privacy
+Terms
+Core Equations of the Quantum Affinity Gravity Framework
+1. The Affinity-Vacuum Interaction (AVI) Law (Galactic Rotation Curves)
+The AVI Law replaces non-baryonic dark matter by accounting for the non-linear polarization response of the 2D vacuum floor to visible baryonic mass
+:
+2. Temporal Echo Wave Function
+QAG models quantum state persistence and black hole ringdown memory through a discrete comb of temporal echoes reflecting off the quantum affinity boundary
+When parametrized per system mass (
+), the echo delay is linked via the Mass-Resonance scaling relation
+3. Critical Acceleration ( ) Derivation
+Derived directly from the Riemann Hypothesis metric boundary (Euler's number
+) and the global Hubble expansion rate (
+)
+(Alternatively expressed in sub-Planckian terms as
+).
+4. Vacuum Ground State ( Ground State Vector)
+The analytical solution for the vacuum expectation value (VEV) balancing contraction, expansion, and equilibrium without informational leakage
+5. QAG Energy Equivalence & Holographic Generative Flux
+6. Singularity Resolution (Modified Schwarzschild Metric)
+Exponential spatial buffer preventing curvature divergence at the Planck length
+7. Jordan-Frame Master Action & QAG Master Lagrangian
+8. Global Reduced Chi-Squared (Universal Harmony Metric)
+9. Baryogenesis Equation
+10. 3D Cluster Potential & Integrated Cluster Mass Law
+Exact Values of Canonical Constants and Source Comparisons
+1. Critical Acceleration ( )
+2. Asymptotic Vacuum Resonance Velocity ( )
+3. Affinity Radius ( )
+4. (Base-12 to Base-10 Symmetry Scaling Factor)
+5. (Affinity Symmetry Bias)
+6. (Affinitic Susceptibility / Cluster Response Coefficient)
+7. (Affinity Vacuum Mass Scale)
+8. Affiniton Mass ( or Mass Gap )
+9. or (Stellar Mass-to-Light Ratio / Upsilon Lock)
+10. Affinity Frequencies in MHz (and Hz)
+11. Echo Delay Parameters
+12. Additional Core Parameters
+Thoughts
+The core equations and exact values of all canonical constants within the
+framework, compiled directly from the provided source passages, are detailed below.
+In alternative or simplified forms across datasets:
+3. Critical Acceleration (
+) Derivation
+4. Vacuum Ground State (
+Ground State Vector)
+Where different sources record distinct values for the same parameter, each value is listed alongside its source document:
+1. Critical Acceleration (
+2. Asymptotic Vacuum Resonance Velocity (
+3. Affinity Radius (
+4.
+(Base-12 to Base-10 Symmetry Scaling Factor)
+5.
+(Affinity Symmetry Bias)
+6.
+(Affinitic Susceptibility / Cluster Response Coefficient)
+7.
+(Affinity Vacuum Mass Scale)
+8. Affiniton Mass (
+or Mass Gap
+9.
+or
+(Stellar Mass-to-Light Ratio / Upsilon Lock)
+🌌
+Would you like me to synthesize these mathematical proofs into a structured written report or build a interactive visualization script for your notebook?
+1
+5
+where
+Running Affinitic Susceptibility:
+25
+36
+38
+43
+50
+51
+29
+61
+53
+6
+68
+100
+19
+107
+(Canonical value derived from

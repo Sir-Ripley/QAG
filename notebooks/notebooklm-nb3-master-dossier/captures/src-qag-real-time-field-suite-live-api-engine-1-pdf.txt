@@ -1,0 +1,98 @@
+PRO
+Source guide
+Sources
+QAG Real-Time Field Suite & Live API Engine (1).pdf
+Create notebook
+This source outlines a
+designed to analyze physical phenomena across vastly different scales using a unified mathematical framework. Its primary purpose is to
+through real-time data integration. The platform achieves this by utilizing live application programming interfaces to
+simultaneously. Ultimately, the document showcases an advanced software engine that applies
+to model complex interactions from the atomic level up to massive cosmic structures.
+Gemini Notebook can make mistakes, so double-check it.
+comprehensive digital interface
+bridge microscopic molecular biology and cosmological mechanics
+assess viral structural properties and compute galactic rotation curves
+consistent universal constants
+Quantum Affinity Gravity (QAG) Real-Time Field Suite
+Live REST API Fetching & Real-Time Kinematic Computation Across Cosmological and Biological Arenas
+Live Data Engine Active | RCSB PDB REST API & SPARC N=171 Kinematic Catalog
+Fetch live structural metadata (molecular weight, atom count, density proxy) directly from the RCSB Protein
+Data Bank API and execute the QAG Viral Decoherence Algorithm in real time.
+Select Preset PDB Target or Custom Search: 6VXX - SARS-CoV-2 Spike Glycoprotein 3J3Q - HIV-1 Capsid
+Architecture 1RVX - Influenza A Hemagglutinin 1R08 - Human Rhinovirus Capsid 4G93 - Zika Virus Envelope
+Enter Custom PDB ID below...
+PDB Accession ID:
+Fetch PDB API
+Live Structure Title: Loading...
+Molecular Weight (MW): -- kDa
+Deposited Atom Count: --
+Calculated Structural Density Proxy: --
+Viral Affinitic Impedance (Zv): --
+Disruptive Resonant Frequency (fkill): -- MHz
+Estimated Viral Zeta (ζv): -- mV
+Host Safety Margin (Δζ > 20 mV): --
+Calculates the exact temporal echo delay (Δtecho), QAG Universal Integer (k), and wave mechanics reflection
+signatures across microscopic and cosmic masses.
+Target System / Lensing Mass M (Solar Masses M⊙):
+1014.0 M⊙
+Recursive Echo Count (N):
+Wave Reflection Coefficient (R):
+Base Temporal Pixel (tpixel): 3.41 × 10-7 s
+QAG Universal Integer (k): --
+Total Echo Delay Time (techo = k · tpixel): -- s
+Wave Mechanics Gamma (Γ): 0.1735
+Informational Fidelity (Γfidelity): > 97.0% (Coherent)
+Select any galaxy from the SPARC empirical catalog to compute its real-time rotation curve under the
+Affinity-Vacuum Interaction (AVI) Law.
+Select Galaxy from SPARC Catalog:
+Locked Upsilon Baryonic Floor (Υ*):
+Peak Observed Speed (vmax): -- km/s
+Newtonian Mean Residual: -- km/s
+QAG AVI Law Mean Residual: -- km/s
+Fidelity Gain over MOND / Newtonian: -- km/s
+Systemic Coherence Index (Ξ): -- %
+Critical Acceleration (a0)
+1.2047 × 10-10 m/s2
+Derived via cH0 / 2e (Riemann Hypothesis Horizon Link)
+Affinity Symmetry Bias (KASB)
+0.013829
+Vacuum tilt; solves Baryogenesis & σ8 cosmic web tension
+Universal Coherence Index (&mathcal;C)
+6.00 × 10-7
+Gravity-consciousness coupling constant (WEP violation signature)
+Affinitic Susceptibility (β)
+3.14 × 10-19 s2/m
+Ferroelectric vacuum response density constant (ρvac = β gB 2)
+© 2026 Ripley & Ripley Research / R&R Droids | Quantum Affinity Gravity (QAG) Unified Field Engine
+Quantum Affinity Gravity (QAG) & Affy Master Research Dossier
+79 sources
+·
+The provided documents detail the technical architecture for
+, a hybrid dual-hemisphere artificial intelligence ecosystem designed to operate concurrently across an Android mobile device powered by a Google Tensor G4 NPU and a Windows 11 desktop workstation uti
+, combining rapid intuitive draft models with rigorous analytical models, and arbitrates their outputs using a
+to prevent hallucinations. Communication between the mobile and desktop environments is maintained via an
+, which allows seamless session handoffs, tool execution, and local database synchronization without relying on cloud infrastructure. Additionally, the project incorporates
+and
+that enable the software to safely test, compile, and update its own codebase locally.
+Share
+QAG Real-Time Suite
+Structural Ingestion Node
+Temporal Echo Engine
+SPARC Catalog Navigator
+Universal Constants Matrix
+🧬 RCSB PDB Live Structural Ingestion Node
+⏱ Chrono-Holographic Latency & Echo Time Engine
+🌌 SPARC Statistical Catalog Navigator (N=171 Galaxies)
+📜 Canonical Universal Constants Matrix
+⚛️
+Sep 20, 2026
+Affy
+3+1 model hierarchy
+reduced chi-squared dissonance gate
+ADB reverse loopback bridge
+autonomous memory consolidation
+recursive self-improvement harnesses
+Save to note
+How do the mobile and PC components work together?
+What is the dual-hemisphere model architecture and how does it function?
+How does the system perform zero-copy VRAM acceleration on Windows?

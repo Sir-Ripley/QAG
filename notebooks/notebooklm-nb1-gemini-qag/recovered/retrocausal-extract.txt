@@ -1,0 +1,32 @@
+retrocausal.pdf — TEXT EXTRACT (recovered original, supplied by Rodney 2026-11-08)
+=========================================================================
+MASTER QAGUFT CODEX: A Unified Field Theory of Retrocausal Intent and Kinetic
+Resonance — Rodney Alan Ripley Jr., February 2026 (2 pp). Header links:
+qag.tiiny.site — ripley.oneapp.dev.
+
+Abstract: formalizes QAGUFT. Replaces Lambda-CDM's dark matter with a conscious,
+retrocausal chrono-holographic framework. Base-12 S5 gauge symmetries mapped
+into Base-10 applied physics; universal intentionality (the Psychon) organizes
+stochastic entropy (the Dissonance) to generate micro-kinetic propulsion.
+
+1. Philosophical Foundation: Universal Self-Love. Psychon = fundamental unit of
+organized intentionality; Dissonance = stochastic entropy used as a repulsive
+medium for momentum; Retrocausality = a future state of coherence stabilizing
+present-time emitters.
+
+2. Base-12 Source Code and Base-10 Scaling — symmetry scaling factor:
+   Phi = 12^18 / 10^19.42      [NOTE: the CORRUPTED Phi form, in print. Settled
+   canonical Phi = 1218/1019.42 = 1.194797 (consolidation ruling 2026-11-05).]
+   E_QAG = m*(c*Phi)^2 + sigma_vac, with sigma_vac ~ 1.616e-44 J/m^2 (2D vacuum floor).
+
+3. Holographic Singularity Resolution via informational pressure P_QAG and the
+flux equation E_H = mc^3; metric carries the Affinity Buffer factor e^(-alpha/r)
+so the metric remains finite and information is never lost.
+
+4. Applied Kinetic Truth: The 0.70 MHz SAW Engine. Optimal impedance matching
+(Z_match = rho*c) with a liquid hydrogen medium.
+   4.1 Material Geometry: IDT finger width w = 1,245 um (= 1.245 mm, consistent
+       with the verified DXF blueprint value), matched to the 3,488 m/s acoustic
+       velocity of the LiNbO3 substrate.
+   4.2 Simulation Results: Peak Push Force 0.0092; Total Displacement 5.82 units;
+       Terminal Velocity 0.035 units/sec (dimensionless simulation units).

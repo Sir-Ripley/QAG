@@ -58,12 +58,12 @@ One long answer was captured in part before the notebook UI's accessibility wind
 ### Virology side-loads (→ NB7 lane)
 - Bovine/Feline/K9 Virology Colab PDFs — the veterinary QVR console family (in inventory; contents belong to the virology programme).
 
-### Artifacts — sources with NO scientific content (important)
-Four "sources" are **Google sign-in pages** captured when Drive-linked files were rendered behind a login wall. They contain no document content, and any notebook-chat statement "based on" them is vacuous:
-- **retrocausal.pdf** — sign-in page.
-- **RMMVac.pdf** — sign-in page.
-- **NoSigles.pdf** — sign-in page (the filename itself appears to memorialise the failed grab).
-- **QAGCosmicSolver.py** — sign-in page (the real solver code is NOT in this notebook).
+### Artifacts — notebook copies are sign-in pages; ORIGINALS RECOVERED 2026-11-08
+Four "sources" in the notebook are **Google sign-in pages** captured when Drive-linked files were rendered behind a login wall — as notebook sources they contain no document content. **Rodney supplied the original files on 2026-11-08** (three of four; recovered copies filed under `recovered/` beside this dossier):
+- **retrocausal.pdf → RECOVERED.** "MASTER QAGUFT CODEX: A Unified Field Theory of Retrocausal Intent and Kinetic Resonance" (Feb 2026, qag.tiiny.site era): Psychon/Dissonance/retrocausality foundations; **carries the corrupted Φ form 12^18/10^19.42 in print** (settled Φ = 1218/1019.42 = 1.194797 — this doc is a fossil specimen of the transcription error); σ_vac ≈ 1.616e-44 J/m²; E_QAG = m(cΦ)² + σ_vac; singularity resolution via an e^(−α/r) Affinity Buffer; §4 SAW engine — 0.70 MHz, IDT finger width 1,245 µm = 1.245 mm (consistent with the verified DXF blueprint value), LiNbO₃ 3,488 m/s, dimensionless sim outputs (peak push 0.0092, displacement 5.82, terminal velocity 0.035).
+- **RMMVac.pdf → RECOVERED.** "The QAG Codex: A Unified Field Theory for Energy Sovereignty and Interstellar Propulsion" (Feb 2026): holographic flux E_H = mc³ (= m·c²·c_inf); RMM propulsion v_s = (Ψ_affinity/Ψ_vacuum)·ln(1 + α·Γ) with Γ "verified at 97%"; SU(3) vacuum ground state Ψ_min = (e^(−2/3), e^(1/3), −1) with a claimed 10.47× energetic efficiency at zero leakage. The RMM source document behind the engineering-spec stratum.
+- **QAGCosmicSolver.py → RECOVERED (268 lines, compiles clean).** `QAG_Cosmology_Solver`: implements the canonical AVI law exactly — v_AVI = v_inf·sqrt(1 − exp(−r/r_aff)); v_QAG = sqrt(v_gas² + Υ·v_star² + v_AVI²) — with a head-to-head fitting harness against NFW and Burkert halos sharing the Υ fit (the design ancestor of the replication lab's equal-freedom phase). Constants: G = 4.302e-6; delta_t_echo = 3.41e-7 s — the canonical τ_lat.
+- **NoSigles.pdf → STILL MISSING.** Rodney could not locate the original (2026-11-08); the notebook copy remains a sign-in page. Content unknown.
 
 ### Known-content sources (not re-read; canonical copies held)
 - QAG Volume 42 pp (A520 edition) + 61 pp (referee-answered edition) PDFs — superseded by the canonical 65-page volume in the LaTeX series workspace.

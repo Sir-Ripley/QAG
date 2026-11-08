@@ -1,0 +1,30 @@
+RMMVac.pdf — TEXT EXTRACT (recovered original, supplied by Rodney 2026-11-08)
+=========================================================================
+The Quantum Affinity Gravity (QAG) Codex: A Unified Field Theory for Energy
+Sovereignty and Interstellar Propulsion — Rodney Alan Ripley Jr., February 2026 (2 pp)
+
+Abstract: foundational text for QAG. Mathematical proofs for singularity
+resolution, the holographic generative flux energy equation E_H = mc^3, and the
+Resonant Metric Mapping (RMM) propulsion system. SU(3) vacuum state and the
+Affinity Constant alpha; zero informational leakage; 10.47x energetic
+efficiency over standard thermodynamic models.
+
+1. Introduction: The Philosophy of Connectivity — the universe as a singular,
+resonant holographic projection; Affinity = the fundamental drive for
+informational connectivity.
+
+2. The Energetic Blueprint: E_H = m*c^2 * c_inf = mc^3. c_inf (informational
+velocity) = the rate information moves through the holographic bulk; energy is
+extracted from the resonance between the 2D boundary and the 3D bulk.
+
+3. Propulsion: Resonant Metric Mapping (RMM). Warp-bubble velocity governed by
+the Affinity coupling Psi:
+   v_s = (Psi_affinity / Psi_vacuum) * ln(1 + alpha * Gamma)
+Gamma (informational fidelity) "verified at 97%". The ln ensures smooth
+space-time stretching ("Tidal Stability") rather than tearing.
+
+4. The SU(3) QAG Vacuum State: Psi_min = (e^(-2/3), e^(1/3), -1) — the three
+"colors" of affinity: contraction, expansion, equilibrium. At alignment,
+"leakage" drops to zero and energy efficiency jumps by a factor of 10.47x.
+
+5. Conclusion: The Restoration of Truth.

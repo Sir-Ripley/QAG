@@ -1,0 +1,225 @@
+PRO
+Source guide
+Sources
+ToroidalDirectML deep review.md
+Create notebook
+The provided text is a technical code review of a cross-platform artificial intelligence framework called
+, which aims to run models entirely without Nvidia's CUDA by leveraging Windows DirectML and Android's NNAPI. The document details a hybrid
+that combines quantized language models with a toroidal mathematical substrate designed to arbitrate and route tasks between desktop and mobile devices. However, the evaluation reveals that the syste
+across different programming languages. While the Android component runs functional ONNX models, the personal computer side relies heavily on CPU loops, stubbed servers, and fabricated telemetry data
+is architecturally sound, achieving a truly functional hybrid system requires significant code consolidation, repaired GPU execution paths, and standardized mathematical formulas.
+ToroidalDirectML — Deep Code Review (repo: Sir-Ripley/AI-Offline, main)
+1. ARCHITECTURE — how the system actually works
+1.1 The "3+1" tier structure (HYBRID_3PLUS1_ARCHITECTURE.md)
+1.2 What the toroidal math actually is — FOUR different definitions, none matching
+1.3 SyntheticTier4.hlsl (Windows Tier 4)
+1.4 PC ↔ Android communication
+1.5 The "8-tensor-node simulation"
+1.6 "Geometry-based routing"
+2. COMPLETENESS — per file
+PC backend — C++/HLSL
+PC backend — Python
+Android (for platform coverage; beyond the brief's file list)
+3. PLATFORM COVERAGE
+4. SYNC STATE
+5. GAPS TO FULL FUNCTIONALITY
+PC CPU+GPU execution
+Android execution
+Geometry-based inter-device routing of toroidal state
+Bottom line for the "replace CUDA" thesis
+Gemini Notebook can make mistakes, so double-check it.
+ToroidalDirectML
+"3+1" tiered architecture
+fragmented codebases, unexecuted GPU shaders, and inconsistent mathematical implementations
+CUDA-free design premise
+Scope note:
+verified EMPTY (GitHub API: 409 "Git Repository is empty"). All real code lives in AI-Offline. Review also covers three files the brief didn't list but which carry the actual system behavior:
+,
+, and the Android
+.
+--------------------------------------------------------------------------------
+"3+1" = three on-disk quantized LiteRT LLM models + one ephemeral "synthetic" tier:
+Tiers 1–3 ARE defined (this doc +
+docstring +
+EXPECTED_MODELS — note the latter lists only Tiers 1 and 3). The toroidal manifold is the arbitration substrate between the tiers: draft and verifier hidden states are projected onto a shared 8,192-e
+The state is two fields ψ1, ψ2 of 8,192 floats, shaped [1, 32, 16, 16] (channels×H×W). Each implementation defines the coupling differently:
+Key facts:
+Single elementwise pass:
+. No weights, no state evolution, no coupling.
+is a self-consistent D3D12 wrapper (root signature CBV+SRV+UAV, runtime
+of
+, cs_5_1; numthreads(64) matches its dispatch math). It has
+no fence/synchronization
+—
+submits and returns; the caller cannot know when output is ready.
+is a
+matplotlib visualization only
+: parametric torus (R=5, r=2) with surface displacement
+, and 8 cyan scatter points at θ = k·π/4, φ = 0 on the outer equator. No tensors, no node state, no communication, no dynamics — it models nothing computational.
+Not implemented anywhere.
+Routing is
+: substring match of the task name against static sets (
+) plus a
+rule, returning TARGET_PC_WORKSTATION_GPU / TARGET_HYBRID_COOPERATIVE / TARGET_LOCAL_PIXEL_9A_NPU. Manifold state, χ², readout vectors, and torus geometry play no role in any routing decision.
+The premise holds directionally — the design is DirectML/NNAPI-native and contains zero CUDA — but today the PC GPU path executes nothing: the flagship exe is a CPU loop with cosmetic D3D12 initializa
+Affy / Aestheria Hive-Mind Master Workspace
+43 sources
+·
+The provided sources outline a comprehensive technical dossier and implementation framework for an advanced
+engineered around the
+duodecimal architecture. This unified technological stack spans multiple runtime environments, including a Windows workstation acting as a heavy compute hub, an
+running tiered Gemma models mediated by toroidal manifolds, and a Python-based research assistant named
+. Across these components, the architecture relies on strict mathematical boundaries, such as a
+, alongside specialized computational substrates like
+to ensure localized privacy and CUDA-free execution. Furthermore, the framework integrates distributed bio-acoustic parameter simulations, evolutionary Monte Carlo optimization for microalgae carbon
+Saturday, October 3
+Today • 4:42 PM
+Share
+Hybrid 3+1 architecture
+Toroidal math definitions
+Platform code completeness
+Cross-device synchronization state
+Gaps to functionality
+Sir-Ripley/ToroidalDirectML
+pc_backend/hardware_mesh.py
+pc_backend/directml_cascade.py
+app/.../engine/AndroidToroidalBridge.kt
+NexusOrchestrator.kt
+tier4/SyntheticAndroidTier4.kt
+Tier 1
+Reflexive Drafter —
+(~304 MB, INT8)
+Tier 2
+Semantic Arbiter —
+(~584 MB, INT4)
+Tier 3
+Analytical Verifier —
+(~2.59 GB, INT8)
+Tier 4 (Android)
+— system Gemini Nano via Google AICore, fallback ephemeral INT8 buffer
+Tier 4 (Windows)
+HLSL compute shader synthesized in VRAM
+directml_cascade.py
+self_heal_cache.py
+Despite "S⁵ ↔ S³ manifold" comments everywhere, the HLSL/C++/NumPy coupling is a
+flat 1-D elementwise map
+— no sphere geometry, no neighbor coupling, no topology. The only genuinely
+toroidal
+math in the repo is in
+:
+does periodic wrap-around padding (true T² topology) feeding
+. The ONNX model
+(present in
+and in Android
+) is therefore the only artifact that implements the advertised topology — and it is a
+different function
+from the HLSL/C++/Python coupling that shares its name and κ constants.
+No χ² anywhere is a statistical chi-squared against data; all are heuristic "dissonance" scores anchored near 1.0 by construction.
+additionally
+clamps the reported value
+OutputState[idx] = sin(InputState[idx]·0.12 + phase)·0.97
+SyntheticWindowsTier4.h
+D3DCompileFromFile
+CSMain
+Dispatch()
+Transport
+: USB
+ADB reverse tunnel
+; the phone POSTs to
+. The full hub (
+) runs an
+asyncio task re-binding the tunnel every 10 s and caching device state. No Wi-Fi/LAN transport, no TLS, no auth on any endpoint.
+Message format
+: JSON over HTTP (FastAPI). Tensor payload =
+Base64(MessagePack(float array))
+— field
+(+
+, optional
+/
+in the big hub's
+). Android
+uses msgpack-core packFloat array + Base64 — wire-compatible with the Python bridges.
+Endpoints
+(WebSocket telemetry/token stream),
+, scheduler + skills endpoints (big hub only).
+What /resonate actually does with a tensor
+: deserializes it, takes
+as the "readout" (first 32 elements —
+not
+a manifold projection), optionally shells out to
+for benchmark numbers, and returns those.
+The coupling is never executed on the received tensor
+in any server.
+exists in the big hub but operates on hidden states inside the skills layer, not on the resonate path.
+tools/simulations/QAG_Toroidal_8_Tensor_Nodes.py
+sin(7θ)·cos(10φ)·0.4
+hardware_mesh.py: HardwareCapabilityRegistry.evaluate_delegation(task_type, payload_size_bytes)
+pc_tasks
+hybrid_tasks
+payload > 2 MB → PC
+— RUNNABLE BUT MISLABELED.
+Creates a D3D12 device (with WARP fallback), then runs the coupling in a
+pure CPU
+loop over std::vectors
+. The device is never used for compute; neither header class is included or instantiated. Flags
+and
+are parsed and
+never used
+. The state never evolves: ψ1/ψ2 inputs are constants (0.42 / −0.38) and outputs are never fed back, so all N iterations recompute identical values. Reported
+(0.000038) and
+(0.999984) are
+hardcoded literals
+; χ² is clamped to 1.0028 if above gate (see 1.2). JSON claims
+— BROKEN, CANNOT INITIALIZE.
+compiles entry point
+from
+— that function
+does not exist
+in the shader (readout+χ² live inside
+); the second
+fails and
+returns false. Further defects: (a)
+computes thread groups as
+but the shader is
+— 4× over-dispatch (masked by the bounds guard); (b)
+records N ping-pong dispatches into one command list while rewriting a
+single mapped constant buffer
+between recordings — all dispatches read the final constant values at execution time, so per-iteration phase shifts are lost; (c) nothing in the repo instantiates this class.
+— COMPLETE as a standalone class
+(see 1.3); unused by any caller; no fence.
+— COMPLETE shader, with a race
+: readout threads 0–31 read
+elements written concurrently by other threads in the same dispatch (no barrier possible mid-dispatch) — readout values are racy; χ² uses thread 0's element only. Precompiled
+sit in the repo but
+no code loads any .cso
+(all paths compile HLSL at runtime).
+— COMPLETE for what it builds
+only, links d3d12/dxgi/d3dcompiler, copies the two .hlsl files post-build. The architecture doc's claimed ONNX Runtime linkage (
+) is
+absent
+— the .onnx is merely copied if present.
+— COMPLETE CLI, CPU-ONLY despite branding.
+is real NumPy math; serialization round-trips losslessly (8192 reshape / 32-readout channel broadcast / tile-or-truncate);
+all wired. But:
+only
+checks
+whether
+exists and returns a label string —
+no
+is ever created; the ONNX model is never run
+; all math is NumPy on CPU.
+fabricates fields the exe never emits:
+(v1.1.0) — RUNNABLE STUB.
+FastAPI server;
+decodes the tensor and returns only its shape + L2 norm ("[Integration Point] Pass to Toroidal Topology" comment marks the unimplemented step). Also serves QAG constants and a GW-echo calculator (phy
+; nothing is encrypted.
+Root
+(v1.0.0) — earlier, simpler stub
+of the same server (no CORS, no qag_constants/gw_echo, no energy norm). Both bind
+— root
+and both hubs also bind 8000, so the four servers are mutually exclusive alternatives, not a stack.
+— STUB VARIANT.
+Same resonate stub + echo-stub chat completions;
+returns hardcoded
+;
+Root-tree

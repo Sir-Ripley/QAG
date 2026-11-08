@@ -1,0 +1,94 @@
+REDACTED COPY — filed per Rodney's instruction 2026-11-08 (copy with personal data removed, everything else intact). The unredacted capture is retained in Squish's local ingest workspace only.
+
+PRO
+Source guide
+Sources
+Create notebook
+This document is an
+that compiles the foundational registration and classification records associated with a specific commercial enterprise. The text is structured to display
+, including the unique employer identification number, official mailing address, and the precise month and year when the business was established. Furthermore, the record outlines
+, such as the applicable industrial classification code and specific tax return requirements managed by federal authorities.
+Gemini Notebook can make mistakes, so double-check it.
+50c2cab0-bb73-4835-bd71-d97e54824bb7.pdf
+official entity transcript from the Internal Revenue Service
+confidential taxpayer details
+operational and filing obligations
+Internal Revenue Service
+United States Department of the Treasury
+This Product Contains Sensitive Taxpayer Data
+Entity Transcript for Business
+Employer Identification Number (EIN) Provided: [EIN REDACTED]
+The following reflects the entity information on file for the Taxpayer Identification Number
+listed above. A blank field indicates no data on file.
+Business Close Date:
+Filing Requirements:
+Fiscal Year Month (FYM):
+Prior Fiscal Year Month:
+Limited Liability Company:
+IRC Section 754 election:
+IRC Section 754 election year:
+North American Industry Classification System CODE:
+Railroad Retirement Board Number:
+Parent Employer Identification Number (EIN):
+Sole Proprietor Taxpayer Identification Number (TIN):
+Employment Code:
+Form 940, Employers Annual Federal
+Unemployment (FUTA) Tax Return,
+Form944FilingRqrCd.01
+454110
+XXX-XX-7617
+Page 1/1
+R&R Droids
+24 sources
+·
+The provided documentation outlines the
+framework and its integration with
+, establishing an advanced computational and theoretical architecture developed by Rodney Alan Ripley Jr. This system introduces a
+that operates across mobile vessels using Google Pixel 9a Tensor G4 processors and Windows 11 high-throughput compute cores, utilizing LiteRT and specialized C++ JNI safety shielding. At its core, th
+built upon a ferroelectric superfluid vacuum, utilizing Base-12 harmonic symmetry to achieve high-efficiency energy extraction and propulsion without relying on dark matter. Complemented by the
+React and Tailwind application framework, the initiative spans diverse domains from autonomous
+enterprise tooling and defense innovations to accessible, privacy-first mobile assistants designed to support neurodivergent workplace needs.
+Share
+Entity Transcript
+Business Information
+Internal Revenue
+Taxpayer Data
+Employer Identification
+📂
+Aug 15, 2026
+Quantum Affinity Gravity (QAG)
+Affy AI
+Heterogeneous Hive-Mind Mesh
+Tripartite Field Theory
+"My Human"
+Service-as-a-Software
+Save to note
+How does the Quantum Affinity Gravity framework redefine cosmology and replace dark matter?
+What are the core technical architectures behind the Affy AI dual-hemisphere edge application?
+How do the zero-point resonance thrusters and SAW propulsion blueprints extract energy?
+Request Date:
+03-26-2026
+Response Date:
+Tracking Number:
+110077146569
+Business Operating Division:
+Small Business
+SB
+Primary Name:
+RODNEY RIPLEY
+Sort Name:
+R&R DROIDS
+Name Control:
+RIPL
+Street Address:
+37026 HAZEL RUN RD
+City:
+SALINEVILLE
+State:
+OH
+ZIP Code:
+43945-9742-265
+IRS Establishment Date:
+02/2020
+Business Operational Date:
+201801

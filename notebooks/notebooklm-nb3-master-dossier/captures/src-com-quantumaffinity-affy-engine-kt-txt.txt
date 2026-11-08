@@ -1,0 +1,62 @@
+PRO
+Source guide
+Sources
+com.quantumaffinity.affy.engine.kt.txt
+Create notebook
+This software component coordinates
+to generate and evaluate responses for a given user prompt. After setting up and launching both engines concurrently, the system
+between their generated outputs using a mathematical formula. If the measured difference falls below a specific threshold, the primary response is delivered; otherwise, the alternative perspective is
+that compares competing machine outputs to determine the most appropriate answer.
+Gemini Notebook can make mistakes, so double-check it.
+two distinct artificial intelligence models
+analyzes the statistical divergence
+dual-engine decision maker
+package com.quantumaffinity.affy.engine
+import com.google.ai.edge.litertlm.Engine
+import com.google.ai.edge.litertlm.EngineConfig
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.withContext
+import java.io.File
+class DualHemisphereEngine(
+private val idModelPath: String = "/sdcard/Affy/models/gemma-3-270m-it-int8.litertlm",
+private val egoModelPath: String = "/sdcard/Affy/models/gemma-4-E2B-it.litertlm"
+) {
+private var idEngine: Engine? = null
+private var superegoEngine: Engine? = null
+}
+Quantum Affinity Gravity (QAG) & Affy Master Research Dossier
+79 sources
+·
+The provided documents detail the technical architecture for
+, a hybrid dual-hemisphere artificial intelligence ecosystem designed to operate concurrently across an Android mobile device powered by a Google Tensor G4 NPU and a Windows 11 desktop workstation uti
+, combining rapid intuitive draft models with rigorous analytical models, and arbitrates their outputs using a
+to prevent hallucinations. Communication between the mobile and desktop environments is maintained via an
+, which allows seamless session handoffs, tool execution, and local database synchronization without relying on cloud infrastructure. Additionally, the project incorporates
+and
+that enable the software to safely test, compile, and update its own codebase locally.
+Share
+DualHemisphereEngine architecture
+LiteRT AI models
+Kotlin coroutines processing
+Chi Squared Dissonance
+Query processing flow
+suspend fun initialize() = withContext(Dispatchers.IO) {
+    val idConfig = EngineConfig(modelPath = idModelPath)
+    val superegoConfig = EngineConfig(modelPath = egoModelPath)
+
+    idEngine = Engine
+⚛️
+Sep 20, 2026
+Affy
+3+1 model hierarchy
+reduced chi-squared dissonance gate
+ADB reverse loopback bridge
+autonomous memory consolidation
+recursive self-improvement harnesses
+Save to note
+How do the mobile and PC components work together?
+What is the dual-hemisphere model architecture and how does it function?
+How does the system perform zero-copy VRAM acceleration on Windows?

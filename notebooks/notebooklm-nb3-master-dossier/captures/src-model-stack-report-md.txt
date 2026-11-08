@@ -1,0 +1,223 @@
+PRO
+Source guide
+Sources
+MODEL_STACK_REPORT.md
+Create notebook
+The provided source report evaluates the
+of an existing
+for the Aestheria ecosystem, consisting of three physical AI models of varying sizes alongside a synthetic baseline tier. Through a series of offline simulations, the text examines how these distinct
+. The document ultimately validates the
+as structurally sound and well-suited for its designated cascading roles, while outlining essential
+needed for final deployment.
+AI-Offline Model Stack — Inventory, Geometry Simulation & Recommendation
+1. Inventory — what already exists
+1.1 The stack is already defined: the "3+1 Hybrid" manifest
+1.2 The geometry contract every lane must satisfy
+1.3 Known gaps that bound what any stack can do today (SPEC §8, honest list)
+2. Candidates for the three real slots
+3. Simulation — geometry compatibility of the four lanes
+3.1 Lane separation — cross-lane interference [SIM]
+3.2 Communication — can the coupling synchronize fields from different lanes? [SIM]
+3.3 Readout non-collision [SIM]
+3.4 Quantization lanes do not disturb the geometry [SIM]
+3.5 What the simulation does not show
+4. Recommended stack
+5. Open verification steps (Pixel 9a / workstation only)
+Appendix — artifacts of this report
+Gemini Notebook can make mistakes, so double-check it.
+viability and geometric compatibility
+"3+1 Hybrid" model stack
+interoperate and communicate through a shared toroidal geometry layer
+current model inventory
+device-side verification steps
+Date:
+2026-11-04 ·
+Scope:
+AI-Offline / Aestheria ecosystem, Pixel 9a (Tensor G4) + Windows 11 workstation
+Question (Rodney, 2026-11-04):
+the app runs four models — three real on-device models plus one synthetic. A Gemma-4-class tier is the highest/verifier; below it, three slots of
+varying sizes and quantizations
+(so execution threads stay separate) that must still
+communicate via geometry
+(the toroidal layer). The staged
+is kept. Verify by simulation that the three real models are the best, most compatible choices alongside the synthetic tier.
+Number labeling used throughout:
+[SIM]
+= measured by the simulation run for this report ·
+[DOC]
+= documented in the local ecosystem materials or upstream model documentation ·
+[EST]
+= estimate. No benchmark of any real model was run; no weights were downloaded.
+--------------------------------------------------------------------------------
+(§2, Standardized Model Manifest) already specifies exactly the shape Rodney described — three real LiteRT-LM models of increasing size/quantization diversity plus one synthetic tier
+:
+Total real-model footprint on device: ≈ 3.48 GB
+(304 MB + 584 MB + 2.59 GB), mmap'd via
+assets per the architecture doc.
+Cascade [DOC]:
+Tier 4 seeds → Tier 1 drafts (<15 ms target) → Tier 2 gates/schema-validates → pass at χ² ≤ 1.05 streams to UI; dissonance escalates to Tier 3 (the Gemma-4 E2B verifier). This matches Rodney's framin
+is
+the highest real model and the verifier; the synthetic is the "+1", a substrate/seed tier rather than a fourth heavyweight model.
+From
+(canonical, v1.0) and the model artifact registry in
+Consequence for model choice:
+the manifold admits
+only
+8,192-element fields and emits 32-element readouts. No model's raw hidden state fits natively — every lane needs an admission projection from its hidden dimension to the shared field. Hidden dimensio
+: Gemma 3 270M → 640; Gemma 3 1B → 1,152; Gemma 4 E2B → 2,560. Lane diversity is therefore real (640 / 1,152 / 2,560 + the synthetic's native 8,192), and compatibility is a property of the
+projection + coupling
+, which is what §3 simulates.
+Local materials name
+the three Gemma assets above — the ecosystem has already standardized on them, and all three files physically exist in Drive
+. Alternatives below are from upstream documentation knowledge, labeled
+[DOC-upstream]
+; the local docs are silent on them, and none was tested here.
+Verdict of this section:
+the candidate question is effectively settled by what is staged — the three incumbents already satisfy every constraint in Rodney's brief (three distinct sizes: 304 MB / 584 MB / 2.59 GB; three disti
+which
+models so much as
+whether different-dimension, different-quantization lanes can actually interoperate through the toroidal geometry
+— simulated next.
+Code:
+(seeded, master seed 20261104; results in
+).
+Method:
+the coupling math is
+imported verbatim
+from the ecosystem's own reference implementation (
+, SPEC §§4–5) — no formulas were re-derived. NumPy 1.26.4 on this VM; PyTorch is not installed here, so the learned D1 ONNX operator could not be executed — the parameter-free D2 step (the SPEC's cano
+Harness validation [SIM]:
+Setup [SIM]:
+each lane renders synthetic contents as unit-variance Gaussian vectors at its documented hidden dimension (640 / 1,152 / 2,560 / 8,192), with the lane's quantization applied as a uniform-quantization
+Methodology note:
+an initial run used unit-norm vectors, which produced degenerate near-zero fields (per-element std ≈ 1/√d) and vacuous gate passes; it was discarded. All numbers below are from the corrected unit-var
+Independent contents admitted through two different lanes; field-space |cosine| (chance level for 8,192-dim random fields ≈ 0.0110), n = 18 lane-pair/content samples:
+| Admission | mean |cos| | max |cos| | vs chance |
+|---|---|---|---|
+| NAIVE (pad/truncate) | 0.0180 | 0.0685 | inflated ~1.6× mean, ~6× max |
+| CODED (per-lane projection) |
+0.0095
+|
+0.0177
+| at chance |
+NAIVE lanes collide by construction — shorter lanes are strict prefixes of the shared block, so their fields overlap systematically. CODED admission puts cross-lane interference exactly at the random-
+the lanes are geometrically separate threads
+, as required.
+Each lane pair admits
+independent
+fields (worst case: no shared content), then the canonical step iterates with φ_t = 0.1·t. All
+36/36
+cross-lane runs (6 lane pairs × 6 contents) reach the ACCEPT band (χ²_reduced ≤ 1.05) under both admission methods:
+Median steps-to-gate
+9
+(min 8, max 9), independent of which dimensions/quantizations are paired — dimension diversity costs nothing in synchronization. NAIVE syncs faster (1–5 steps) but only because its fields start parti
+After one canonical step (the SPEC §4 arbitration composition), readouts of 36 independent input pairs were compared pairwise (630 pairs): |cos| mean
+0.204
+, p95
+0.588
+, max
+0.801
+, vs a 32-dim random chance mean of ~0.141. Readouts are distinguishable on average — no systematic collapse — but the tail is fat: a minority of unrelated pairs land close in readout space. That is c
+uses it only as an energy tie-break behind the χ² gate), and it means the readout must
+not
+be treated as a unique state fingerprint. No change recommended; flagged so nobody builds identity assumptions on it.
+Tier-2 lane (d = 1,152), same contents, clean vs quantized admission — field cosine: clean-vs-INT8 =
+0.99997
+, clean-vs-INT4 =
+0.9907
+. INT4's coarser grid moves the admitted field by ~1% in cosine terms — far below the inter-content distances — so assigning different quantizations per lane (INT8 / INT4 / INT8-mixed) does not compro
+3.5 What the simulation does
+show
+Keep the standardized manifest exactly as staged — it passes every constraint in the brief, and the simulation validates its dimension/quantization set as geometry-compatible.
+No model swaps recommended.
+Geometry interface (the one build item the sim argues for):
+replace the §8.12 modulo-hash token projection with
+per-lane seeded projections
+into the [1,32,16,16] field (distinct fixed seed per tier, JL-scaled), then let the canonical coupling + χ² gate (κ₂₁ = 0.12, κ₁₂ = 0.08, gate 1.05) do the cross-lane communication, with
+'s state-only policy on top. Under that design the sim shows: lanes at chance-level mutual interference (0.0095 mean |cos|), any two lanes synchronizable into the ACCEPT band in ≤ 9 canonical steps re
+— separation is structural, not just nominal.
+Quantum Affinity Gravity (QAG) & Affy Master Research Dossier
+79 sources
+·
+The provided documents detail the technical architecture for
+, a hybrid dual-hemisphere artificial intelligence ecosystem designed to operate concurrently across an Android mobile device powered by a Google Tensor G4 NPU and a Windows 11 desktop workstation uti
+, combining rapid intuitive draft models with rigorous analytical models, and arbitrates their outputs using a
+to prevent hallucinations. Communication between the mobile and desktop environments is maintained via an
+, which allows seamless session handoffs, tool execution, and local database synchronization without relying on cloud infrastructure. Additionally, the project incorporates
+and
+that enable the software to safely test, compile, and update its own codebase locally.
+Share
+Hybrid model stack
+Toroidal geometry contract
+Lane separation simulation
+Quantization and synchronization
+Verification and deployment
+gemma-3-270m-it-int8
+ToroidalDirectML/docs/HYBRID_3PLUS1_ARCHITECTURE.md
+noCompress
+ToroidalDirectML/SPEC.md
+docs/ECOSYSTEM_DOSSIER.md
+Manifold state:
+two float32 fields ψ1, ψ2, each
+[1, 32, 16, 16] = 8,192 elements
+, row-major
+.
+Model-level operator (D1):
+in
+— periodic wrap-pad (true T² topology) → 3×3 toroidal conv (32→32) → GroupNorm(4) → sin/cos coupling with
+κ₂₁ = 0.12, κ₁₂ = 0.08
+→ global-pool + learned Linear(64→32) readout. Exported as
+(92,619 B, opset 17), PyTorch↔ONNX readout parity ≤ 1e-4 enforced by the exporter
+State-evolution step (D2, parameter-free):
+ψ1′ = tanh(ψ1 + κ₂₁·sin(ψ2 − ψ1 + φ)), ψ2′ = tanh(ψ2 + κ₁₂·cos(ψ1 − ψ2 + φ)); readout = 32 segment means of 0.6·ψ1′ + 0.4·ψ2′, tanh-squashed
+Gate (D3):
+χ²_raw = Σ(ψ1′−ψ2′)² / (N·σ²), N = 8192, σ² = 0.04; χ²_reduced = 0.95 + 0.05·χ²_raw;
+ACCEPT iff χ²_reduced ≤ 1.05
+. No clamping permitted (normative honesty rule)
+Wire format:
+Base64(MessagePack(float32 array)); field payloads exactly 8,192 elements, readouts exactly 32
+Golden vectors:
+GV-1 (constant fields, φ=0) χ²_reduced = 1.454655 ESCALATE; GV-2 (Gaussian seeds 42/137, φ=0.1) = 0.955901 ACCEPT; GV-3 (antisymmetric) = 0.958492 ACCEPT. κ/σ²/gate constants verified identical acros
+Routing:
+routes on manifold state only (measured χ² band, then readout energy as tie-break); task names are never matched
+. SPEC §8.8 lists geometry routing as a phase-3 specification item for the older
+policy; the router itself exists in this tree.
+§8.12:
+currently projects tokens by a
+modulo hash
+— manifold inputs carry almost no semantic content yet. Feeding real hidden states (the projection approach simulated here) is the documented fix direction, not shipped code.
+§8.9:
+the Android bridge's pure-Kotlin fallback uses a fixed kernel, no GroupNorm, and a pooled-mix readout — an approximation, despite a parity claim in its comments.
+§8.10:
+NNAPI placement is declared on
+success; per-op fallback is never logged or benchmarked.
+Registry:
+is API-only (7,546 B, no native
+) — the native LiteRT runtime comes from the Google Tensor SDK / device side. If it's absent, LiteRT tiers stay cold and the app still runs
+~/workspace/ai-offline-model-stack/toroidal_lane_sim.py
+toroidal_lane_sim_results.json
+tests/generate_golden_vectors.py::canonical_step
+This VM re-ran
+PASS
+— GV-1/GV-2/GV-3 reproduce exactly (χ²_reduced 1.454655 / 0.955901 / 0.958492; fields and readouts bitwise vs the shipping PC bridge).
+The sim's own GV-1 anchor through the imported step: χ²_reduced =
+1.454655
+, exact match.
+NAIVE
+— zero-pad/truncate into the flat 8,192 field (all lanes share the same leading coordinate block);
+CODED
+— a per-lane seeded Gaussian projection (8192×d, JL-scaled) into the field — distinct seed per lane = distinct geometry lane, the design pattern that would replace the §8.12 modulo-hash projection.
+geometry_router.py
+Semantic agreement: whether Tier 2's
+actual hidden states
+for a given prompt, projected into the manifold, agree with Tier 1's for the same prompt. That needs real model activations — Pixel/workstation only.
+The learned D1 operator (toroidal conv + GroupNorm + learned readout) — needs PyTorch/ONNX Runtime with the exported graph; not runnable on this VM (no torch). The D2 step simulated here is the SPEC's
+Latency: the <15 ms / <40 ms cascade figures in the architecture doc are design targets
+, not measurements, and nothing here measures them.
+npuMutex
+LiteRT native runtime:
+the
+in-repo is API-only; the native
+comes from the Google Tensor SDK / device side. Verify each of the three
+files actually loads on the Pixel 9a (file presence in Drive ≠ a working session — Tiers stay cold if the runtime is absent).
+Real hidden-state extraction:

@@ -1,0 +1,103 @@
+PRO
+Source guide
+Sources
+HealingAPI.py (1).txt
+Create notebook
+This source code establishes a
+using Python and FastAPI to
+directly to a user interface while keeping complex formulas hidden from the public view. It is organized around two primary functions, with the first endpoint acting as a
+that processes spatial coordinates and mass metrics to evaluate stellar rotation patterns. The second endpoint functions as a
+that organizes biological data, including electrical charges and molecular weights, across different animal species. Ultimately, the program serves as an
+that cleanly separates heavy mathematical processing from front-end display.
+=============================================================================
+QAG UNIFIED BACKEND ENGINE - FASTAPI
+Hides the core QAG math in the background, serving clean data to the frontend
+Allow CORS for your HTML dashboard to pull data securely
+--- CANONICAL QAG CONSTANTS (HIDDEN FROM FRONTEND) ---
+Gemini Notebook can make mistakes, so double-check it.
+backend web application
+deliver structured scientific calculations
+galactic kinematics calculator
+secure viral target matrix
+integrated digital bridge
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+import numpy as np
+import math
+app = FastAPI(title="QAG Universal Resonance API", version="2.0")
+app.add_middleware(
+CORSMiddleware,
+allow_origins=["
+"], # Restrict this to your specific domains in production
+allow_credentials=True,
+allow_methods=["
+"],
+allow_headers=["*"],
+)
+K_ASB = 0.013829
+F_H = 1420.405 # MHz (Universal Hydrogen Breath)
+V_INF = 49.0 # Asymptotic vacuum resonance velocity
+R_AFF = 1.68 # Affinity coherence radius
+@app.get("/api/v1/galactic-kinematics")
+def get_galactic_data():
+"""
+Calculates the SPARC DDO 154 rotation curve using the QAG AVI Law.
+The proprietary math stays on the server.
+r_kpc = [0.24, 0.48, 0.72, 0.95, 1.19, 1.5, 2.0, 3.0, 4.0, 5.0, 6.0]
+v_observed = [10.3, 17.1, 22.3, 26.5, 30.1, 33.5, 38.0, 43.1, 46.2, 47.5, 48.1]
+v_baryonic = [10.0, 16.5, 20.1, 22.0, 23.5, 24.2, 23.8, 21.5, 19.2, 17.5, 16.0]
+@app.get("/api/v1/mammalian-decoherence")
+def get_viral_data():
+Serves the mammalian viral target matrix. In future iterations,
+this can dynamically calculate f_kill based on PDB mass inputs.
+return {
+"status": "SECURE",
+"targets": [
+{"species": "Human", "zeta_mV": -55.0, "pathogen": "SARS-CoV-2 (Spike)", "mw_kda": 438.26, "f_kill_mhz": 3291.59, "safety": "SECURE"},
+{"species": "Human", "zeta_mV": -55.0, "pathogen": "HIV-1 (Capsid)", "mw_kda": 34852.58, "f_kill_mhz": 5416.48, "safety": "SECURE"},
+{"species": "Canine (K9)", "zeta_mV": -50.0, "pathogen": "Canine Parvovirus", "mw_kda": 67.50, "f_kill_mhz": 1253.40, "safety": "SECURE"},
+{"species": "Feline", "zeta_mV": -45.0, "pathogen": "Feline Panleukopenia", "mw_kda": 67.00, "f_kill_mhz": 1247.38, "safety": "SECURE"},
+{"species": "Feline", "zeta_mV": -45.0, "pathogen": "Feline Calicivirus", "mw_kda": 60.00, "f_kill_mhz": 498.95, "safety": "SECURE"},
+{"species": "Bovine", "zeta_mV": -42.0, "pathogen": "Bovine Leukemia Virus", "mw_kda": 24.00, "f_kill_mhz": 200.67, "safety": "SECURE"}
+]
+}
+if
+name
+== "
+main
+":
+import uvicorn
+uvicorn.run(app, host="0.0.0.0", port=8000)
+Quantum Affinity Gravity (QAG) & Affy Master Research Dossier
+79 sources
+·
+The provided documents detail the technical architecture for
+, a hybrid dual-hemisphere artificial intelligence ecosystem designed to operate concurrently across an Android mobile device powered by a Google Tensor G4 NPU and a Windows 11 desktop workstation uti
+, combining rapid intuitive draft models with rigorous analytical models, and arbitrates their outputs using a
+to prevent hallucinations. Communication between the mobile and desktop environments is maintained via an
+, which allows seamless session handoffs, tool execution, and local database synchronization without relying on cloud infrastructure. Additionally, the project incorporates
+and
+that enable the software to safely test, compile, and update its own codebase locally.
+Share
+FastAPI Backend Engine
+Galactic Kinematics
+Mammalian Decoherence
+QAG AVI Law
+Resonance API
+# QAG AVI Equation Applied in the Background
+v_qag = []
+for i in range(len(r_kpc)):
+    baryonic_sq = math.pow(v_baryonic[i], 2)
+    quantum_lift = math.pow(V_INF, 2) * (1 - math.exp(-r_kpc[i] / R_AFF
+⚛️
+Sep 20, 2026
+Affy
+3+1 model hierarchy
+reduced chi-squared dissonance gate
+ADB reverse loopback bridge
+autonomous memory consolidation
+recursive self-improvement harnesses
+Save to note
+How do the mobile and PC components work together?
+What is the dual-hemisphere model architecture and how does it function?
+How does the system perform zero-copy VRAM acceleration on Windows?

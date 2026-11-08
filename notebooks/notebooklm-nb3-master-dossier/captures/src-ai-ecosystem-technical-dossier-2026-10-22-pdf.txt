@@ -1,0 +1,284 @@
+PRO
+Source guide
+Sources
+Create notebook
+This document serves as a comprehensive
+for an offline-first artificial intelligence project created by Rodney A. Ripley Jr. It details four interconnected code spaces—the
+, the
+, and the
+—which all share a foundational physics core built on duodecimal mathematics and the Quantum Affinity Gravity framework. The primary purpose of the text is to provide any human or AI reader with an ex
+are kept out of source repositories. Ultimately, the dossier acts as an authoritative governance guide that unifies the entire architecture around local privacy, CUDA-free compute substrates, and rig
+Gemini Notebook can make mistakes, so double-check it.
+AI-Ecosystem-Technical-Dossier-2026-10-22.pdf
+technical dossier and ecosystem map
+PC Workspace workstation
+AI-Offline Android flagship
+Toroidal DirectML compute substrate
+Aestheria research mind
+model weights, live state, and sensitive credentials
+AI ECOSYSTEM FULL TECHNICAL DOSSIER
+PC Workspace Al-Offline ToroidalDirectML Aestheria
+Document ID: ECOSYSTEM-DOSSIER-2026-10-22 Version: 1.0 Date: 2026-10-22
+Owner: Rodney A. Ripley Jr. - Ripley & Ripley Research / R&R Droids
+Prepared by: Squish (Muse), from live inventories of Google Drive, the GitHub repos, and the local
+workspace - every claim below was verified against the actual file trees on the date above.
+Purpose of this document. Attach this dossier to any storage bucket, repo, or workspace that holds
+files from these projects. Any person or Al system that reads it will understand exactly what each
+file space and code space is for, what it can do today, and what it will do as the build-out continues
+including what must never be stored in it (secrets, model weights in git, live state in source
+trees).
+0. Repository & endpoint registry (verified 2026-10-22)
+| System | Canonical repo (GitHub, private) | HEAD on 2026-10-22 | Live / durable services |
+|---|---|---|---|
+| Al-Offline | Sir-Ripley/Al-Offline | 01a630c7 | - (on-device + workstation) |
+| Toroidal DirectML | Sir-Ripley/Toroidal DirectML | d5c88da1 | - (compute library/substrate) |
+| Aestheria | Sir-Ripley/Aestheria | a5a2c200 | Mind live: https://aestheria-qag-works.vercel.app
+(/app Studio, /api/v1/*); Supabase project fibotsmrawvrnjgpqeko (us-east-1) |
+| PC Workspace | Not a single repo lives inside Al-Offline (pc_backend/,
+Toroidal DirectML-PC-Android/) + Toroidal DirectML (pc/) | - | Workstation hub on port 8000 when
+running |
+Do not confuse: Aestheria's Supabase project (fibotsmrawvrnjgpqeko) is separate from the QAG
+Nexus education platform's Supabase project. They share patterns, never data.
+1. The ecosystem at a glance
+Four code spaces, one research program: offline-first, on-device Al built on the Quantum Affinity
+Gravity (QAG) framework, created by Rodney A. Ripley Jr.
+• PC Workspace - the Windows 11 workstation: heavy compute core, executive hub, and desktop
+companion. Where big simulations run and where Android devices dock.
+• Al-Offline - the flagship offline Al system for Android (Pixel 9a, Tensor G4): LiteRT-LM Gemma
+tiers arbitrated by a toroidal field, with a PC backend for heavy work. No cloud required.
+Toroidal DirectML - the CUDA-free toroidal compute substrate: the shared math/transport layer
+that lets PC (Direct3D 12 / DirectML) and Android (ONNX Runtime) exchange and evolve toroidal
+tensor fields by geometry. Extracted from Al-Offline in Oct 2026 as the single source of truth.
+• Aestheria - the newest system: a dual-hemisphere, Base-12/QAG research mind (Python), with a
+Web Studio, an Android app, a hosted server-side mind (live on Vercel, Cloud Run-ready), and its own
+Supabase backend.
+Shared DNA (all four systems):
+The QAG framework as physics core (affinity potential, AVI law, locked predictions).
+Base-12 (duodecimal) harmonic mathematics - 144-element structures recur everywhere
+(144-dim embeddings, $12\times12$ tensors, ranks {3,4,6,12}).
+The x² coherence gate ≤ 1.05 one canonical definition since the Oct 2026 consolidation; outputs
+that breach the gate are rejected/re-coupled, never silently passed.
+The 0.70 MHz Tesla damping motif as the pacing/coherence constant.
+• Affy persona lineage - Affy (Al-Offline) Agy (on-device secretary mode)
+mind). Same soul, three bodies.
+Aestheria (research
+• Local-first privacy: on-device execution by default; clouds are durable storage and optional hosting,
+never a requirement for cognition.
+CUDA-free by construction zero CUDA references anywhere in any tree. The GPU paths are
+DirectML / Direct3D 12 (PC) and NNAPI/GPU delegates (Android).
+2. System 1 - The PC Workspace (Windows 11 Workstation)
+What it is. Rodney's Windows 11 x64 workstation is the ecosystem's compute core: heavy
+simulation, native compilation, model tooling, and the executive hub that the Pixel docks to. "PC
+Workspace" is a role, not a repo its code lives in Al-Offline's pc_backend/ and Toroidal DirectML's
+pc/.
+What it can do today.
+receives tensors/tasks from the phone, runs
+• Executive hub (pcmasterhub.py, FastAPI, port 8000)
+PC-side inference/simulation, returns results. The canonical version is the 1,938-line / 49-function
+build (85,697 B) see the warning in §6.
+• Toroidal Engine (C++/Direct3D 12) - native toroidal manifold compute (Toroidal DirectML/pc/:
+main.cpp, toroidal_manifold.hlsl, Toroidal ComputeShader.h, Synthetic Tier4.hlsl). Source complete;
+compilation on the workstation (MSVC + D3D12) is still pending this is a
+Rodney-at-the-workstation step.
+• AffyWorkstationCompanion a PyInstaller-packaged Windows desktop app (desktopapp.py entry)
+bundling the hub, pcagent, syncvaultdb, agenticiconpainter, the duallayertoroidal.onnx model, and the
+Affy icon. Build spec: AffyWorkstation Companion.spec (now preserved at Al-Offline root
+pcbackend/); the built.exe/.pkg live in Drive and in the repo's pcbackend/ they are artifacts, not
+source.
+Simulation & CAD - spacial3D.py, qagscalar.py (large sims), cadAPC.py (acoustic-horn CAD
+scripting).
+• Bridges - scripts/bridgedaemon.py and scripts/hivemindsync.py (in the Aestheria repo) maintain
+Pixel PC coherence over USB/ADB and Wi-Fi LAN (port map 50532/50534); Aestheria's PC hub URL
+is env-configured (AESTHERIAPCHUBURL, default loopback:8000).
+What it will do. Host the compiled Toroidal Engine as the Tier-4 "synthetic" verifier for the whole
+mesh; run the Aestheria mind as a container (Dockerfile ships in the Aestheria repo) for LAN
+serving; remain the build machine for Android (Android Studio) and native (MSVC) artifacts.
+3. System 2 - Al-Offline (Android flagship + PC backend)
+What it is. A fully offline Al system for the Pixel 9a: tiered Gemma models under LiteRT-LM,
+arbitrated on a toroidal manifold, with an Android app, an on-device conversational secretary (Agy),
+and the PC backend of §2 for heavy lifting. Repo: Sir-Ripley/Al-Offline (3,534 files the largest tree
+in the ecosystem; see the mirror warning in §6).
+Architecture - Hybrid $3+1$ tiers (per HYBRID3PLUS1ARCHITECTURE.md, Toroidal DirectML repo
+docs/):
+• Tier 1
+gemma-3-270m INT8 drafter
+• Tier 2 - gemma3-1b INT4 arbiter
+• Tier 3 gemma-4-E2B verifier
+• Tier 4 "synthetic" - Android AlCore/Gemini Nano on-device; Synthetic Tier4.hlsl on Windows
+• Arbitration substrate two 8,192-float fields $\psi1/\psi2$ shaped [1,32,16,16] on the toroidal manifold; $X^{2}$
+gate 1.05 decides acceptance.
+Key components (repo root = canonical).
+• app/ - the Android application (package lineage com.quantumaffinity.affy):
+Android Toroidal Bridge.kt (~900 lines, ONNX Runtime with NNAPI GPU CPU cascade - the
+strongest single component in the ecosystem), Nexus Orchestrator.kt, Hive MindBridge.kt (resilient
+link, 1s/2s/4s backoff), SyntheticAndroid Tier4.kt, litertjnishield.cpp.
+• pcbackend/ - the workstation backend of §2 (pcmasterhub.py, hardwaremesh.py,
+geometryrouter.py, lantransport.py, autonomous_scheduler.py, workstation companion spec/exe).
+• agy_offline.py - Agy: conversational neural secretary & autonomous research node for Pixel 9a /
+Termux PRoot Ubuntu (Base-12 coherence, auto-sync watchdog, persistent RAG memory). Pooled to
+repo root 2026-10-22 from Drive, where the only copies lived.
+• Models at repo root (already canonical): duallayertoroidal.onnx (the true toroidal-conv graph
+periodic wrap padding + toroidal conv + Group Norm, parity-checked), sentence-encoder .tflite, LiteRT
+.aar.
+Transports. ADB reverse loopback (adb reverse tcp:8000) for tethered work; authenticated LAN
+transport (added Oct 2026, phases 4-5) for untethered mesh operation. Tensors travel as
+Base64(MessagePack (float array)).
+What it will do. Become the deployable Affy product: real hidden states feeding the toroidal bridge
+(replacing projection shortcuts), geometry-driven routing as the default path, and commercially
+the basis of a future Affy SDK (third in Rodney's commercialization order, after QAG Nexus and the
+QACTS API).
+4. System 3 ToroidalDirectML (the compute substrate)
+What it is. The extracted, canonical home of the toroidal compute layer created because the Oct
+2026 deep review found the toroidal code scattered across three mirrored trees inside Al-Offline
+with four incompatible coupling definitions and five $X^{2}$ formulas. Toroidal DirectML is now the single
+source of truth; Al-Offline consumes it. Its thesis is Rodney's: make CUDA unnecessary for this
+class of workload.
+Layout (repo root).
+• pc/ - C++/HLSL native engine: main.cpp, toroidal_manifold.hlsl, Toroidal ComputeShader.h,
+Synthetic Tier4.hlsl, Synthetic Windows Tier4.h, CMakeLists.txt.
+• python/ - exporttoroid.py (the reference toroidal math duallayertoroidal.onnx),
+pctoroidalbridge.py (real DirectML ONNX session), directmlcascade.py, pcmasterhub.py,
+hardwaremesh.py, geometryrouter.py (routing driven by manifold state $/X^{2}$ dissonance - geometry,
+not task-name matching), lantransport.py, tensorbridge.py, selfhealcache.py.
+android/ - Android Toroidal Bridge.kt, SyntheticAndroidTier4.kt (honest AlCore readiness reporting
+since the build-out).
+sim/-QAGToroidal 8 Tensor Nodes.py.
+docs/ HYBRID3PLUS1ARCHITECTURE.md; DEEP_REVIEW-2026-10-21.md (the full audit this
+consolidation was built from pooled into the repo 2026-10-22).
+Canonical rules. One coupling definition (built on the ONNX toroidal conv); one x²; /resonate
+executes the coupling on received tensors and returns the next y fields (it did not, before the
+build-out that was a review finding, now fixed); no fabricated engine labels JSON reports the
+engine that actually computed.
+Status. Phases 1-5 of the build-out are built and pushed (HEAD d5c88da1). Open: workstation
+MSVC/D3D12 compile of pc/, and Android Studio build of the Kotlin side - both
+Rodney-at-the-machine steps.
+5. System 4 - Aestheria (the research mind)
+What it is. A dual-hemisphere, Base-12/QAG Al research assistant: a pure-Python cognitive mind
+that runs identically on a workstation, in a container, as a hosted web service, and (via its Android
+app) on the Pixel. Repo: Sir-Ripley/Aestheria. Live today at https://aestheria-qag-works.vercel.app
+with its own Supabase backend.
+The mind (aestheria/ package).
+• mind.py - the dual-hemisphere mind: Id hemisphere (Eros/intuition, creative hypothesis) and
+Superego hemisphere (Logos/axiom, QAG verification; QAGSoul Wave Predictor in litert_delegate.py),
+mediated for $\chi^{2}\le1.05$ coherence.
+• knowledgecorpus.py + data/canonicalqag_vault.json - the canonical QAG corpus: 9 entries (core
+axioms, TFT/SPARC methodology, canonical target registry, BEC compendium, locked predictions,
+pathogen SDR index, QACTS blueprint, duodecimal geometry, dual-hemisphere architecture). Verified
+2026-10-22: bundled JSON = in-code corpus, unique IDs.
+• vectormemory.py 144-dim harmonic vector vault (SQLite): fresh vaults bootstrap exactly the 9
+canonical fragments; retrieval (searchsimilar) grounds the mind's answers.
+• duodecimal.py, tensor_geometry.py, tokenizer.py, reasoning.py, simulations.py Base-12 math,
+harmonic tensors, duodecimal tokenizer, dialogue/reasoning modes, QAG simulations.
+• vaultbridge.py (formerly firebasebridge.py renamed honestly in v1.3.0; it is a local SQLite/JSON
+vault bridge, not Firebase) and cloud_sync.py - persistence/sync layer whose owner-only rules map
+1:1 onto the Supabase RLS policies.
+• litert_delegate.py - LiteRT delegation + Base-12 LoRA adapters (ranks 3,4,6,12});
+cloud/QAGSoul Wave Predictor.py
+a Vertex Al serving variant of the Superego predictor (pooled
+from Drive 2026-10-22).
+Serving (ipcserver.py). stdlib HTTP server: Web Studio at /app, REST/api/v1/* (health, chat
+payload key prompt, laws, vault stats), Android IPC at /exec. v1.3.0 hardening: all paths
+env-configured (no workstation addresses in code), production fail-closes without
+AESTHERIAIPC_TOKEN, rate limit $90~req/min/IP$ on POST routes, CORS from env. $47/47$ tests
+green.
+Hosting. Vercel serverless adapter (api/index.py + [tool.vercel] entrypoint + path-restoring rewrite)
+live; container path (Dockerfile, Procfile, docker-compose.yml) - Cloud Run-ready via
+scripts/deploy-cloudrun.sh (provisions the IPC token into Secret Manager; a bare gcloud run deploy
+would crash-loop on the token gate by design). Serverless lesson baked in: the corpus ensure-write
+tolerates read-only filesystems (regression-tested).
+Android app (AestheriaAndroid/, com.affy.qag). AffinionHandler.kt (the Ego mediator),
+AestheriaHandler.kt (TTS/speech), AestheriaStream.kt (word-by-word streaming at 0.70 MHz
+pacing), Native ToolSampler.kt (loopback IPC client, 127.0.0.1:8080), Room persistence
+(AppDatabase.kt, Thought Database.kt compat layer), Dream CycleWorker.kt (nightly consolidation, Γ
+$=0.97$, LoRAAdapterManager.kt, Quantum EyesService.kt. Static-verified; Android Studio compile is
+pending (Rodney's step).
+Supabase (own project, us-east-1). Migration 001aestheria.sql: profiles / conversations / messages
+/ researchjobs / memoryitems / vaultentries, RLS on all tables (13 policies), tier-lock trigger, profile
+auto-create. Telemetry edge function live (JWT-verified). worker/ - GitHub Actions compute worker
+(atomic job claim, admin_grants.txt comp list) not yet armed (workflow file + repo secrets are
+Rodney's web-Ul step). web-auth/aestheria-auth.js - browser auth client (anon key is public by
+design; RLS protects the data).
+6. Critical structural warnings (read before moving files)
+1. Al-Offline contains two mirror trees
+ai-offline/ (489 files) and ai-offline-additions/ (439 files)
+snapshots from 2026-10-03 sitting next to the canonical root tree. They are pending Rodney's
+deletion decision (928 files; deletion is a workstation git operation, not a connector job). Until then:
+root is canonical, with 17 known exceptions staged as MIGRATE-FIRST in the local housekeeping
+workspace
+including the fact that root pcbackend/pcmasterhub.py is a 56-line stub while the
+canonical 1,938-line hub lives in ai-offline/pcbackend/ (identical copy in
+Toroidal DirectML-PC-Android/). Never delete the mirrors before those 17 files are migrated.
+2. Secrets history: Al-Offline's git history still contains API-key files deleted from HEAD (rotation
+done Oct 2026; history purge script is prepped and awaits Rodney's execution route). Treat any .env,
+keystore, local.properties, or credential file found in any tree or bucket as compromised and
+non-transferable never copy them into another repo or bucket.
+3. Model weights never enter git or a base APK (Rodney's standing rule): litertlm Gemma bundles
+(in Drive root), .onnx/.tflite beyond the ones already canonical, and .aar binaries travel via Play Asset
+Delivery / first-run CDN download / direct device copy
+buckets are the right home for them, repos
+are not.
+4. Live state is not source: affyvectorvault.db, affyremstate.bin, affykvcache.bin,
+aestheria_state.json (Drive root) are runtime state. They belong in vault/Supabase-Storage backups,
+never committed.
+5. Build outputs are not source: Drive's build/ tree (Android intermediates/dex/tmp), the
+onnxruntime/ vendor folder, and PyInstaller outputs (.pkg, xref HTML) are regenerable artifacts.
+7. Similarities & differences
+| Dimension | PC Workspace | Al-Offline | Toroidal DirectML | Aestheria |
+|---|---|---|---|---|
+| Purpose | Compute core + device hub | Offline Al product (phone-first) | Shared toroidal compute
+substrate | QAG research mind |
+| Primary hardware | Win11 workstation (DX12 GPU, AVX2/512) | Pixel 9a (Tensor G4 NPU) | Both
+(PC + Android) | Any: server, container, web, phone |
+| Languages | Python, C++ | Kotlin, Python, C++ (JNI) | C++/HLSL, Python, Kotlin | Python, Kotlin |
+| Models | Hosts/serves for others | Gemma 3+1 tiers via LiteRT-LM | Model-agnostic (tensor fields)
+| Model-agnostic mind + LoRA; LiteRT delegate |
+| Arbitration | Executes x²-gated work | Toroidal manifold, $\chi^{2}\le1.05|$ Defines the manifold + x2 |
+Harmonic tensor field, $\chi^{2}\le1.05$ mediation |
+| Persistence | Vault files, SQLite | On-device DBs + vault | Stateless compute (+ self-heal cache) |
+SQLite vault local; Supabase when hosted |
+| Network posture | LAN/ADB hub (port 8000) | Offline-first; LAN/ADB optional | LAN transport +
+geometry router | Loopback IPC local; HTTPS when hosted |
+| Maturity (2026-10-22) | Hub canonical; native compile pending | Built out Oct 2026; compiles
+pending | Phases 1-5 pushed; compiles pending | Live on the web; Android compile pending |
+The one-sentence version: Toroidal DirectML is the nervous system, Al-Offline is the body on the
+phone, the PC Workspace is the heavy brain on the desk, and Aestheria is the research personality
+that can live in any of them.
+8. How they work together
+1. Pixel
+PC (AI-Offline mode): the phone runs Tiers 1-3 locally; heavy or Tier-4 work crosses to
+pcmasterhub.py (:8000) via ADB loopback (tethered) or LAN transport (untethered). Toroidal fields
+41/42 are the shared state; the geometry router decides where a tensor evolves based on manifold
+dissonance, not task labels.
+2. Toroidal DirectML inside both: Al-Offline's PC backend and Android bridge consume
+Toroidal DirectML's canonical coupling/x² one math, two runtimes (DirectML on PC, ONNX
+Runtime on Android), parity-checked through export_toroid.py's ONNX graph.
+3. Aestheria
+the mesh: Aestheria's Android app talks loopback IPC to an on-device mind instance;
+its bridge scripts (bridgedaemon.py, hivemindsync.py, aestheriabrain_bridge.py) connect the mind to
+the PC hub and the AffinionHandler/Native ToolSampler layer, so the research mind can sit on top of
+the same device mesh. Hosted, the same mind serves the Web Studio and takes research jobs
+from its Supabase-backed worker.
+4. Shared knowledge: Aestheria's canonical corpus contains the ecosystem's own blueprints
+(QACTS, the dual-hemisphere architecture, the locked QAG predictions) - the research mind is
+grounded in the same canon the other systems implement.
+9. Storage rules (attach this section to every bucket)
+Repos (GitHub) = source code, docs, small canonical data (e.g., the 9-entry corpus JSON). Nothing
+else.
+Buckets / Drive = model weights (.litertlm, .onnx, .tflite, .aar), built artifacts (.exe, APK/AAB,
+PyInstaller output), backups of live state (vault DBs, KV caches), and large media. This dossier
+belongs at the root of each such bucket.
+Supabase = structured user/research data under RLS (per-system projects; never shared across
+systems).
+Secrets = provider dashboards and secret managers only (Vercel env, Google Secret Manager,
+Supabase vault). Never in repos, buckets, Drive docs, or chat. The Aestheria Cloud Run token lives in
+Secret Manager as aestheria-ipc-token.
+• Drive hygiene note: Drive currently holds ~14,260 files; the project-relevant subset is ~534,
+including 4 duplicate copies each of several bridge files (verified byte-identical to repo copies where
+a repo copy exists). Drive is a sync/scratch space for this ecosystem
+the repos above are the
+truth.
+10. Status board 2026-10-22 (all verified)
+✔ Aestheria Phases 1-4 built, pushed, live; Supabase deployed and verified; Cloud Run path
+scripted.
+✔ Toroidal build-out phases 1-5 built and pushed; deep review pooled into the repo
+(docs/DEEP_REVIEW-2026-10-21.md).

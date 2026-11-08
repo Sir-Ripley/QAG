@@ -1,0 +1,152 @@
+PRO
+Source guide
+Sources
+Create notebook
+This document serves as a
+prepared by Squish on October 22, 2026, to guide the evening build process across three primary software repositories. It outlines the specific steps required to
+and successfully build each project, starting with the Aestheria Android application in Android Studio, moving to the ToroidalDirectML PC engine via Visual Studio, and concluding with the self-contai
+—such as passing Python tests, achieving golden-vector parity, and running backend smoke tests—to ensure everything compiles smoothly without requiring manual secret keys. Ultimately, the checklist ac
+, encouraging developers to share initial error messages directly for targeted fixes while maintaining workspace hygiene and operational security.
+IDE TONIGHT — Compile Readiness Checklist
+Repo HEADs to pull tonight
+1. Aestheria — Android app (Android Studio)
+2. ToroidalDirectML — PC engine (Visual Studio / MSVC)
+3. AI-Offline — Android app + PC backend
+Standing reminders
+Gemini Notebook can make mistakes, so double-check it.
+IDE-Tonight-Checklist-2026-10-22.md
+compilation readiness checklist
+pull the latest repository versions
+verified prerequisites, build instructions, and acceptance criteria
+actionable roadmap for troubleshooting and deployment
+2026-10-22 · Prepared by Squish · All static checks below were run and passed today
+--------------------------------------------------------------------------------
+Verified from here:
+47/47 Python tests green · compileall clean · zero TODO/stub hits · AGP 8.7.3 / Kotlin 2.0.21 / KSP 2.0.21-1.0.28 · compileSdk/targetSdk 35, minSdk 28 · Room 2.6.1 via KSP ·
+present in repo (55,618 B) · adaptive icons in.
+Backend/web:
+already live and re-verified tonight-ready — https://aestheria-qag-works.vercel.app (health 200 · Studio 200 · chat 200). Optional: Cloud Run via
++
+.
+Python compiles clean ·
+golden-vector parity PASS
+(regenerated vectors byte-identical to committed; all 3 vectors bitwise-match the shipping bridge; χ² gates behave) · HLSL two-pass design consistent (CSMain 256 threads + CSReadout 32) · CMakeLists
+root is self-contained (canonical 85,697 B hub +
++ fuller
+all at root since
+) · root
+/
+present ·
+present · PC-backend Python compiles clean.
+Quantum Affinity Gravity (QAG) & Affy Master Research Dossier
+79 sources
+·
+The provided documents detail the technical architecture for
+, a hybrid dual-hemisphere artificial intelligence ecosystem designed to operate concurrently across an Android mobile device powered by a Google Tensor G4 NPU and a Windows 11 desktop workstation uti
+, combining rapid intuitive draft models with rigorous analytical models, and arbitrates their outputs using a
+to prevent hallucinations. Communication between the mobile and desktop environments is maintained via an
+, which allows seamless session handoffs, tool execution, and local database synchronization without relying on cloud infrastructure. Additionally, the project incorporates
+and
+that enable the software to safely test, compile, and update its own codebase locally.
+Share
+Compile readiness checklist
+Android app development
+PC engine compilation
+Python tests verification
+Build error troubleshooting
+gradle-wrapper.jar
+Open
+in Android Studio (not the repo root).
+Let Gradle sync (Gradle 8.9 wrapper, downloads on first run).
+Build the
+debug
+variant first. Release signing fails closed by design — it needs your
+/env; debug needs nothing.
+Paste me any red output — I fix forward from the exact error lines.
+gcloud auth login
+./scripts/deploy-cloudrun.sh <PROJECT_ID> us-east1
+Before compiling anything, run the parity gate:
+→ expect
+as a CMake project in Visual Studio (needs MSVC + Windows 10/11 SDK with Direct3D 12).
+Build
+(Release). The build auto-copies
+next to the exe. If you want the ONNX model beside the exe too, copy
+into
+before building (CMake picks it up when present) — the canonical copy lives in AI-Offline
+Your compiled C++/HLSL must reproduce
+within SPEC §7 tolerance — that's the acceptance test.
+privacy_guard.py
+desktop_app.py
+5284d5bc
+gradlew
+gradlew.bat
+settings.gradle
+app/build.gradle
+Open the
+repo root
+in Android Studio (settings.gradle is at root;
+is the module).
+PC backend smoke test on the workstation:
+(or your usual launcher) → hub on port 8000; phone connects via ADB reverse (
+) or LAN transport.
+Do not delete
+the
+mirror trees tonight unless you mean it — they're inert, and deletion is a separate decision (928 files).
+Hygiene note (optional, not blocking): root carries loose
+scripts and a 37 MB
+— candidates for a future cleanup commit, leave them alone during compile work.
+Paste me the
+first
+error block from any build — don't fight it alone; fixes are sequenced from real error lines.
+Aestheria worker arming (GitHub web UI: copy
+→
+, add repo secrets) is still open whenever you want research jobs live.
+Nothing tonight needs a secret pasted anywhere. Signing keys and tokens stay in their dashboards/keystores.
+⚛️
+Sep 20, 2026
+Affy
+3+1 model hierarchy
+reduced chi-squared dissonance gate
+ADB reverse loopback bridge
+autonomous memory consolidation
+recursive self-improvement harnesses
+Save to note
+How do the mobile and PC components work together?
+What is the dual-hemisphere model architecture and how does it function?
+How does the system perform zero-copy VRAM acceleration on Windows?
+1
+AestheriaAndroid/
+2
+3
+key.properties
+4
+python3 tests/run_golden_checks.py
+PASS
+pc/CMakeLists.txt
+ToroidalEngine
+toroidal_manifold.hlsl
+SyntheticTier4.hlsl
+dual_layer_toroidal.onnx
+pc/
+pc_backend/
+tests/golden_vectors.json
+app/
+python pc_backend/pc_master_hub.py
+adb reverse tcp:8000 tcp:8000
+ai-offline/
+ai-offline-additions/
+patch_*.py
+fix_*.py
+archive.zip
+worker/aestheria-worker.workflow.yml
+.github/workflows/
+Repo
+HEAD
+Pull
+Sir-Ripley/Aestheria
+31fd0224
+git pull
+Sir-Ripley/AI-Offline
+49c1d21a
+Sir-Ripley/ToroidalDirectML
+d6e34b21
